@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate }
+    ports: ["5432:5432"]
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0 }
+    volumes: [".:/app"]
+    ports: ["8000:8000"]
+    depends_on: [db, redis]
+  worker:
+    build: .
+    command: celery -A servicemate worker -l info
+    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0 }
+    volumes: [".:/app"]
+    depends_on: [db, redis]
