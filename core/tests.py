@@ -5,6 +5,7 @@ from django.urls import reverse
 from .logging import log_agent_event
 from .models import Approval, Provider, ProviderSearchCache, ServiceRequest
 from .orchestration import approval_gate, create_pending_approval, recovery_agent, route_after_approval, route_recovery
+from .tasks import run_workflow
 
 class PersonOneTests(TestCase):
     def setUp(self):
@@ -74,3 +75,11 @@ class PersonOneTests(TestCase):
     def test_search_again_excludes_all_shown_providers(self, _interrupt):
         result = approval_gate({"request_id": self.request_obj.id, "ranked_providers": [{"place_id": "place-1"}, {"place_id": "place-2"}], "excluded_provider_ids": ["earlier"], "retry_count": 0})
         self.assertEqual(result, {"status": "search_again", "excluded_provider_ids": ["earlier", "place-1", "place-2"], "retry_count": 1})
+
+    def test_task_rejects_missing_or_mismatched_workflow_identity(self):
+        with self.assertRaisesMessage(ValueError, "Unknown service request"):
+            run_workflow(self.request_obj.id + 999, "thread-1", {"request_id": self.request_obj.id + 999})
+        with self.assertRaisesMessage(ValueError, "Workflow request and thread identity do not match"):
+            run_workflow(self.request_obj.id, "wrong-thread", {"request_id": self.request_obj.id})
+        with self.assertRaisesMessage(ValueError, "Workflow request and thread identity do not match"):
+            run_workflow(self.request_obj.id, "thread-1", {"request_id": self.request_obj.id + 1})
