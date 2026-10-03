@@ -14,6 +14,6 @@ def run_workflow(request_id: int, thread_id: str, state: dict):
     with checkpointer as saver:
         saver.setup()
         workflow = build_workflow(saver)
-        if state.get("status") in {"approve", "reject", "search_again"}:
-            return workflow.invoke(Command(resume=state["status"]), config=config)
+        if "resume" in state:
+            return workflow.invoke(Command(resume=state["resume"]), config=config)
         return workflow.invoke(state, config=config)

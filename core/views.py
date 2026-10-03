@@ -29,7 +29,14 @@ def approval_action(request, approval_id):
     choices = {"approve": Approval.Decision.APPROVED, "reject": Approval.Decision.REJECTED, "search_again": Approval.Decision.SEARCH_AGAIN}
     action = request.POST.get("action")
     if action not in choices or approval.decision != Approval.Decision.PENDING: return HttpResponseBadRequest("Invalid approval action")
+    provider_id = request.POST.get("provider_id")
+    valid_ids = {provider.get("place_id") for provider in approval.payload.get("ranked_providers", [])}
+    if action == "approve" and provider_id not in valid_ids:
+        return HttpResponseBadRequest("Choose one of the ranked providers before approving")
     approval.decision, approval.decided_at = choices[action], timezone.now()
     approval.save(update_fields=["decision", "decided_at"])
-    run_workflow.delay(approval.request_id, approval.thread_id, {"request_id": approval.request_id, "status": action})
+    resume = {"action": action}
+    if action == "approve":
+        resume["provider_id"] = provider_id
+    run_workflow.delay(approval.request_id, approval.thread_id, {"request_id": approval.request_id, "resume": resume})
     return redirect("approvals")

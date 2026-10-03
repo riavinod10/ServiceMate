@@ -24,6 +24,13 @@ class Provider(models.Model):
     price_is_estimate = models.BooleanField(default=True)
     source = models.CharField(max_length=64, blank=True)
 
+
+class ProviderSearchCache(models.Model):
+    """Person 2 can reuse a provider set for the same normalized discovery query."""
+    query = models.CharField(max_length=512, unique=True)
+    providers = models.ManyToManyField(Provider, related_name="search_caches")
+    fetched_at = models.DateTimeField(auto_now=True)
+
 class Booking(models.Model):
     request = models.OneToOneField(ServiceRequest, on_delete=models.CASCADE, related_name="booking_record")
     provider = models.ForeignKey(Provider, null=True, blank=True, on_delete=models.SET_NULL)
