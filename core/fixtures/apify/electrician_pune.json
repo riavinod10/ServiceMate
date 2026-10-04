@@ -1,0 +1,2491 @@
+[{
+  "title": "Shiva Electrician",
+  "subTitle": "शिवा इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Vrindavan Colony, Alkapuri Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Vrindavan Colony, Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99752 96705",
+  "phoneUnformatted": "+919975296705",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5070035,
+    "lng": 73.8073578
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJKRgLBY6_wjsRn0apTadQbCU",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bf8e050b1829:0x256c50a74da9469f",
+  "cid": "2696618956380784287",
+  "reviewsCount": 34,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 31
+  },
+  "imagesCount": 45,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.520Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shiva%20Electrician&query_place_id=ChIJKRgLBY6_wjsRn0apTadQbCU",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOgOuu2KzajJqnP5TQGTciE1VwyvU2YMQVotUMmq0SL-cPe0zNpzXMtt1Y_-VkSGlf7DOBxSiNbqF4fcE6uOXjF1ygfpI6RxAkGqeg1fCq21Z0rb8Svshcej3oqlgNF5OmW15G5=w408-h883-k-no",
+  "kgmid": "/g/11p5_zx8dv",
+  "businessProfileId": "5161889407676985660"
+},
+{
+  "title": "SUNIL ELECTRICALS",
+  "subTitle": "सुनील इलेक्ट्रिकल्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "shop no- 5, vanaz corner, New friends society, Paud Rd, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Lokmanya Colony, Kothrud",
+  "street": "shop no- 5, vanaz corner, New friends society, Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99211 02721",
+  "phoneUnformatted": "+919921102721",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5076587,
+    "lng": 73.8077869
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJr-se7rm_wjsRafn5ckmGh9Q",
+  "categories": [
+    "Electrical installation service",
+    "Electrical equipment supplier",
+    "Electrical repair shop",
+    "Electrical supply store",
+    "Electrician"
+  ],
+  "fid": "0x3bc2bfb9ee1eebaf:0xd487864972f9f969",
+  "cid": "15314356707916380521",
+  "reviewsCount": 97,
+  "reviewsDistribution": {
+    "oneStar": 3,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 2,
+    "fiveStar": 91
+  },
+  "imagesCount": 28,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.521Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 10:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 10:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=SUNIL%20ELECTRICALS&query_place_id=ChIJr-se7rm_wjsRafn5ckmGh9Q",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmNc7XL8nx-G0SEmtq8m90lRl15tByjo7L4AEy1nUADUwOFG_0nFxzt4PC5izJiXun9YondOu8DPWcL-B6x-IXz_XqXVUmil5qCBSpmOAwvk8bL1B96HQ8ywNQ3Va5L4sWxYxCAb8P2STnGY=w408-h544-k-no",
+  "kgmid": "/g/12628phvv",
+  "businessProfileId": "10284275950311414389"
+},
+{
+  "title": "Sanvi Electrical service Kothrud",
+  "subTitle": "संवि इलेक्ट्रिकल सर्विस कोथरुड",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "Vrindavan Colony, Alkapuri Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Vrindavan Colony, Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99702 74513",
+  "phoneUnformatted": "+919970274513",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5070906,
+    "lng": 73.8070252
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJOVbVguu_wjsRBGKRORAb3Ow",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bfeb82d55639:0xecdc1b1039916204",
+  "cid": "17067546444326593028",
+  "reviewsCount": 29,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 27
+  },
+  "imagesCount": 18,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sanvi%20Electrical%20service%20Kothrud&query_place_id=ChIJOVbVguu_wjsRBGKRORAb3Ow",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOGSxbFcujxP9x0sGBwxSyLJ4EZkqH07XCEe0MSXd-DMWiEN3SpaVv6PXBa3GGWVmhJgao2nj_52VcRHaxANB0gMRtI9a_EcRnK6UO3zJX9yVeqxUNf2i9aEGeo82M-COuGzelERvmlF1o7=w408-h306-k-no",
+  "kgmid": "/g/11n4srp9jm",
+  "businessProfileId": "17764334836572265697"
+},
+{
+  "title": "Chaitanya electrical and services Chaitanya solar And all type solar water repairing services",
+  "subTitle": "चैतन्य इलेक्ट्रिकल एंड सर्विसेज चैतन्य सोलर एंड ऑल टाइप सोलर वॉटर रिपेयरिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "MIT School Rd, backside, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "backside, Kothrud",
+  "street": "MIT School Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 92714 31143",
+  "phoneUnformatted": "+919271431143",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5098664,
+    "lng": 73.8143803
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJqQ1icqK_wjsRSKhprk5U5Mk",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bfa272620da9:0xc9e4544eae69a848",
+  "cid": "14547845393223886920",
+  "reviewsCount": 42,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 42
+  },
+  "imagesCount": 95,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Chaitanya%20electrical%20and%20services%20Chaitanya%20solar%20And%20all%20type%20solar%20water%20repairing%20services&query_place_id=ChIJqQ1icqK_wjsRSKhprk5U5Mk",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLesLALWRgGQdOG7Eq9dJMrf8IlMnfeJwu8lSjgyueP6lM6uEbnuX10djUrfrGho-GLufiF7266WBbBT27qUu6mjKPLSL_ZtOgoQkNE32eKJ0NFsWgKGWkYNZ4kQPhB3fBZSbkDtVw=w408-h544-k-no",
+  "kgmid": "/g/11tbzzj8k1",
+  "businessProfileId": "9118594254186371308"
+},
+{
+  "title": "Shivaji electrician",
+  "subTitle": "शिवाजी इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical engineer",
+  "address": "Bhudan, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Bhudan, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 78752 96705",
+  "phoneUnformatted": "+917875296705",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5073514,
+    "lng": 73.8076543
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ5_RSlBO_wjsR49Yezx7SzsI",
+  "categories": [
+    "Electrical engineer"
+  ],
+  "fid": "0x3bc2bf139452f4e7:0xc2ced21ecf1ed6e3",
+  "cid": "14037388118326171363",
+  "reviewsCount": 6,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 6
+  },
+  "imagesCount": 30,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 10:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 to 10:30 AM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 10:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 10:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 10:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 10:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 10:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shivaji%20electrician&query_place_id=ChIJ5_RSlBO_wjsR49Yezx7SzsI",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOZgL8gS-51bKlfsyfD6GSqEFrETBWTqqtp8rKTK3GlZag1DcnBo5_SRZfyp5j3J2Yd1lMH9jysvkpsL5QJ7qo6Ld4R4C73YSy-Zi5Xzt94BoJH1hb5sAkiFhMz0p0UiOhgQNqyDFxcIMTp=w408-h602-k-no",
+  "kgmid": "/g/11zjt193fn",
+  "businessProfileId": "15299640357997300198"
+},
+{
+  "title": "MG Electrician & Plumber services",
+  "subTitle": "एमजी इलेक्ट्रीशियन & प्लंबर सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Alkapuri Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://mg.com/",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5073514,
+    "lng": 73.8076543
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJndq7FK2_wjsRqvH9I-SapuM",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bfad14bbda9d:0xe3a69ae423fdf1aa",
+  "cid": "16403968997390676394",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=MG%20Electrician%20%26%20Plumber%20services&query_place_id=ChIJndq7FK2_wjsRqvH9I-SapuM",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOIKWlL2BC07SxvJVhaoeGSqhnwDTQmQ_M8-a_Ujve-aRxf12A4hc33mYqqbT2LcmnNncCb2gYaa_kp-wdOC6ZSoUnhKCPr5pxYeSxKT6HmQQFjM3aQVKG_CJC3sWZWMloc6C7wTT2HmomU=w408-h906-k-no",
+  "kgmid": "/g/11ntk4kq8s",
+  "businessProfileId": "17014661664860208272"
+},
+{
+  "title": "Swara electrical service",
+  "subTitle": "स्वरा इलेक्ट्रिकल सर्विस",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "m corp.) 411038, Sr no 112 lane no 30 shivshakti nagar, Silver Crest Hill Town Rd, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Sutardada Nagar, Kothrud",
+  "street": "m corp.) 411038, Sr no 112 lane no 30 shivshakti nagar, Silver Crest Hill Town Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://swara-electrical.grexa.site/",
+  "phone": "+91 90210 45208",
+  "phoneUnformatted": "+919021045208",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5170935,
+    "lng": 73.8087882
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJgdzsSPi_wjsRNDbPCL1iKLo",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bff848ecdc81:0xba2862bd08cf3634",
+  "cid": "13414080054159160884",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 7
+  },
+  "imagesCount": 17,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Swara%20electrical%20service&query_place_id=ChIJgdzsSPi_wjsRNDbPCL1iKLo",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOUUxEm-l-JGLeh1KLS5r1q3IF5nQD1dHj3H2jj8cZ7gu_U3OJojW6AZoRmqgW03_7VH3UJ6Roa073e5celXPp5rHXlT79nKO4T7KL2KGGKNDMgdH1YhGs0NEu1VHXoQn9daWj2KpQbC4Ra=w408-h408-k-no",
+  "kgmid": "/g/11z84h1gnf",
+  "businessProfileId": "16523570171083310997"
+},
+{
+  "title": "Krushna Electrician",
+  "subTitle": "कृष्ण इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Paud Rd, Ashish Vihar, Gananjay Society, Kothrud, Pune, Maharashtra 411058, India",
+  "neighborhood": "Ashish Vihar, Gananjay Society, Kothrud",
+  "street": "Paud Rd",
+  "city": "Pune",
+  "postalCode": "411058",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 86004 27949",
+  "phoneUnformatted": "+918600427949",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5014221,
+    "lng": 73.8035929
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJPTHkt0HIXYcRfypoKlAWOVE",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x875dc841b7e4313d:0x513916502a682a7f",
+  "cid": "5852733724309334655",
+  "reviewsCount": 10,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 9
+  },
+  "imagesCount": 22,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Krushna%20Electrician&query_place_id=ChIJPTHkt0HIXYcRfypoKlAWOVE",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmP_HeIf2bkNroXuJs-dM0p2Oz3fy4JhvwS1kDmbn1mxYuQI3bpSgZeR7CwYXGmhc_24StOw08R_etMvvF49FQoxoix4IpuSbPEHu2SAuhm5Hak9IBlxLIgTTuB464fzd3XsOOfo4Kst1WeL=w408-h906-k-no",
+  "kgmid": "/g/11zcvymrcc",
+  "businessProfileId": "13838702397631087281"
+},
+{
+  "title": "SP Electrician And CCTV Service",
+  "subTitle": "एसपी इलेक्ट्रीशियन एंड सीसीटीवी सर्विस",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Warje Malwadi Rd, Bhelkenagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Bhelkenagar, Kothrud",
+  "street": "Warje Malwadi Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 92843 18691",
+  "phoneUnformatted": "+919284318691",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5041529,
+    "lng": 73.8078513
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJi1csLP6_wjsR9cJuP0sACP4",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bffe2c2c578b:0xfe08004b3f6ec2f5",
+  "cid": "18304881008634151669",
+  "reviewsCount": 25,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 24
+  },
+  "imagesCount": 28,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.522Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=SP%20Electrician%20And%20CCTV%20Service&query_place_id=ChIJi1csLP6_wjsR9cJuP0sACP4",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmO-wHV_UPtfZHnQAt-CugcU0EJRKUcHc1lG_O27u47KF7PEdBgmJGpzaojwMojG1HLydL_5uqRN1x1pcI5TyFzjDmlfoCaj648WAQ2dwvSSv7v_faeJgLksNKPdyTl_ATsYXQdJHLdbwUin=w408-h306-k-no",
+  "kgmid": "/g/11p67byg7d",
+  "businessProfileId": "5660019070783972642"
+},
+{
+  "title": "VARSHA ELECTRICALS",
+  "subTitle": "वर्ष इलेक्ट्रिकल्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Store",
+  "address": "Shopno 02, Paud Rd, nr. SEEMA GARDEN, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Shivthirth Nagar, Kothrud",
+  "street": "Shopno 02, Paud Rd, nr. SEEMA GARDEN",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 98505 80107",
+  "phoneUnformatted": "+919850580107",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5114761,
+    "lng": 73.8061071
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJowUDe7C_wjsRr8Kv7r4qiaY",
+  "categories": [
+    "Store",
+    "Electrical supply store"
+  ],
+  "fid": "0x3bc2bfb07b0305a3:0xa6892abeeeafc2af",
+  "cid": "12000169681642046127",
+  "reviewsCount": 12,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 2,
+    "fiveStar": 9
+  },
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 10 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=VARSHA%20ELECTRICALS&query_place_id=ChIJowUDe7C_wjsRr8Kv7r4qiaY",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eZ-rpyj5aO5DXpWVRaIx6Q&cb_client=search.gws-prod.grass&w=408&h=240&yaw=305.57266&pitch=0&thumbfov=100",
+  "kgmid": "/g/11cn5fz91g",
+  "businessProfileId": "4466097844698304664"
+},
+{
+  "title": "Maruti electricals",
+  "subTitle": "मारुति इलेक्ट्रिकल्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical products wholesaler",
+  "address": "Shop No. 2, Rajdeep Apartment, Metro Station, Maruti electricals, Opposite Hotel Laxminarayan, beside Anand Nagar, Rambaug Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rambaug Colony, Kothrud",
+  "street": "Shop No. 2, Rajdeep Apartment, Metro Station, Maruti electricals, Opposite Hotel Laxminarayan, beside Anand Nagar",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 98506 03894",
+  "phoneUnformatted": "+919850603894",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.509729,
+    "lng": 73.8137397
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJy67xsxm_wjsRjKI89QU4uTc",
+  "categories": [
+    "Electrical products wholesaler"
+  ],
+  "fid": "0x3bc2bf19b3f1aecb:0x37b93805f53ca28c",
+  "cid": "4015302141017891468",
+  "reviewsCount": 20,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 19
+  },
+  "imagesCount": 20,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8:30 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8:30 AM to 10 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Maruti%20electricals&query_place_id=ChIJy67xsxm_wjsRjKI89QU4uTc",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLc4g-khsY3sS73VUHOoKkfKhwIH-pM0ReDUUckeiF85jZjc1n4OL6X8EmdKzzXOdV8HTP50MFjqwvADL1Dw3Mm1o_ZTy_oG8_qgjKNN4OL1EnJMXsxR6erua34smN5mfFSBmnj_8D4_8Gw=w408-h542-k-no",
+  "kgmid": "/g/11vs7p1qzm",
+  "businessProfileId": "3591026882575381935"
+},
+{
+  "title": "Vighnesh Electrical Work",
+  "subTitle": "विघ्नेश इलेक्ट्रिकल वर्क",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Rajpath Housing Society, Manikya Nagar, Ramkrishna Paramhans Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rajpath Housing Society, Manikya Nagar, Ramkrishna Paramhans Nagar, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5097086,
+    "lng": 73.8032069
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJZ2sZXXS_wjsRwrI_bjH6mFk",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bf745d196b67:0x5998fa316e3fb2c2",
+  "cid": "6456185156045615810",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "6 to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Vighnesh%20Electrical%20Work&query_place_id=ChIJZ2sZXXS_wjsRwrI_bjH6mFk",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=3IkQxdIJcnPVb5glaTHNNA&cb_client=search.gws-prod.grass&w=408&h=240&yaw=325.02792&pitch=0&thumbfov=100",
+  "kgmid": "/g/11rhqq6z1k",
+  "businessProfileId": "6910652418450289522"
+},
+{
+  "title": "Concept Engineering Company",
+  "subTitle": "कॉन्सेप्ट इंजिनियरिंग कंपनी",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "shop no.6 plot, Canara Bank, Kalyan, Off, Paud Rd, Rambaug Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rambaug Colony, Kothrud",
+  "street": "shop no.6 plot, Canara Bank, Kalyan, Off, Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://www.conceptscheme.com/",
+  "phone": "+91 98220 28614",
+  "phoneUnformatted": "+919822028614",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5099787,
+    "lng": 73.8144974
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ____S72_wjsROEU1WszNH7A",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bfbd4bffffff:0xb01fcdcc5a354538",
+  "cid": "12691088552523810104",
+  "reviewsCount": 12,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 0,
+    "fiveStar": 10
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 6 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "6 AM to 6 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Concept%20Engineering%20Company&query_place_id=ChIJ____S72_wjsROEU1WszNH7A",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=D02ZSpV3EPYokFfG3IISTA&cb_client=search.gws-prod.grass&w=408&h=240&yaw=138.31491&pitch=0&thumbfov=100",
+  "kgmid": "/g/1tdxzbrq",
+  "businessProfileId": "12368909865491232692"
+},
+{
+  "title": "Shivprasad Electrician",
+  "subTitle": "शिवप्रसाद इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Amar Hardware Right, Paud Rd, Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": "Amar Hardware Right, Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5080927,
+    "lng": 73.7948253
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJgWChgX29wjsRuo_trpwFomM",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bd7d81a16081:0x63a2059caeed8fba",
+  "cid": "7179306926489833402",
+  "reviewsCount": 18,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 17
+  },
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shivprasad%20Electrician&query_place_id=ChIJgWChgX29wjsRuo_trpwFomM",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOdoESMUOFsCRjlQR45NergVakW2tibyMvY-ug7ZPiNd60aO2447Dl30OBtdcrk0PwgzdEsmzEFOMaeSZt0rBxr_yQbTLMgVTh8ZZcQwUtT5zHvIXQUv2Kdhiwc0rqoGXGDVS4dguHEJiE=w408-h489-k-no",
+  "kgmid": "/g/11x6s00w_l",
+  "businessProfileId": "10168432648962770912"
+},
+{
+  "title": "Vaishnavi Electricals",
+  "subTitle": "वैष्णवी इलेक्ट्रिकल्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "Shop 1, Karve Rd, opp. to Yatri hotel, Kuldeep Cooperative Housing Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Kuldeep Cooperative Housing Society, Kothrud",
+  "street": "Shop 1, Karve Rd, opp. to Yatri hotel",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://electricalcontractorsnearme.in/",
+  "phone": "+91 98600 27897",
+  "phoneUnformatted": "+919860027897",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5055715,
+    "lng": 73.8238851
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJvTSTteq_wjsRTlHjWGGvBy4",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bfeab59334bd:0x2e07af6158e3514e",
+  "cid": "3316812483219640654",
+  "reviewsCount": 49,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 1,
+    "threeStar": 1,
+    "fourStar": 0,
+    "fiveStar": 46
+  },
+  "imagesCount": 42,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.523Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 8:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 8:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Assistive hearing loop": false
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Vaishnavi%20Electricals&query_place_id=ChIJvTSTteq_wjsRTlHjWGGvBy4",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmNPl-jMtj872ERwuhl974EIYrXN5DzCdnjm4nA3KlRC-vWwIqZOGqoFZECcqI4CJi8h8RtTtvL_JU_I4x2p0dkY0P9y_FgT1lNWjo_dGRsHS2bNR-2r-okv2Jr3gw5kr3kfJ38f9gkmLWc=w426-h240-k-no",
+  "kgmid": "/g/11sbhv8zdl",
+  "businessProfileId": "2035361539966180637"
+},
+{
+  "title": "Om electricians",
+  "subTitle": "ओम इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Alkapuri Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://www.omelectricians.com/",
+  "phone": "+91 70206 78317",
+  "phoneUnformatted": "+917020678317",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5073514,
+    "lng": 73.8076543
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJLwWrCxm_wjsRsV1mGJk5g9s",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bf190bab052f:0xdb83399918665db1",
+  "cid": "15817549645957455281",
+  "reviewsCount": null,
+  "imagesCount": 16,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.524Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 12 AM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "12 to 6 AM, 10 AM to 12 AM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "12 to 6 AM, 10 AM to 12 AM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "12 to 6 AM, 10 AM to 12 AM"
+    },
+    {
+      "day": "Friday",
+      "hours": "12 to 6 AM, 10 AM to 12 AM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "12 to 6 AM, 10 AM to 12 AM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "12 to 6 AM"
+    }
+  ],
+  "wasOpenAtScrapeTime": false,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Om%20electricians&query_place_id=ChIJLwWrCxm_wjsRsV1mGJk5g9s",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmPpW-_71-tRcMYdQGGcqQDUm41L7BXUlG-WCegSiargfW2HNlCw11ZdcaSWMgyTsWJG__kVbZcL0siMYKSw7suUgHba0iipQWpRqFmaVx4OmwA4OMcpa15ddz61Skdc3oUkp1Kejxlsc7g=w408-h306-k-no",
+  "kgmid": "/g/11zhfvfpp8",
+  "businessProfileId": "8560748708310716590"
+},
+{
+  "title": "Nakoda Electric and Hardware",
+  "subTitle": "नाकोडा इलेक्ट्रिक आणि हार्डवेयर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Hardware store",
+  "address": "Parijat apartment, 3, Shripati Sutar Path, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Madhavbaug Society, Shivthirth Nagar, Kothrud",
+  "street": "Parijat apartment, 3, Shripati Sutar Path",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 93724 66121",
+  "phoneUnformatted": "+919372466121",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5083051,
+    "lng": 73.8089656
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJKw2Yh7m_wjsRPZ2B3EySfcw",
+  "categories": [
+    "Hardware store",
+    "Electrical products wholesaler",
+    "Paint store"
+  ],
+  "fid": "0x3bc2bfb987980d2b:0xcc7d924cdc819d3d",
+  "cid": "14735094414640782653",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 6
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.524Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Nakoda%20Electric%20and%20Hardware&query_place_id=ChIJKw2Yh7m_wjsRPZ2B3EySfcw",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmM9HHy6W39Ye7NVJpmkGYL6bo6n2kIRIe3x3MWJHTHZ4cRNNBfJANNWUp0nQ6X1uOmQtNQcHtRDKYoUWEn_QBbEK0QsRWLEgnZLXfeAjc2I1ZkyMFq5xuzGU8_dPo25kbzf0nSMGg=w408-h306-k-no",
+  "kgmid": "/g/11ckqsywn2",
+  "businessProfileId": "7347805138904549887"
+},
+{
+  "title": "Gundappa Electrician",
+  "subTitle": "गुंडप्पा इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical engineer",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 98226 67545",
+  "phoneUnformatted": "+919822667545",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.506951,
+    "lng": 73.7942771
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJIfzha0y_wjsRHgaoN5eN2Mc",
+  "categories": [
+    "Electrical engineer"
+  ],
+  "fid": "0x3bc2bf4c6be1fc21:0xc7d88d9737a8061e",
+  "cid": "14400415489130497566",
+  "reviewsCount": 22,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 1,
+    "fiveStar": 18
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.524Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [],
+  "wasOpenAtScrapeTime": null,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Gundappa%20Electrician&query_place_id=ChIJIfzha0y_wjsRHgaoN5eN2Mc",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 18,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdLDMDB3JvzUTAzVpdGjTsNH4wwiwZIl656FECmiISO2vu0aR2qF7p-XF_CKW3WsIoMa6zgrLIZyb6xUPv-kFHUrQfF0NrNzhhv1j60WGAcH9nmzn5B42aWDewcF3VbjQ0u8JTtVw=w426-h240-k-no",
+  "kgmid": "/g/11g07tq__2",
+  "businessProfileId": "10990906804387649350"
+},
+{
+  "title": "R.B. ELECTRICIAN",
+  "subTitle": "आर.बी. इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Warje, Karvenagar, Pune, Maharashtra 411052, India",
+  "neighborhood": "Warje, Karvenagar",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411052",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 88881 17166",
+  "phoneUnformatted": "+918888117166",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4973483,
+    "lng": 73.8151913
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJAXd-jBG_wjsRJc8p78ZU8lE",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bf118c7e7701:0x51f254c6ef29cf25",
+  "cid": "5904875274828893989",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 4,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.524Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=R.B.%20ELECTRICIAN&query_place_id=ChIJAXd-jBG_wjsRJc8p78ZU8lE",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 20,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmPKlr9WBu5mAraI_um1c-p53P8ABBJXlFKMjuK9WKK_ShkU-OBv_QMGDG6Br_oomS6Cxk4qI1WvENcFZstLrx6HQythVMn6UHZhC_VjW9qYYZ12SIv-LbdE1e0ON9S1NdvDhmqZ7je_fRk=w408-h408-k-no",
+  "kgmid": "/g/11zgmn_nbc",
+  "businessProfileId": "15559828228388344520"
+},
+{
+  "title": "Avinash electrician",
+  "subTitle": "अविनाश इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "Warje Malwadi Rd, Rahul Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rahul Nagar, Kothrud",
+  "street": "Warje Malwadi Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://www.aviele.com143gmail.com/",
+  "phone": "+91 70584 64068",
+  "phoneUnformatted": "+917058464068",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4999028,
+    "lng": 73.8138671
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJuU9fAPq_wjsRQqJ2UfSlcEc",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bffa005f4fb9:0x4770a5f45176a242",
+  "cid": "5147796842841809474",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 15,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:31.827Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8:30 AM to 12:30 AM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:30 AM to 12:30 AM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8:30 AM to 12:30 AM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 12:30 AM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8:30 AM to 12:30 AM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 12 AM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 12 AM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Avinash%20electrician&query_place_id=ChIJuU9fAPq_wjsRQqJ2UfSlcEc",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeQGtcdn6IIidaKSmiEmNPx4x17tKUMCJAK47rPhVNsZUKo8eyXe-MIcNefzmroTuPpEvcG3KWj3yxISVmUTSEQ-g2sD6AbY7FkHsq68ptZq5XFDj1AYoTmOxZO1EInnMpQ84i0rQ=w408-h306-k-no",
+  "kgmid": "/g/11rnbsb6vh",
+  "businessProfileId": "17846190071741985772"
+},
+{
+  "title": "Kailas v Devkatte Plumber And Electrician Pune",
+  "subTitle": "कैलाश वी देवकट्टे प्लंबर एंड इलेक्ट्रीशियन पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://sites.google.com/view/kailas-v-devkatte-plumber-and-/",
+  "phone": "+91 72197 29204",
+  "phoneUnformatted": "+917219729204",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5082037,
+    "lng": 73.7904413
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ4QylMyXdr6cRLoRjywwBbf4",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0xa7afdd2533a50ce1:0xfe6d010ccb63842e",
+  "cid": "18333310812558689326",
+  "reviewsCount": 86,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 83
+  },
+  "imagesCount": 47,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:35.626Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Kailas%20v%20Devkatte%20Plumber%20And%20Electrician%20Pune&query_place_id=ChIJ4QylMyXdr6cRLoRjywwBbf4",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmO_iPSHyj1Vyynd5nBD8TvuEqj2BvYxIjF1MJU75jb_I9JUtoaBG9kx7DBfWMgrKSXq5SXNyWb9chaYzvKSGGt8DT8Z7PG_r5cF-DCFJU_rSlpbDIMd0zS5NWgL9NVTdImVRhbRy-PUwLc=w408-h731-k-no",
+  "kgmid": "/g/11ykpmv5xn",
+  "businessProfileId": "12073229047680940560"
+},
+{
+  "title": "Navnath Electrician",
+  "subTitle": "नवनाथ इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrical installation service",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411029, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411029",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 96656 17525",
+  "phoneUnformatted": "+919665617525",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5084698,
+    "lng": 73.7933809
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJv3zQQl6_wjsR07yRJGDW6aw",
+  "categories": [
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bf5e42d07cbf:0xace9d6602491bcd3",
+  "cid": "12459725552515923155",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:35.626Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [],
+  "wasOpenAtScrapeTime": null,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Navnath%20Electrician&query_place_id=ChIJv3zQQl6_wjsR07yRJGDW6aw",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=RmSEUwtSCnMImLYiggH5cw&cb_client=search.gws-prod.grass&w=408&h=240&yaw=6.578509&pitch=0&thumbfov=100",
+  "kgmid": "/g/11yr7pjz97",
+  "businessProfileId": "3189824526892402799"
+},
+{
+  "title": "Balaji Electricals, Kothrud",
+  "subTitle": "बालाजी इलेक्ट्रिकल्स, कोथरुड",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Shop No 1, Shrushti Apartment, DP Rd, near Guru Ganesh Nagar, Chintamani Paradise, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Chintamani Paradise, Kothrud",
+  "street": "Shop No 1, Shrushti Apartment, DP Rd, near Guru Ganesh Nagar",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 98600 47203",
+  "phoneUnformatted": "+919860047203",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5030459,
+    "lng": 73.8003391
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJEcwv5rW_wjsRusQqPSZedI8",
+  "categories": [
+    "Electrician",
+    "Electrical installation service",
+    "Electrical supply store",
+    "Electrical equipment supplier"
+  ],
+  "fid": "0x3bc2bfb5e62fcc11:0x8f745e263d2ac4ba",
+  "cid": "10336990563050112186",
+  "reviewsCount": 19,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 16
+  },
+  "imagesCount": 13,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:35.626Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 10 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Onsite services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Balaji%20Electricals%2C%20Kothrud&query_place_id=ChIJEcwv5rW_wjsRusQqPSZedI8",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOYDBZX_gmBHuaLFXPRVykaK_WiCj6Ne3zkdd7qjMBUxsifM7FPqMk5Bi294CBHJq0gWNlDCaQqGxw9aYKZeOpQNM9dfcCkbrjl75nF67A_UCqXKeOaB9TISuHyy81mIuDtixnV=w408-h306-k-no",
+  "kgmid": "/g/11t55_sh0l",
+  "businessProfileId": "13878964785216685064"
+},
+{
+  "title": "Devendra electricians",
+  "subTitle": "देवेंद्र इलेक्ट्रीशियन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Home health care service",
+  "address": "Anant Kurpa Society, Madhav Baug, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Anant Kurpa Society, Madhav Baug, Shivthirth Nagar, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5101482,
+    "lng": 73.8084365
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJZ-lxZOK_wjsRR8VM_JmqEy8",
+  "categories": [
+    "Home health care service"
+  ],
+  "fid": "0x3bc2bfe26471e967:0x2f13aa99fc4cc547",
+  "cid": "3392242522679723335",
+  "reviewsCount": null,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:35.626Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Devendra%20electricians&query_place_id=ChIJZ-lxZOK_wjsRR8VM_JmqEy8",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 19,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOdvU25xC8m2lOLgZxhkmeSLmvLeEBR1o0BkAZ2sTwhmgDJxzmFt_vgPlvIrEfqB7I5XhOvbbxhjfAUOTZZ3OxhWism1f6-wXPUTzBsmglNTh7qYohH5fbIoAcXpysfJOJ3cPGq_fqQisp4=w408-h544-k-no",
+  "kgmid": "/g/11zj0dkt9x",
+  "businessProfileId": "2239674859621454755"
+},
+{
+  "title": "AJ Electrical",
+  "subTitle": "आज इलेक्ट्रिकल",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "near vanaz metro station, Gujrat Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Gujrat Colony, Kothrud",
+  "street": "near vanaz metro station",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://www.ajelectrical.in/",
+  "phone": "+91 98346 94044",
+  "phoneUnformatted": "+919834694044",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5048265,
+    "lng": 73.8085039
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJex1MQAK_wjsRG60RaMi7TzA",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bf02404c1d7b:0x304fbbc86811ad1b",
+  "cid": "3481207506394524955",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 5
+  },
+  "imagesCount": 10,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:44:36.999Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=AJ%20Electrical&query_place_id=ChIJex1MQAK_wjsRG60RaMi7TzA",
+  "searchPageUrl": "https://www.google.com/maps/search/Electrician/@18.51976256031216,73.80151845356286,17z?hl=en",
+  "searchString": "Electrician",
+  "language": "en",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RebF-0HeMqhJax-4mgMKgh6IrN-Io6gmWJXG9FmbQcOFfK5gJIIMRDAQ5vmRplmMtzl91nD0M8UKdQg026-yUfP3mCDgEQ3BYXi5NXGqR_n8l47rXN1ZANvd408F768InefI4=w427-h240-k-no",
+  "kgmid": "/g/11y2r7pyvr",
+  "businessProfileId": "7555065435111730409"
+}]

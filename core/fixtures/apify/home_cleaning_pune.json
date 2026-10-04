@@ -1,0 +1,2684 @@
+[{
+  "title": "Cleaner Masters",
+  "subTitle": "क्लीनर मास्टर्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Sr.No.88/19 Konark mini Market, Nanasaheb Sutar Rd, near Sutar Hospital, opposite Pooja Electronic, Gujrat Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Gujrat Colony, Kothrud",
+  "street": "Sr.No.88/19 Konark mini Market, Nanasaheb Sutar Rd, near Sutar Hospital, opposite Pooja Electronic",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://cleanermasters.in/",
+  "phone": "+91 86686 24143",
+  "phoneUnformatted": "+918668624143",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5049346,
+    "lng": 73.8077942
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJfe8kvru_wjsRgwSf3T3MJLE",
+  "categories": [
+    "House cleaning service"
+  ],
+  "fid": "0x3bc2bfbbbe24ef7d:0xb124cc3ddd9f0483",
+  "cid": "12764551809958085763",
+  "reviewsCount": 385,
+  "reviewsDistribution": {
+    "oneStar": 13,
+    "twoStar": 0,
+    "threeStar": 2,
+    "fourStar": 61,
+    "fiveStar": 309
+  },
+  "imagesCount": 340,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.483Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8:30 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:30 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8:30 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8:30 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8:30 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 11 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible seating": true
+      },
+      {
+        "Wheelchair accessible restroom": false
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Cleaner%20Masters&query_place_id=ChIJfe8kvru_wjsRgwSf3T3MJLE",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 1,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdXvm-PEBIy1pi44557TvN6_99pnL79mr-yhbWyOitD-auvpBfoVQHBzePme4Dv-2D1B5UYKt95CwOhVm3D9F1CFIv4r5_87Hn3BJkptvOkjg-JgyEmyzkJ8sym5Pfw7riatabk=w426-h240-k-no",
+  "kgmid": "/g/11f66d5mzh",
+  "businessProfileId": "10815237716681746729"
+},
+{
+  "title": "Shiny Homes cleaning service Kothrud, Pune",
+  "subTitle": "शाइनी होम्स क्लीनिंग सर्विस कोथरुड, पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Cleaners",
+  "address": "Gadia Estate, Guruganesh Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Guruganesh Nagar, Kothrud",
+  "street": "Gadia Estate",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://shiny-homes-cleaning.grexa.site/",
+  "phone": "+91 87665 85020",
+  "phoneUnformatted": "+918766585020",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5060202,
+    "lng": 73.7991071
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJv_Fmxye_wjsRSEryiasQWuA",
+  "categories": [
+    "Cleaners",
+    "Carpet cleaning service",
+    "Window cleaning service"
+  ],
+  "fid": "0x3bc2bf27c766f1bf:0xe05a10ab89f24a48",
+  "cid": "16166252141339626056",
+  "reviewsCount": 49,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 47
+  },
+  "imagesCount": 46,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.485Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "6:30 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "6:30 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "6:30 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "6:30 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "6:30 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "6:30 AM to 11:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "6:30 AM to 11:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assistive hearing loop": false
+      },
+      {
+        "Wheelchair accessible entrance": false
+      },
+      {
+        "Wheelchair accessible parking lot": false
+      },
+      {
+        "Wheelchair accessible restroom": false
+      },
+      {
+        "Wheelchair accessible seating": false
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shiny%20Homes%20cleaning%20service%20Kothrud%2C%20Pune&query_place_id=ChIJv_Fmxye_wjsRSEryiasQWuA",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 2,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeo64bWivnoC8P3ovEFfWk946W4E8Ux7B_iCYUg34NtVbJ7TkdRjJD5I0NgeiSBq2BE2NucNG-XXrHtLCgZNp4boVULt1E0qkfJMKYl7bCV7jfSVEqXG82WunUdl4Lk5GDqIp_0K_h_xvDX=w408-h544-k-no",
+  "kgmid": "/g/11mlvl995r",
+  "businessProfileId": "2708681482224955215"
+},
+{
+  "title": "Professional Cleaning Services",
+  "subTitle": "प्रोफेशनल क्लीनिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Cleaners",
+  "address": "Lane # 3, opposite Samrajya Society, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Matoba Nagar, Kothrud",
+  "street": "Lane # 3, opposite Samrajya Society",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 82081 43628",
+  "phoneUnformatted": "+918208143628",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5158474,
+    "lng": 73.8038284
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJYclJn6q_wjsRiHck7KqhYsQ",
+  "categories": [
+    "Cleaners"
+  ],
+  "fid": "0x3bc2bfaa9f49c961:0xc462a1aaec247788",
+  "cid": "14151050734629844872",
+  "reviewsCount": 39,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 1,
+    "threeStar": 2,
+    "fourStar": 1,
+    "fiveStar": 34
+  },
+  "imagesCount": 37,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.486Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 10 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Professional%20Cleaning%20Services&query_place_id=ChIJYclJn6q_wjsRiHck7KqhYsQ",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 3,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLfTPlhDzUmg5By66L4uQULolmDylt_RwlLhV9jhNmC7nHYPfA8UjT0DmYvXeXGETF4QTNbgJyB0GFjDLmsadcGQ_a9eTVujPKiUDJzH3M47GnzfxDs6l6scp4HXNZW3YDp6TLY=w408-h543-k-no",
+  "kgmid": "/g/11rj67zsc3",
+  "businessProfileId": "10775875098856818590"
+},
+{
+  "title": "Samrath Hom cleaning pune",
+  "subTitle": "समरथ होम क्लीनिंग पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Home help",
+  "address": "sai pales opsait, Vanaj cornar, Lane No. 4, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Lokmanya Colony, Kothrud",
+  "street": "sai pales opsait, Vanaj cornar, Lane No. 4",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://mastarclinarclinar.com/",
+  "phone": "+91 92840 60122",
+  "phoneUnformatted": "+919284060122",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5089047,
+    "lng": 73.806095
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJReWWa96_wjsRHLV3nl2uSDc",
+  "categories": [
+    "Home help"
+  ],
+  "fid": "0x3bc2bfde6b96e545:0x3748ae5d9e77b51c",
+  "cid": "3983625587523040540",
+  "reviewsCount": 7,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 6
+  },
+  "imagesCount": 13,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.486Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assisted listening devices": true
+      },
+      {
+        "Assistive hearing loop": true
+      },
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Samrath%20Hom%20cleaning%20pune&query_place_id=ChIJReWWa96_wjsRHLV3nl2uSDc",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLcryjcyeUJ85s1JRhxtnKhblRuacf2KICLTk-U9pwJRAy_BJxNfEyALtYUEd3-kR-WK4jMBD541t9n7VEBTFLfWDIm2cOgLl4xlRNPNgiDKUpKxSfUBzaPiOxY-_BFiz-3vljE9e7Q9bqsg=w408-h273-k-no",
+  "kgmid": "/g/11nhrzgfj0",
+  "businessProfileId": "7920514925083968034"
+},
+{
+  "title": "Clean & Shine Services",
+  "subTitle": "क्लीन & शाइन सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Gujrat Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Gujrat Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 70580 93461",
+  "phoneUnformatted": "+917058093461",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5057606,
+    "lng": 73.8079113
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJMXMXMQO_wjsRCIXzFzR_cxk",
+  "categories": [
+    "House cleaning service",
+    "Cleaners"
+  ],
+  "fid": "0x3bc2bf0331177331:0x19737f3417f38508",
+  "cid": "1833949334986786056",
+  "reviewsCount": 18,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 18
+  },
+  "imagesCount": 33,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.486Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Clean%20%26%20Shine%20Services&query_place_id=ChIJMXMXMQO_wjsRCIXzFzR_cxk",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdllJBgNKKj6-oyPQDrgLyS7P_3Q7LRGdbmtcG2eLOcpsrJv1PF8cix7K5xaelQAIVGl3ITGvTraWeAEjsp_49A8xi1z7ZUYwMQnaLEcpsorqH7mZ5cpTykarbkepIVi-1CK2ci=w408-h272-k-no",
+  "kgmid": "/g/11s0t15v8_",
+  "businessProfileId": "8574846964326129739"
+},
+{
+  "title": "Siddhi Hygiene",
+  "subTitle": "सिद्धि हाइजीन",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Shivshankar Building, Anant Kurpa Society, Homet, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Anant Kurpa Society, Homet, Shivthirth Nagar, Kothrud",
+  "street": "Shivshankar Building",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://siddhihygiene.com/?i=1",
+  "phone": "+91 95525 56523",
+  "phoneUnformatted": "+919552556523",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5101482,
+    "lng": 73.8084365
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ4xh7z7e_wjsRHW__S8QIJNQ",
+  "categories": [
+    "House cleaning service"
+  ],
+  "fid": "0x3bc2bfb7cf7b18e3:0xd42408c44bff6f1d",
+  "cid": "15286352674383949597",
+  "reviewsCount": 9,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 7
+  },
+  "imagesCount": 29,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.486Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Siddhi%20Hygiene&query_place_id=ChIJ4xh7z7e_wjsRHW__S8QIJNQ",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdwQhqHeEP93EWlLiZcf5hWgG0qX85_533vx-sEVe6-aU7aMixdYHptUrn5aYBMzx3P04ne3R1FTCHeoQsJLXRG8PvWApn3pW_zX03x_oEuw2XvagFZ8GnjrqDJv95V2hAzINO1lyNieQCc=w408-h839-k-no",
+  "kgmid": "/g/11xcmnkhb7",
+  "businessProfileId": "6815158838986967429"
+},
+{
+  "title": "Shiny Cleany",
+  "subTitle": "शाइनी क्लिनी",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "2nd Floor, Venture Building, Depot, Paud Rd, above McDonald, Left Bhusari Colony, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Left Bhusari Colony, Right Bhusari Colony, Kothrud",
+  "street": "2nd Floor, Venture Building, Depot, Paud Rd, above McDonald",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://shinycleany.com/",
+  "phone": "+91 92844 46268",
+  "phoneUnformatted": "+919284446268",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5082113,
+    "lng": 73.7964369
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJk2juVM6_wjsRIxlNtiGaZTg",
+  "categories": [
+    "House cleaning service",
+    "Carpet cleaning service",
+    "Cleaners",
+    "Pest control service",
+    "Window cleaning service"
+  ],
+  "fid": "0x3bc2bfce54ee6893:0x38659a21b64d1923",
+  "cid": "4063823708354844963",
+  "reviewsCount": 306,
+  "reviewsDistribution": {
+    "oneStar": 11,
+    "twoStar": 4,
+    "threeStar": 3,
+    "fourStar": 18,
+    "fiveStar": 270
+  },
+  "imagesCount": 39,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 6 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible seating": true
+      },
+      {
+        "Wheelchair accessible restroom": false
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shiny%20Cleany&query_place_id=ChIJk2juVM6_wjsRIxlNtiGaZTg",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 7,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeg8y1r6UCVRpBzJpa22PKinEPrg1HmxzzN9dmnX19tnwboH_cTuA_g-QRFX_gIUsQvlV2MzXT9Lluu9eWP8lJe3yt6L0XDtdn9yYFmfiJYRfuRPPpO-ipzPKo6dKrz8hBrY78=w408-h543-k-no",
+  "kgmid": "/g/11lwgt1z2h",
+  "businessProfileId": "14384731279146427273"
+},
+{
+  "title": "Classic Cleaning Services",
+  "subTitle": "क्लासिक क्लीनिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Flat No. 09, Marne Building, Left Bhusari Colony, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Left Bhusari Colony, Right Bhusari Colony, Kothrud",
+  "street": "Flat No. 09, Marne Building",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://classic-cleaning.grexa.site/",
+  "phone": "+91 73851 69523",
+  "phoneUnformatted": "+917385169523",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5042942,
+    "lng": 73.7941843
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJwTDWA8y_wjsRRYTOz4h41cA",
+  "categories": [
+    "House cleaning service",
+    "Cleaners",
+    "Gutter cleaning service",
+    "Tile cleaning service",
+    "Window cleaning service"
+  ],
+  "fid": "0x3bc2bfcc03d630c1:0xc0d57888cfce8445",
+  "cid": "13895144754318836805",
+  "reviewsCount": 176,
+  "reviewsDistribution": {
+    "oneStar": 3,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 12,
+    "fiveStar": 160
+  },
+  "imagesCount": 1511,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 11 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assisted listening devices": true
+      },
+      {
+        "Assistive hearing loop": true
+      },
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Classic%20Cleaning%20Services&query_place_id=ChIJwTDWA8y_wjsRRYTOz4h41cA",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLcn8rIzHZ9Hz5d8JzQwm10D3ZLTMTcnI7UW0J6FVuB7uiz__AyELALNGin6uff2OVArKkDStkFAXCsvbX5lmcQs0onz9uYNktS0kTCUhhwSlfvJMC9vqC8K-BSHdPbGYUHrTCzheYJzKTo=w408-h544-k-no",
+  "kgmid": "/g/11w93z31zl",
+  "businessProfileId": "8759287931787627701"
+},
+{
+  "title": "Prime Home Care",
+  "subTitle": "प्राइम होम केयर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Sant Dnyaneshwar Colony, S.No 83/26, Shastri Nagar, Kothrud, Pune, Maharashtra 411029, India",
+  "neighborhood": "Shastri Nagar, Kothrud",
+  "street": "Sant Dnyaneshwar Colony, S.No 83/26",
+  "city": "Pune",
+  "postalCode": "411029",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://primehomecareservices.in/",
+  "phone": "+91 82088 17720",
+  "phoneUnformatted": "+918208817720",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.504182,
+    "lng": 73.801374
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ76U56O-_wjsRnvBZ17Sc6Ww",
+  "categories": [
+    "House cleaning service"
+  ],
+  "fid": "0x3bc2bfefe839a5ef:0x6ce99cb4d759f09e",
+  "cid": "7847976126190842014",
+  "reviewsCount": 5,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 5
+  },
+  "imagesCount": 9,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Prime%20Home%20Care&query_place_id=ChIJ76U56O-_wjsRnvBZ17Sc6Ww",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeePKuUUYLiiDildEZ3yb18ErjsUkQe0ijRk7B4tiGwXhoidUU04bY1-UdkFpXhHd_ahhzBAsjZI_pR_imo9_Se4sZ26x6epL2Ibkm4WlGCV2-lidwqh3_QT61SkjZdemGmArb8kPY_qDSJ=w408-h306-k-no",
+  "kgmid": "/g/11nr3f4q25",
+  "businessProfileId": "17071789359657202465"
+},
+{
+  "title": "Mahalaxmi Cleaning Service Pune Kothrud",
+  "subTitle": "महालक्ष्मी क्लीनिंग सर्विस पुणे कोथरुड",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "Shop No. 14, Rahul Nagar Rd, near Karve Putala, Rahul Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rahul Nagar, Kothrud",
+  "street": "Shop No. 14, Rahul Nagar Rd, near Karve Putala",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 80107 38401",
+  "phoneUnformatted": "+918010738401",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5005409,
+    "lng": 73.8160023
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJT3LvzbG_wjsR19dzjmkUsxA",
+  "categories": [
+    "House cleaning service",
+    "Cleaners"
+  ],
+  "fid": "0x3bc2bfb1cdef724f:0x10b314698e73d7d7",
+  "cid": "1203327969032132567",
+  "reviewsCount": 16,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 16
+  },
+  "imagesCount": 22,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Mahalaxmi%20Cleaning%20Service%20Pune%20Kothrud&query_place_id=ChIJT3LvzbG_wjsR19dzjmkUsxA",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLf5Vixm9hlRCmHwMHhLrxCEFETPqtCeTk_XBANFlsvi3z7I9H9ImgyqJOBAuVf-r8PBx51M0FvULBf27KCO_KmtyKyzvOAAwWOk3RQpnf1jKf3sxo6r971Erwsv1kW4b6BunZeenVzM3zdl=w408-h552-k-no",
+  "kgmid": "/g/11nw0slxjm",
+  "businessProfileId": "11888816006428778303"
+},
+{
+  "title": "Shri Balumama housekiping serives",
+  "subTitle": "श्री बालूमामा हाउसकीपिंग सर्विस",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "House cleaning service",
+  "address": "120, Kishkinda Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Kishkinda Nagar, Kothrud",
+  "street": "120",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 18.5142004,
+    "lng": 73.810419
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJwQyodgC_wjsRhEGjIp3LBgY",
+  "categories": [
+    "House cleaning service"
+  ],
+  "fid": "0x3bc2bf0076a80cc1:0x606cb9d22a34184",
+  "cid": "434258289839260036",
+  "reviewsCount": null,
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [],
+  "wasOpenAtScrapeTime": null,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shri%20Balumama%20housekiping%20serives&query_place_id=ChIJwQyodgC_wjsRhEGjIp3LBgY",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11zyxbsydb",
+  "businessProfileId": null
+},
+{
+  "title": "Home Cleaning and Shifting Services",
+  "subTitle": "होम क्लीनिंग एंड शिफ्टिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Home help service agency",
+  "address": "Survey No 44, Survey No 44, Paud Rd, Paud Phata, Hanuman Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Phata, Hanuman Nagar, Kothrud",
+  "street": "Survey No 44, Survey No 44, Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 18.510473,
+    "lng": 73.818658
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJY_HdHpa_wjsR5uSn4bfMzIM",
+  "categories": [
+    "Home help service agency"
+  ],
+  "fid": "0x3bc2bf961eddf163:0x83ccccb7e1a7e4e6",
+  "cid": "9497190804354491622",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.487Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [],
+  "wasOpenAtScrapeTime": null,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Home%20Cleaning%20and%20Shifting%20Services&query_place_id=ChIJY_HdHpa_wjsR5uSn4bfMzIM",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 13,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=JVeIm4CC87otljPz_xF1uw&cb_client=search.gws-prod.grass&w=408&h=240&yaw=8.344033&pitch=0&thumbfov=100",
+  "kgmid": "/g/11xrln27xf",
+  "businessProfileId": null
+},
+{
+  "title": "shree swamisamarth cleaning services",
+  "subTitle": "श्री स्वामिसमर्थ क्लीनिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Cleaners",
+  "address": "A, 18Mahatma Society, Mahatma Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Mahatma Society, Kothrud",
+  "street": "A, 18Mahatma Society",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://swamisamarthcleaning.online/",
+  "phone": "+91 99210 23967",
+  "phoneUnformatted": "+919921023967",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4971063,
+    "lng": 73.7990023
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJqznmDY2_wjsRlm8sXYjp7jM",
+  "categories": [
+    "Cleaners"
+  ],
+  "fid": "0x3bc2bf8d0de639ab:0x33eee9885d2c6f96",
+  "cid": "3742185112279478166",
+  "reviewsCount": 53,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 53
+  },
+  "imagesCount": 9,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:57.488Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "7 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=shree%20swamisamarth%20cleaning%20services&query_place_id=ChIJqznmDY2_wjsRlm8sXYjp7jM",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOomz-ILJ1E_g0_lG0VCoS-Dp3POUkDKLyKCuwy0bMiB80bfeV-zTwtuyifO4PsvVG8YzQMZFL3lcVfrfI9hLchCmD-ZuSrm--8eqfMPe1LbJkA9p4d_ffY_tp-Okli5V_mAwhYXA=w408-h904-k-no",
+  "kgmid": "/g/11vk0b206m",
+  "businessProfileId": "252339432473224488"
+},
+{
+  "title": "Sundarban Agro & Tourism Development Pvt. Ltd",
+  "subTitle": "सुंदरबन एग्रो & टूरिज्म डेवलपमेंट पवत. एलटीडी",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Real estate developer",
+  "address": "6th Floor, A wing, Office No. A-602, opposite to City Pride, Paschimanagri, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paschimanagri, Kothrud",
+  "street": "6th Floor, A wing, Office No. A-602, opposite to City Pride",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://sundarbanagrotourism.com/",
+  "phone": "+91 91755 43981",
+  "phoneUnformatted": "+919175543981",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4987291,
+    "lng": 73.8205701
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJnQQ28s6_wjsRj5tKkVeklzA",
+  "categories": [
+    "Real estate developer"
+  ],
+  "fid": "0x3bc2bfcef236049d:0x3097a457914a9b8f",
+  "cid": "3501447931310545807",
+  "reviewsCount": 24,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 20
+  },
+  "imagesCount": 16,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9:30 AM to 6:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9:30 AM to 6:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9:30 AM to 6:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9:30 AM to 6:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9:30 AM to 6:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9:30 AM to 6:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sundarban%20Agro%20%26%20Tourism%20Development%20Pvt.%20Ltd&query_place_id=ChIJnQQ28s6_wjsRj5tKkVeklzA",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 24,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmM5yAcbn9aF7alh3I2pbzjl0949PzNahN4mDfsdM9A9Udzco6Rf29vUjxw_25hmk2mbcDF1jPcbeJWGH92kniJ0HwEvT90DFHHh69kxGn5KGXE20G_da78k-zch0SHrVtB0Y9nyfKiPaKUw=w408-h306-k-no",
+  "kgmid": "/g/11xvvlw5m4",
+  "businessProfileId": "16033397209332414350"
+},
+{
+  "title": "Kapils Salon - Kothrud",
+  "subTitle": "कपिल सैलून - कोथरुड",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Beauty salon",
+  "address": "Shop No. 1, Ground Floor, Gokhale Business Bay, below Croma, opp. to City Pride, Cinema, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Cinema, Kothrud",
+  "street": "Shop No. 1, Ground Floor, Gokhale Business Bay, below Croma, opp. to City Pride",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://www.kapilssalon.com/",
+  "phone": "+91 74002 81653",
+  "phoneUnformatted": "+917400281653",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4987861,
+    "lng": 73.8215891
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJhwFQBa2_wjsRlqCn0rPNkPA",
+  "categories": [
+    "Beauty salon"
+  ],
+  "fid": "0x3bc2bfad05500187:0xf090cdb3d2a7a096",
+  "cid": "17334581137966080150",
+  "reviewsCount": 387,
+  "reviewsDistribution": {
+    "oneStar": 14,
+    "twoStar": 1,
+    "threeStar": 2,
+    "fourStar": 28,
+    "fiveStar": 342
+  },
+  "imagesCount": 42,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Kapils%20Salon%20-%20Kothrud&query_place_id=ChIJhwFQBa2_wjsRlqCn0rPNkPA",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 26,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmMNWFsKg4CgfNYFJkqalIitKf8MSmkYk-ZTLIPu-n_h4hxWMhdA5DIqYojhiU_23Q-oRSZTBnl8PkLYroiJ8YpOC0hDgguI1RnyPksH1iU36QqUmMy7YdHr1ncdcY7-P9Ngz5-uo_5wIxtP=w408-h408-k-no",
+  "kgmid": "/g/11n9v3rm8t",
+  "businessProfileId": "13771770127234507912"
+},
+{
+  "title": "Massif HP / Dell Service Center",
+  "subTitle": "मासिफ एचपी / डेल सर्विस सेंटर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Computer support and services",
+  "address": "Office No 24, 19E Residency, Paschimanagri, near SVC bank, Hingne Budrukh, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Hingne Budrukh, Kothrud",
+  "street": "Office No 24, 19E Residency, Paschimanagri, near SVC bank",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://massifhpservicecenter.online/",
+  "phone": "+91 87439 73340",
+  "phoneUnformatted": "+918743973340",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4976772,
+    "lng": 73.8200079
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJkXUM6Xy_wjsR5lnrk-PnLa4",
+  "categories": [
+    "Computer support and services"
+  ],
+  "fid": "0x3bc2bf7ce90c7591:0xae2de7e393eb59e6",
+  "cid": "12550942701176707558",
+  "reviewsCount": 25,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 1,
+    "fiveStar": 23
+  },
+  "imagesCount": 18,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Closed"
+    },
+    {
+      "day": "Sunday",
+      "hours": "11 AM to 4 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assisted listening devices": true
+      },
+      {
+        "Assistive hearing loop": true
+      },
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Massif%20HP%20%2F%20Dell%20Service%20Center&query_place_id=ChIJkXUM6Xy_wjsR5lnrk-PnLa4",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 27,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmMhh5WSSY-IvKxF081QkDhVCuGrBd-yfzvl13Vvs64EjBuLdsMai3FAoeFxt0sNQBg4gmv3xWGMgaUUEoKvPs0tUo6n5BfGNymdgfLDhhA0TmHKfoqUz143uYEuh2PrGT2f2WzdOZKu8h35=w408-h306-k-no",
+  "kgmid": "/g/11z50t3f57",
+  "businessProfileId": "8863533652290786825"
+},
+{
+  "title": "Jay Ganesh Air conditioning",
+  "subTitle": "जय गणेश एयर कंडीशनिंग",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "HVAC contractor",
+  "address": "next two pinnac memories society, Happy Colony, Lane No. 1, phase 2, Kothrud, Pune, Maharashtra 411052, India",
+  "neighborhood": "phase 2, Kothrud",
+  "street": "next two pinnac memories society, Happy Colony, Lane No. 1",
+  "city": "Pune",
+  "postalCode": "411052",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://dvtpl.info/jaiganeshairconditioning",
+  "phone": "+91 99707 70055",
+  "phoneUnformatted": "+919970770055",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4965862,
+    "lng": 73.8157639
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJJVP2b9S_wjsRHtFLlTgRZTY",
+  "categories": [
+    "HVAC contractor"
+  ],
+  "fid": "0x3bc2bfd46ff65325:0x36651138954bd11e",
+  "cid": "3919557985416499486",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 0,
+    "fiveStar": 0
+  },
+  "imagesCount": 18,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Jay%20Ganesh%20Air%20conditioning&query_place_id=ChIJJVP2b9S_wjsRHtFLlTgRZTY",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 28,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmM_UXyVyhiSpDW8VV6KKdCwrrF1o45DzmY9tV_OAp1-hG3d_Qu7DbvjqIxW9Rfnif1SOTVQhkd0WTI6Yl_jO_A7rd_geLiH6JqIFiqbyWbDkI0Rr9NGX5wPdjOdXG5KBZpJIlJ56du3LNM=w408-h306-k-no",
+  "kgmid": "/g/11tgdhr4fk",
+  "businessProfileId": "11575145965479222340"
+},
+{
+  "title": "Lenovo msi service center",
+  "subTitle": "लेनेवो मैं सर्विस सेंटर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Computer support and services",
+  "address": "339, E-19/4 Paschimanagri, Akra Maruti Kopra Chowk, Shukrawar Peth, Kothrud, Pune, Maharashtra 411002, India",
+  "neighborhood": "Paschimanagri, Kothrud",
+  "street": "339, E-19/4 Paschimanagri, Akra Maruti Kopra Chowk, Shukrawar Peth",
+  "city": "Pune",
+  "postalCode": "411002",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://lenovoservicecenter.store/kothrud.html",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4978469,
+    "lng": 73.8203864
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJQYFjbBfBwjsRhINVGhT39E4",
+  "categories": [
+    "Computer support and services"
+  ],
+  "fid": "0x3bc2c1176c638141:0x4ef4f7141a558384",
+  "cid": "5689443894988997508",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 10,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "11 AM to 8 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "11 AM to 4 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assisted listening devices": true
+      },
+      {
+        "Assistive hearing loop": true
+      },
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Lenovo%20msi%20service%20center&query_place_id=ChIJQYFjbBfBwjsRhINVGhT39E4",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 30,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLfqT1ylqPHIn2iUEaflkpxeNu3jxXk-FpxmwpKiBlHKlE7ioOmUYZdRNhQOmcXQOC2HJNFMV2ieSZD08Hlht4dRCrIe7ClcGV2-ydMcwtoAMxhYHtEVsbnEsABbKAB7EihJMFj2acdUlonQ=w408-h297-k-no",
+  "kgmid": "/g/11mcpb041b",
+  "businessProfileId": "1113433686431688755"
+},
+{
+  "title": "Paradise Properties Real Estate Consultant",
+  "subTitle": "पैराडाइज प्रोपर्टीज रियल एस्टेट कंसलटेंट",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Real estate agency",
+  "address": "Office No-21, Karve Rd, near Kothrud Stand, Dahanukar A, Dahanukar Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Dahanukar A, Dahanukar Colony, Kothrud",
+  "street": "Office No-21, Karve Rd, near Kothrud Stand",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://paradiseprops.in/",
+  "phone": "+91 91759 51187",
+  "phoneUnformatted": "+919175951187",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4982944,
+    "lng": 73.8133715
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJQdf-pUe_wjsRgc9pUjW4f9s",
+  "categories": [
+    "Real estate agency"
+  ],
+  "fid": "0x3bc2bf47a5fed741:0xdb7fb8355269cf81",
+  "cid": "15816562955503914881",
+  "reviewsCount": 47,
+  "reviewsDistribution": {
+    "oneStar": 2,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 44
+  },
+  "imagesCount": 8,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 7 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 7 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Paradise%20Properties%20Real%20Estate%20Consultant&query_place_id=ChIJQdf-pUe_wjsRgc9pUjW4f9s",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 31,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLek7CjzObOBVfvPaQWfwQ2Mkh2isLhQRAgQd-zU8WipgerY9sJss5e4GCwy6hRzbGaKKln2398F7PQvwHqxysIWjj88J2zDENp23AjM-OL1BGuanbMz0NACKQmbDuUKxYatCSSN=w408-h306-k-no",
+  "kgmid": "/g/11szfx61jh",
+  "businessProfileId": "9382503475550393813"
+},
+{
+  "title": "Croma - Pune - Kothrud 2",
+  "subTitle": "क्रोमा - पुणे - कोथरुड 2",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electronics store",
+  "address": "CTS No 667, Plot No A6 & A7, Gokhale Business Bay Survey No, 20/2, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paschimanagri, Kothrud",
+  "street": "CTS No 667, Plot No A6 & A7, Gokhale Business Bay Survey No, 20/2",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://store.croma.com/croma-pune-kothrud-2-electronics-retail-and-repair-shop-kothrud-pune-462700/Home?utm_source=locator&utm_medium=googleplaces",
+  "phone": "+91 86527 31619",
+  "phoneUnformatted": "+918652731619",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.498802,
+    "lng": 73.821511
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJZesIZiG_wjsRXeCrHZTNshY",
+  "categories": [
+    "Electronics store",
+    "Appliance store",
+    "Computer accessories store",
+    "Refrigerator store"
+  ],
+  "fid": "0x3bc2bf216608eb65:0x16b2cd941dabe05d",
+  "cid": "1635595650725568605",
+  "reviewsCount": 88,
+  "reviewsDistribution": {
+    "oneStar": 9,
+    "twoStar": 2,
+    "threeStar": 0,
+    "fourStar": 3,
+    "fiveStar": 74
+  },
+  "imagesCount": 39,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.930Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "11 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "11 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible parking lot": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Croma%20-%20Pune%20-%20Kothrud%202&query_place_id=ChIJZesIZiG_wjsRXeCrHZTNshY",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 37,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmONS3OaXSbDo9GgeOdmQthp5GxdzciUAqCXRhXVaURKKSsjDlV6Bys6SWISECNAq9n2bfL4r7NDCxvgLRju_21cRvhgva4Lp25oDY6DeScrzMsavDQhrVIgLWs5aYcpdR-Z-KM44MRNUe4=w426-h240-k-no",
+  "kgmid": "/g/11xst1tc_z",
+  "businessProfileId": "11869180601836822152"
+},
+{
+  "title": "Venky's Xprs (Kothrud Dahunukar circle )",
+  "subTitle": "वेंकीज् एक्सप्रेस (कोथरूड डहाणूकर सर्कल)",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Fried chicken takeaway",
+  "address": "Shop No.3, Amit Shree Society, Happy Colony, Kothrud, Pune, Maharashtra 411052, India",
+  "neighborhood": "Happy Colony, Kothrud",
+  "street": "Shop No.3, Amit Shree Society",
+  "city": "Pune",
+  "postalCode": "411052",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://www.venkys.com/",
+  "phone": "+91 20 2544 0595",
+  "phoneUnformatted": "+912025440595",
+  "claimThisBusiness": true,
+  "location": {
+    "lat": 18.496024,
+    "lng": 73.813686
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJNW9168O_wjsR1WRd7tCELd8",
+  "categories": [
+    "Fried chicken takeaway",
+    "Chicken restaurant",
+    "Chicken shop",
+    "Fast food restaurant",
+    "Hamburger restaurant",
+    "Restaurant"
+  ],
+  "fid": "0x3bc2bfc3eb756f35:0xdf2d84d0ee5d64d5",
+  "cid": "16081655877297071317",
+  "reviewsCount": 458,
+  "reviewsDistribution": {
+    "oneStar": 23,
+    "twoStar": 17,
+    "threeStar": 50,
+    "fourStar": 139,
+    "fiveStar": 229
+  },
+  "imagesCount": 77,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:41:58.931Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8 AM to 11 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8 AM to 11 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Venky's%20Xprs%20(Kothrud%20Dahunukar%20circle%20)&query_place_id=ChIJNW9168O_wjsR1WRd7tCELd8",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 38,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmM223kt0axyDOY2ZLOMfrn4jvW8v9FA6j3xRlwkrw3FV4da1VciX9Bt1y_hIkKu5fkjXkiC3NBc92bfiSJHIjH1UbvtwlGedaq-2kwW6aHjIV__1fxq0DLzVCeRtPHafbPWPTkT=w408-h544-k-no",
+  "kgmid": "/g/1jkwjxvrm",
+  "businessProfileId": null
+},
+{
+  "title": "Lakme Salon For Him and Her in Gokhale Business Bay, Karishma Chowk,Pune",
+  "subTitle": "लक्मे सैलून फॉर हिम एंड हर इन गोखले बिजनेस बे, करिश्मा चौक,पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Beauty salon",
+  "address": "Sr No 20/2, LGF, Gokhale Business Bay, Unit No 3, CTS 667, near Karishma Chowk, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paschimanagri, Kothrud",
+  "street": "Sr No 20/2, LGF, Gokhale Business Bay, Unit No 3, CTS 667, near Karishma Chowk",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://salons.lakmesalon.in/lakme-salon-for-him-and-her-in-gokhale-business-bay-karishma-chowk-pune-beauty-parlour-kothrud-pune-447991/Home",
+  "phone": "+91 88798 81850",
+  "phoneUnformatted": "+918879881850",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4987998,
+    "lng": 73.8214641
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.8,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJA5j1lBG_wjsR6UacgamAZt4",
+  "categories": [
+    "Beauty salon"
+  ],
+  "fid": "0x3bc2bf1194f59803:0xde6680a9819c46e9",
+  "cid": "16025637789556819689",
+  "reviewsCount": 321,
+  "reviewsDistribution": {
+    "oneStar": 10,
+    "twoStar": 5,
+    "threeStar": 4,
+    "fourStar": 13,
+    "fiveStar": 289
+  },
+  "imagesCount": 41,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:42:00.135Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Lakme%20Salon%20For%20Him%20and%20Her%20in%20Gokhale%20Business%20Bay%2C%20Karishma%20Chowk%2CPune&query_place_id=ChIJA5j1lBG_wjsR6UacgamAZt4",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 41,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOVb3MacPHD8mgJK9P8KJXXV-7-dFR1CZXUv92jyQzDpM0D5OZxI8fVr75CVcJWORVaSfSDo0nfr_G4zrRhSUb_-6VH_XHZYAZume43VtKbayjPTr-FZvi8obJF9faWAd5qHOwFIxwUxVS1=w426-h240-k-no",
+  "kgmid": "/g/11xm1b6kt5",
+  "businessProfileId": "14750193166083205987"
+},
+{
+  "title": "Croma - Kothrud",
+  "subTitle": "क्रोमा कोथरुड",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electronics store",
+  "address": "Ground Floor, Giridhar Avenue, Paschimanagri, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paschimanagri, Kothrud",
+  "street": "Ground Floor, Giridhar Avenue",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://store.croma.com/croma-kothrud-electronics-retail-and-repair-shop-kothrud-pune-263627/Home?utm_source=locator&utm_medium=googleplaces",
+  "phone": "+91 89769 11832",
+  "phoneUnformatted": "+918976911832",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.498755,
+    "lng": 73.821795
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJCe7N0eu_wjsREEKI5ZRBGpQ",
+  "categories": [
+    "Electronics store",
+    "Appliance store",
+    "Computer accessories store",
+    "Refrigerator store"
+  ],
+  "fid": "0x3bc2bfebd1cdee09:0x941a4194e5884210",
+  "cid": "10671914374769689104",
+  "reviewsCount": 5565,
+  "reviewsDistribution": {
+    "oneStar": 470,
+    "twoStar": 165,
+    "threeStar": 507,
+    "fourStar": 1110,
+    "fiveStar": 3313
+  },
+  "imagesCount": 442,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:42:00.135Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 9 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 9 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": false
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Croma%20-%20Kothrud&query_place_id=ChIJCe7N0eu_wjsREEKI5ZRBGpQ",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 42,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLcQYKfLOtQFA5Fh-VjgzVY6GbJZRqbKTU0MrRAG8ege-ubjGF5HPb_X0bZ3JZ5cWd4w-owd7HxuIzzHavibjwceFUF0KwGhhvlycoVDn_jeOWz378X0UFFrZzKPqXETvDEPVWk0=w408-h725-k-no",
+  "kgmid": "/g/11xh_cv25",
+  "businessProfileId": "244682141198802467"
+},
+{
+  "title": "Sheetal Packers and Movers",
+  "subTitle": "शीतल पैकर्स एंड मूवर्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Transportation service",
+  "address": "Shop no 10, s, Kalakunj Apartment, Lane Number 6, Dahanukar Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Dahanukar Colony, Kothrud",
+  "street": "Shop no 10, s, Kalakunj Apartment, Lane Number 6",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://sheetalpackersandmovers.com/",
+  "phone": "+91 74995 74858",
+  "phoneUnformatted": "+917499574858",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4965462,
+    "lng": 73.811901
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.3,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ73-yf6a_wjsRzOm0ckcbSwM",
+  "categories": [
+    "Transportation service",
+    "Automobile storage facility",
+    "Freight forwarding service",
+    "Logistics service",
+    "Moving and storage service",
+    "Mover",
+    "Packaging company",
+    "Self-storage facility",
+    "Shipping service",
+    "Storage facility"
+  ],
+  "fid": "0x3bc2bfa67fb27fef:0x34b1b4772b4e9cc",
+  "cid": "237313399048169932",
+  "reviewsCount": 102,
+  "reviewsDistribution": {
+    "oneStar": 16,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 6,
+    "fiveStar": 80
+  },
+  "imagesCount": 73,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:42:00.136Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Assisted listening devices": true
+      },
+      {
+        "Assistive hearing loop": true
+      },
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sheetal%20Packers%20and%20Movers&query_place_id=ChIJ73-yf6a_wjsRzOm0ckcbSwM",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 48,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmNe8aox5avT376KYZO5MvuOeFT1yZi30zk-r2KazXyfJbAgaXohVB3OySUS9SHbAi_oM9ZzC9QEiZPnnheHgdScPLYGmXMLYRZn7yFXzR9YVInkP8bdEONp6yp-uCyFTug5tbx5cEUT463v=w408-h725-k-no",
+  "kgmid": "/g/11tms1r920",
+  "businessProfileId": "13736723889402986281"
+},
+{
+  "title": "The Aura Ladies Beauty Salon",
+  "subTitle": "थे और लेडीज ब्यूटी सैलून",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Beauty salon",
+  "address": "Office no 2, stilt floor, Bageshree Co-op Hsg, society, Lane No. 8, near Saraswathi Vidya mandir school, Dahanukar Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Dahanukar Colony, Kothrud",
+  "street": "Office no 2, stilt floor, Bageshree Co-op Hsg, society, Lane No. 8, near Saraswathi Vidya mandir school",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 92095 59792",
+  "phoneUnformatted": "+919209559792",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4973103,
+    "lng": 73.8115531
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJB6ftLCS_wjsRRDCkJ85Avas",
+  "categories": [
+    "Beauty salon"
+  ],
+  "fid": "0x3bc2bf242ceda707:0xabbd40ce27a43044",
+  "cid": "12375118605256503364",
+  "reviewsCount": 99,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 97
+  },
+  "imagesCount": 265,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:42:00.136Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 8:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=The%20Aura%20Ladies%20Beauty%20Salon&query_place_id=ChIJB6ftLCS_wjsRRDCkJ85Avas",
+  "searchPageUrl": "https://www.google.com/maps/search/Home%20cleaning/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Home cleaning",
+  "language": "en",
+  "rank": 49,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmNW837ovHMhHdNx0xAeGu1yVLO_kHv59hEwILyNxn7qS1qHyiA1n5XgMxTpyvqsuyo6P2LAOtkAjKCsr8O1q7wGyDuC1wl1fLexYBebT4vyJ-l6-o4Gsxg5DKtTGkjG3B13r_iX7g=w408-h544-k-no",
+  "kgmid": "/g/11v_27yrv1",
+  "businessProfileId": "3858757169472581095"
+}]

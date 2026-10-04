@@ -1,0 +1,2300 @@
+[{
+  "title": "Rohan plumbing, electrical & civil work",
+  "subTitle": "रोहन प्लंबिंग, इलेक्ट्रिकल & सिविल वर्क",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "1, Mayur Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Mayur Colony, Kothrud",
+  "street": "1",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 75179 82584",
+  "phoneUnformatted": "+917517982584",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.505622,
+    "lng": 73.8155646
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJCzBthaa_wjsRGQ0jwR9PP54",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bfa6856d300b:0x9e3f4f1fc1230d19",
+  "cid": "11402919779328265497",
+  "reviewsCount": 22,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 21
+  },
+  "imagesCount": 53,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.331Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Rohan%20plumbing%2C%20electrical%20%26%20civil%20work&query_place_id=ChIJCzBthaa_wjsRGQ0jwR9PP54",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLcEuJqlS5pAmXFFNOQY-nyo4iuE7tHPS9TshGt5egNcCyDUd0xcKURFCXDaR7KasoqFgMfIhlHB9S1ysz9Au583zSL_j5tE3R2YSeu49bw5RITL2bqwW2KpTr_HQUhO3USW9rAfCFXf1_d_=w408-h306-k-no",
+  "kgmid": "/g/11zfnrtcdy",
+  "businessProfileId": "7394747443595076797"
+},
+{
+  "title": "Ranjeet Pawar All Plumbing Services",
+  "subTitle": "रंजीत पवार ऑल प्लंबिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Lokmanya Colony, Kothrud, Pune, Maharashtra 411058, India",
+  "neighborhood": "Lokmanya Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411058",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99752 69582",
+  "phoneUnformatted": "+919975269582",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5075209,
+    "lng": 73.8073083
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJcw3Y_2e_wjsRQhNsMyvvt0o",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf67ffd80d73:0x4ab7ef2b336c1342",
+  "cid": "5384034848370070338",
+  "reviewsCount": 29,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 28
+  },
+  "imagesCount": 48,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.334Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Ranjeet%20Pawar%20All%20Plumbing%20Services&query_place_id=ChIJcw3Y_2e_wjsRQhNsMyvvt0o",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdb-MtPkOkegWImV0YCk48J9fWFwSZVvBHGdLINirzEpJrRppaqwA3WZQXCc_movXMVQFD-RWgLDzEt51bRI0SocI73l7IfGCLzZ9X8E7gMM9z6uiHkX5Es8a57tEoSEqv7PuRSIESKI2U1=w408-h544-k-no",
+  "kgmid": "/g/11y_45pz5m",
+  "businessProfileId": "4404592152636251125"
+},
+{
+  "title": "Lalsing plumber civil and tiles work",
+  "subTitle": "लालसिंग प्लंबर सिविल एंड टाइल्स वर्क",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "43, Navketan Society 6th Ln, beside Kalaloom, Navketan Society, Gurha Slathia, Ideal Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Navketan Society, Gurha Slathia, Ideal Colony, Kothrud",
+  "street": "43, Navketan Society 6th Ln, beside Kalaloom",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 98811 83740",
+  "phoneUnformatted": "+919881183740",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5093154,
+    "lng": 73.8188348
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ18gEZAC_wjsRrKqUcqAvCRc",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf006404c8d7:0x17092fa07294aaac",
+  "cid": "1659910303826356908",
+  "reviewsCount": 25,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 25
+  },
+  "imagesCount": 13,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.334Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Lalsing%20plumber%20civil%20and%20tiles%20work&query_place_id=ChIJ18gEZAC_wjsRrKqUcqAvCRc",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLet6UoWcHsfRZj7B8arDdmNYmQfDnmikgGhUCAuCgPcSdOVjC-8CHvXTqInZkqs2VMNnJ1A3PbVJt5M-FPR_CUvmDPS6cobGLfnJ5OAcj0BQJgNplVoV1q7SEALljMLxj6n4ndSxACyholL=w408-h373-k-no",
+  "kgmid": "/g/11z15jqt6l",
+  "businessProfileId": "17767037004835869201"
+},
+{
+  "title": "Kailas v Devkatte Plumber And Electrician Pune",
+  "subTitle": "कैलाश वी देवकट्टे प्लंबर एंड इलेक्ट्रीशियन पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://sites.google.com/view/kailas-v-devkatte-plumber-and-/",
+  "phone": "+91 72197 29204",
+  "phoneUnformatted": "+917219729204",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5082037,
+    "lng": 73.7904413
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ4QylMyXdr6cRLoRjywwBbf4",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0xa7afdd2533a50ce1:0xfe6d010ccb63842e",
+  "cid": "18333310812558689326",
+  "reviewsCount": 86,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 83
+  },
+  "imagesCount": 47,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.335Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Kailas%20v%20Devkatte%20Plumber%20And%20Electrician%20Pune&query_place_id=ChIJ4QylMyXdr6cRLoRjywwBbf4",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLe8ugniOQl4Jcx6dK88AW2J9G0qPa4z_VJsR_L73bzzYdrNhKxLBA013pC42H9dZEta4DZYHE52dSv2Fhs5qdqW4xhhvm5lsJLTKzt2VSrBsm2nYADhuD9dSu5vZBERNYmUPFivVAew2wA=w408-h731-k-no",
+  "kgmid": "/g/11ykpmv5xn",
+  "businessProfileId": "12073229047680940560"
+},
+{
+  "title": "S M Plumbing Services",
+  "subTitle": "स एम प्लंबिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Gurujan society, near Vanaz Company, Shastri Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Shastri Nagar, Kothrud",
+  "street": "Gurujan society, near Vanaz Company",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5058705,
+    "lng": 73.803775
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJHY8TAsm_wjsRmZGPph2TQAM",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bfc902138f1d:0x340931da68f9199",
+  "cid": "234348936181027225",
+  "reviewsCount": 13,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 13
+  },
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.336Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=S%20M%20Plumbing%20Services&query_place_id=ChIJHY8TAsm_wjsRmZGPph2TQAM",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=k-LqYTzSGZTsIMb8_za9oQ&cb_client=search.gws-prod.grass&w=408&h=240&yaw=25.367918&pitch=0&thumbfov=100",
+  "kgmid": "/g/11ytw18h2n",
+  "businessProfileId": "10616921954108689701"
+},
+{
+  "title": "NAIK WATERPROOFING CENTER",
+  "subTitle": "नाईक जलरोधक केंद्र",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Waterproofing service",
+  "address": "Anupam Complex, Anupam Complex Rd, Rahul Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Rahul Nagar, Kothrud",
+  "street": "Anupam Complex, Anupam Complex Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://naikwaterproofing.com/",
+  "phone": "+91 98814 09065",
+  "phoneUnformatted": "+919881409065",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.4987892,
+    "lng": 73.8143299
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJm4A4jfrBwjsRxq409cqFfKo",
+  "categories": [
+    "Waterproofing service"
+  ],
+  "fid": "0x3bc2c1fa8d38809b:0xaa7c85caf534aec6",
+  "cid": "12284840990303628998",
+  "reviewsCount": 278,
+  "reviewsDistribution": {
+    "oneStar": 4,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 12,
+    "fiveStar": 262
+  },
+  "imagesCount": 203,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.336Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 6:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "9 AM to 6:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=NAIK%20WATERPROOFING%20CENTER&query_place_id=ChIJm4A4jfrBwjsRxq409cqFfKo",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 15,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLc4NfB5TOsifMARB31LGRVBilEesBYsw8IIuNHOP11UKcWNLW-Gwn1GZt1N0EndTJ-egyzChuOM3govsKs4Q82m1LaHLGdwdGo6LFJN_IjFKP-DoTC9Nw81i6eU5b3gT1joZJT5=w408-h306-k-no",
+  "kgmid": "/g/11lfl3l62l",
+  "businessProfileId": "11126579144044446497"
+},
+{
+  "title": "Virat plumber",
+  "subTitle": "विराट प्लंबर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud phata, Mahaganesh Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Mahaganesh Colony, Kothrud",
+  "street": "Paud phata",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5090481,
+    "lng": 73.8216904
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJXQMTVxyVwjsREGxYpy171tY",
+  "categories": [
+    "Plumber",
+    "Electrician",
+    "Tile contractor"
+  ],
+  "fid": "0x3bc2951c5713035d:0xd6d67b2da7586c10",
+  "cid": "15480696205143993360",
+  "reviewsCount": 5,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 5
+  },
+  "imagesCount": 0,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.337Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Virat%20plumber&query_place_id=ChIJXQMTVxyVwjsREGxYpy171tY",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.49531983968784,73.81870083931133,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 19,
+  "isAdvertisement": false,
+  "imageUrl": null,
+  "kgmid": "/g/11zgqp_x82",
+  "businessProfileId": "2475880085018099627"
+},
+{
+  "title": "MG Electrician & Plumber services",
+  "subTitle": "एमजी इलेक्ट्रीशियन & प्लंबर सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Electrician",
+  "address": "Alkapuri Society, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "http://mg.com/",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5073514,
+    "lng": 73.8076543
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJndq7FK2_wjsRqvH9I-SapuM",
+  "categories": [
+    "Electrician"
+  ],
+  "fid": "0x3bc2bfad14bbda9d:0xe3a69ae423fdf1aa",
+  "cid": "16403968997390676394",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 3,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.471Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=MG%20Electrician%20%26%20Plumber%20services&query_place_id=ChIJndq7FK2_wjsRqvH9I-SapuM",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeA3HhZ3AocWE4zB07cDYXFYXtyKsjwGzwtYo6vjE-Y5O23SCXDrOYqUDQcrevtV1er3vrPRUz-qiIgJ_cThGkstkhKMuH7PzilNXm_z3kVCBG4ItOY0FtLeMaBrprm4n9aTB2vRD2UGsyE=w408-h906-k-no",
+  "kgmid": "/g/11ntk4kq8s",
+  "businessProfileId": "17014661664860208272"
+},
+{
+  "title": "Shubham Plumber",
+  "subTitle": "शुभम प्लंबर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "amar hardware, opp. right, Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": "amar hardware, opp. right",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://g.co/kgs/9kpBmv7",
+  "phone": "+91 86260 20189",
+  "phoneUnformatted": "+918626020189",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5110133,
+    "lng": 73.7950066
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.7,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJxwVdkzS_wjsRkaE7kDVoXz8",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf34935d05c7:0x3f5f6835903ba191",
+  "cid": "4566483126439354769",
+  "reviewsCount": 18,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 16
+  },
+  "imagesCount": 14,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.472Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shubham%20Plumber&query_place_id=ChIJxwVdkzS_wjsRkaE7kDVoXz8",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLeisxlY-On5prZPii3753tHnhHPTCBjV73iEjneZ35z8umIdBUIhXbztsSZ2_BnHBqopL5wCZqo9mlIjNmnXTwMrtao4sHXK8JWVyXas2JdG6VH4vjK-AkPsGoT6u8qBt2hWJ_Y=w408-h272-k-no",
+  "kgmid": "/g/11w313jdb0",
+  "businessProfileId": "17825818707289429463"
+},
+{
+  "title": "Water Engineer Plumber",
+  "subTitle": "वॉटर इंजीनियर प्लंबर",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Vrindavan Colony, Alkapuri Society, Kothrud, Pune, Maharashtra 411058, India",
+  "neighborhood": "Vrindavan Colony, Alkapuri Society, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411058",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5059982,
+    "lng": 73.8060192
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJZ5A6hp-_wjsRdoGHE5cU8NY",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf9f863a9067:0xd6f0149713878176",
+  "cid": "15487901757627400566",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.472Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Water%20Engineer%20Plumber&query_place_id=ChIJZ5A6hp-_wjsRdoGHE5cU8NY",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 9,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLcyzpFkc3Ga--K_pBv3d2HKR8X5K6rDcDILAF8yiqaf4mex0dvQNcSvi2szjJ-POwt86AJNG1aMX02qGNEIGFLIOFg0iw1OuE4Pga6EHaEZCChpTlywFkkK81Wb645084Bs5nSjmPTCSPU=w408-h544-k-no",
+  "kgmid": "/g/11zx_8t49j",
+  "businessProfileId": "8816205551037656629"
+},
+{
+  "title": "Digambar electrical & Plambar service",
+  "subTitle": "दिगंबर इलेक्ट्रिकल & प्लंबर सर्विस",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Mokate complex, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Matoba Nagar, Kothrud",
+  "street": "Mokate complex",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5165691,
+    "lng": 73.8036752
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJS41aDCS_wjsRW0ZoJ7mQp7k",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf240c5a8d4b:0xb9a790b92768465b",
+  "cid": "13377820343031842395",
+  "reviewsCount": null,
+  "imagesCount": 2,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.472Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9 AM to 5 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Closed"
+    }
+  ],
+  "wasOpenAtScrapeTime": false,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Digambar%20electrical%20%26%20Plambar%20service&query_place_id=ChIJS41aDCS_wjsRW0ZoJ7mQp7k",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLf2b20I3hOqN2K7x1lePBb8VJ7FH6tA70APWpdK86xvaJdSHAJWbxv0rpWlZ6uLxpkEVyzGcSqKmRzNW0BMK1FX8Sw2Lj9lO17FWTaAFMsSn2Hn5p1eekYnXNAWdo-01LU7anVITpJs0Uw=w408-h544-k-no",
+  "kgmid": "/g/11zwm_llfv",
+  "businessProfileId": "6624145932912967400"
+},
+{
+  "title": "Sachin Plumber And Tile Work In Pune",
+  "subTitle": "सचिन प्लंबर एंड टाइल वर्क इन पुणे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://sites.google.com/view/sachintilesandplumberworkpune/",
+  "phone": "+91 83082 74092",
+  "phoneUnformatted": "+918308274092",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5085266,
+    "lng": 73.7902687
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJO8AAD94la0ARimc12VZxonM",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x406b25de0f00c03b:0x73a27156d935678a",
+  "cid": "8332346878414120842",
+  "reviewsCount": 35,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 3,
+    "fiveStar": 31
+  },
+  "imagesCount": 39,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.472Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sachin%20Plumber%20And%20Tile%20Work%20In%20Pune&query_place_id=ChIJO8AAD94la0ARimc12VZxonM",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 16,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLdsAFrAqlwrSZ48FeBT_a7mOBhTmOL4JuziWAw3_mO3k-F9iKZn-o4UVtWf-mUE4WQG9SkKjdEga6k3LiEXKKvsxeqDzHjS27UDBh1LqQhio27y6J_L-Zo2YfYpK0YG9OASBcNttfLRjw20=w408-h544-k-no",
+  "kgmid": "/g/11xt49js50",
+  "businessProfileId": "8996858411408962367"
+},
+{
+  "title": "Patil Electrical&Pluming servicese",
+  "subTitle": "पाटिल इलेक्ट्रिकल&प्लमिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Contractor",
+  "address": "Patel Complex, Maratha mandir, lmd chock, Paud Road, right, Right Bhusari Colony, Bavdhan, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, right, Right Bhusari Colony, Bavdhan",
+  "street": "Patel Complex, Maratha mandir, lmd chock",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "website": "https://patilelectricalplumingservices.blogspot.com/",
+  "phone": "+91 70206 94861",
+  "phoneUnformatted": "+917020694861",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.508678,
+    "lng": 73.7908762
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.9,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJuYxy5aK_wjsRns7FvR_XRWM",
+  "categories": [
+    "Contractor"
+  ],
+  "fid": "0x3bc2bfa2e5728cb9:0x6345d71fbdc5ce9e",
+  "cid": "7153360114475716254",
+  "reviewsCount": 38,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 1,
+    "fiveStar": 36
+  },
+  "imagesCount": 48,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:13.472Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Patil%20Electrical%26Pluming%20servicese&query_place_id=ChIJuYxy5aK_wjsRns7FvR_XRWM",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.8101096464371,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 17,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLfWCf9wJlnQOUizc6pUAarh_VDRZcMbhwq9eSleUdYTP6k4eQFYke8oor-ns_d0PRal57WLeHA7ULyMRxDT-KH2WFNTgAu0NIGrfSqAykd-Ok9a_5DLLnWup-9kvr1_-kidNI9LPw=w408-h306-k-no",
+  "kgmid": "/g/11rmnzwc5q",
+  "businessProfileId": "10881234452925366925"
+},
+{
+  "title": "Sachin khandare",
+  "subTitle": "सचिन खंडारे",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Rd, Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": "Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 84120 94888",
+  "phoneUnformatted": "+918412094888",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5081392,
+    "lng": 73.7957033
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJGw4opa6_wjsRG1derJVTA44",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bfaea5280e1b:0x8e035395ac5e571b",
+  "cid": "10233114680622995227",
+  "reviewsCount": 2,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 2
+  },
+  "imagesCount": 5,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:18.398Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "10 AM to 8:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "10 AM to 2 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": false,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Sachin%20khandare&query_place_id=ChIJGw4opa6_wjsRG1derJVTA44",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 6,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmNSKxI0ZU-lDFS-OccWcNAv2orS7dV8AjKxIRF4AWWH8LML-67VOt5W4PeNlvLN58d8BT3H3OHPG4ccRqH-fAjCgi6ZWfZoJVNDjAimfy4ONCQf6B8EG_oVqbvSGx7gPYGeaUyLK3NH_9wu=w408-h306-k-no",
+  "kgmid": "/g/11zfbcpqt1",
+  "businessProfileId": "12728433644040354177"
+},
+{
+  "title": "Ram Plumbing Services",
+  "subTitle": "राम प्लंबिंग सर्विसेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Rd, Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": "Paud Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.508462,
+    "lng": 73.790197
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.6,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJSdrf-6W_wjsRKiaIIajTBJ0",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bfa5fbdfda49:0x9d04d3a82188262a",
+  "cid": "11314400882932065834",
+  "reviewsCount": 10,
+  "reviewsDistribution": {
+    "oneStar": 1,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 9
+  },
+  "imagesCount": 15,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:18.398Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Ram%20Plumbing%20Services&query_place_id=ChIJSdrf-6W_wjsRKiaIIajTBJ0",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 10,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmN0-C1zkHkECv2D0DPz62rSRuXvLYA3qlJFTA7temOhIXPKm9TPCn8gDKdkOS1mAlmPUKowh2OFf6LOUPdYuC9bCP_uX4ypl1G79QGAPfUkpvqOGPK5k-AkKvmCqFiQsxooagYnfxM72XU=w408-h614-k-no",
+  "kgmid": "/g/11x71cmz35",
+  "businessProfileId": "101158668014398137"
+},
+{
+  "title": "Plumbing & Waterproofing",
+  "subTitle": "प्लंबिंग & वॉटरप्रूफिंग",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Waterproofing service",
+  "address": "Shop No.03, Parijat Apartment, Madhavbaug Society, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Madhavbaug Society, Shivthirth Nagar, Kothrud",
+  "street": "Shop No.03, Parijat Apartment",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5083527,
+    "lng": 73.8090129
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJrcyfQPy_wjsRRd0wHdhhMww",
+  "categories": [
+    "Waterproofing service"
+  ],
+  "fid": "0x3bc2bffc409fccad:0xc3361d81d30dd45",
+  "cid": "879153933097950533",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:18.398Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Plumbing%20%26%20Waterproofing&query_place_id=ChIJrcyfQPy_wjsRRd0wHdhhMww",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 12,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=RefXXhoJRe5mPEJ70Ct5rw&cb_client=search.gws-prod.grass&w=408&h=240&yaw=251.98737&pitch=0&thumbfov=100",
+  "kgmid": "/g/11zww74h13",
+  "businessProfileId": "16384458784619920838"
+},
+{
+  "title": "Keshav V Devkatte Electrical & Plumbing Works",
+  "subTitle": "केशव वी देवकट्टे इलेक्ट्रिकल & प्लंबिंग वर्क्स",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99601 87839",
+  "phoneUnformatted": "+919960187839",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5097129,
+    "lng": 73.7902449
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.2,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJa01dDeq_wjsRleZkru4AzTY",
+  "categories": [
+    "Plumber",
+    "Electrician"
+  ],
+  "fid": "0x3bc2bfea0d5d4d6b:0x36cd00eeae64e695",
+  "cid": "3948813473401857685",
+  "reviewsCount": 5,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 1,
+    "fourStar": 2,
+    "fiveStar": 2
+  },
+  "imagesCount": 16,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:18.398Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Keshav%20V%20Devkatte%20Electrical%20%26%20Plumbing%20Works&query_place_id=ChIJa01dDeq_wjsRleZkru4AzTY",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.80151845356286,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 14,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/AABkmLf29Ow_iyRF1FZB9jONapDCphktclGV4EPctzSmS004Dq5hNrtdAiqUYf39D5vg4uarZYBYdzQznNW_VkDuCODZT9rvk7gMHUwGXpQ2a_EUwGUZXudujOFI6u1djMBFqQ1LhS0i9Pwl7foO=w408-h725-k-no",
+  "kgmid": "/g/11zggj3tvm",
+  "businessProfileId": "17504170085839806357"
+},
+{
+  "title": "Avi works solutions",
+  "subTitle": "अवि वर्क्स सॉल्यूशंस",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Lotus colour world, near right, Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": "Lotus colour world, near right",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 99604 10255",
+  "phoneUnformatted": "+919960410255",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5086381,
+    "lng": 73.7907718
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJm67xMcO_wjsR8pRI75wfC_o",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bfc331f1ae9b:0xfa0b1f9cef4894f2",
+  "cid": "18017529493115671794",
+  "reviewsCount": 10,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 10
+  },
+  "imagesCount": 24,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:22.778Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Avi%20works%20solutions&query_place_id=ChIJm67xMcO_wjsR8pRI75wfC_o",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.79292726068863,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 4,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn2_rSr2LggPg9eqm58nukfWywCZp0xAfkkNTLfCJpoqbR4Rn5GRnrOEt0RFaalzQpOXE19j72MjY_Gn2nfIYiAIi-hYTrqE9hDS-TEo4_2JhcAETAahEaKXKe_fvChcsg2vSIIV-mpyhmZ=w408-h544-k-no",
+  "kgmid": "/g/11zjj1l1b3",
+  "businessProfileId": "15341265918629617895"
+},
+{
+  "title": "Shiv Waterproofing",
+  "subTitle": "शिव वॉटरप्रूफिंग",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Paud Road, Right Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Paud Road, Right Bhusari Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 93733 54641",
+  "phoneUnformatted": "+919373354641",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5084698,
+    "lng": 73.7933809
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJsfnkKpa_wjsROUdXSS3BWWM",
+  "categories": [
+    "Plumber",
+    "Chemical manufacturer",
+    "Contractor",
+    "Flooring contractor",
+    "Waterproofing service",
+    "Structural engineer"
+  ],
+  "fid": "0x3bc2bf962ae4f9b1:0x6359c12d49574739",
+  "cid": "7158965482930259769",
+  "reviewsCount": 19,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 19
+  },
+  "imagesCount": 34,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:22.778Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "7 AM to 10 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "7 AM to 10 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Accessibility": [
+      {
+        "Wheelchair accessible entrance": true
+      },
+      {
+        "Wheelchair accessible parking lot": true
+      },
+      {
+        "Wheelchair accessible restroom": true
+      },
+      {
+        "Wheelchair accessible seating": true
+      },
+      {
+        "Assistive hearing loop": false
+      }
+    ],
+    "Amenities": [
+      {
+        "Gender-neutral restroom": true
+      }
+    ],
+    "Crowd": [
+      {
+        "LGBTQ+ friendly": true
+      }
+    ],
+    "Parking": [
+      {
+        "Free parking lot": true
+      },
+      {
+        "Free street parking": true
+      },
+      {
+        "On-site parking": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=Shiv%20Waterproofing&query_place_id=ChIJsfnkKpa_wjsROUdXSS3BWWM",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.79292726068863,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 11,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWl_g1TOVGynDwZfX44PLvSmmXcjiJxdf1oAR9ELc-ed_FOSlpXTZEKYMf5RKTipxNmom11h2SF9wbCMF_DjPeNfawkgopIJyqyJqed8ptWhyoq8pORqy1fDsAryW2_1bz2cABtrWw=w408-h541-k-no",
+  "kgmid": "/g/11y9143l0_",
+  "businessProfileId": "16983923662212091525"
+},
+{
+  "title": "SEVALAL ENTERPRISES",
+  "subTitle": "सेवालाल एंटरप्राइजेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "52/41A, DP Rd, Sagar Colony, Maurya Vihar, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Sagar Colony, Maurya Vihar, Kothrud",
+  "street": "52/41A, DP Rd",
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 90498 31653",
+  "phoneUnformatted": "+919049831653",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5026476,
+    "lng": 73.8011773
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 5,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJ77QzHQC_wjsRK5hPr4xBN_Y",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf001d33b4ef:0xf637418caf4f982b",
+  "cid": "17741721329541814315",
+  "reviewsCount": 1,
+  "reviewsDistribution": {
+    "oneStar": 0,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 0,
+    "fiveStar": 1
+  },
+  "imagesCount": 9,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:22.779Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Friday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "12 to 8:30 AM, 9 AM to 12 AM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "additionalInfo": {
+    "From the business": [
+      {
+        "Identifies as women-owned": true
+      }
+    ],
+    "Service options": [
+      {
+        "Online estimates": true
+      },
+      {
+        "Onsite services": true
+      }
+    ],
+    "Offerings": [
+      {
+        "Repair services": true
+      }
+    ]
+  },
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=SEVALAL%20ENTERPRISES&query_place_id=ChIJ77QzHQC_wjsRK5hPr4xBN_Y",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.51161498677072,73.79292726068863,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 20,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkbhem0_XNyYcmn_6IOeV5llmlLVsQaQu6gBSlmFgkZ7gBOYVlHMEGCjgLSlQfoVERP06kD2WMkefjIA1F0RMxfVolT6qgySB1CQRn34cQpJJHwxECQpd6j_DWBj7kGMFDPME9LDVmvcTPm=w408-h544-k-no",
+  "kgmid": "/g/11zf3f9gds",
+  "businessProfileId": "14810965896260560573"
+},
+{
+  "title": "HK Electrical & Plumbing",
+  "subTitle": "क इलेक्ट्रिकल & प्लंबिंग",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Near, A-1, Grand Stand, Chandani Chowk, Pune, Maharashtra 411058, India",
+  "neighborhood": "Chandani Chowk, Kothrud",
+  "street": "Near, A-1, Grand Stand",
+  "city": "Pune",
+  "postalCode": "411058",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "+91 96378 86519",
+  "phoneUnformatted": "+919637886519",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5014475,
+    "lng": 73.7913361
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": 4.4,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJS4hT37u_wjsRvenPSHjVX2Q",
+  "categories": [
+    "Plumber",
+    "Electrical installation service"
+  ],
+  "fid": "0x3bc2bfbbdf53884b:0x645fd57848cfe9bd",
+  "cid": "7232734239174683069",
+  "reviewsCount": 28,
+  "reviewsDistribution": {
+    "oneStar": 4,
+    "twoStar": 0,
+    "threeStar": 0,
+    "fourStar": 2,
+    "fiveStar": 22
+  },
+  "imagesCount": 6,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:24.180Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Thursday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Friday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "8:30 AM to 8:30 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "8:30 AM to 8:30 PM"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=HK%20Electrical%20%26%20Plumbing&query_place_id=ChIJS4hT37u_wjsRvenPSHjVX2Q",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.50346741322928,73.79292726068863,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 5,
+  "isAdvertisement": false,
+  "imageUrl": "https://lh3.googleusercontent.com/grass-cs/ACvplmOcYGBhgeQQFr_9KQ7a9U3OxaRaKvjLrdy4K7j7x4j7QSpWQ5_WeQMHbjlQIhHHUnE9xAqXZ8u7aaIXGtZHQjkMKTRAD_7n8j2sEn5of_yes03o9ndNYTQj3fTE5QplIy5S0PAO=w408-h306-k-no",
+  "kgmid": "/g/11h5m64zhf",
+  "businessProfileId": "9068591382558397065"
+},
+{
+  "title": "RB enterprises",
+  "subTitle": "आरबी एंटरप्राइजेज",
+  "description": null,
+  "ownerDescription": null,
+  "price": null,
+  "categoryName": "Plumber",
+  "address": "Gujrat Colony, Kothrud, Pune, Maharashtra 411038, India",
+  "neighborhood": "Gujrat Colony, Kothrud",
+  "street": null,
+  "city": "Pune",
+  "postalCode": "411038",
+  "state": "Maharashtra",
+  "countryCode": "IN",
+  "phone": "",
+  "phoneUnformatted": "",
+  "claimThisBusiness": false,
+  "location": {
+    "lat": 18.5062206,
+    "lng": 73.8088221
+  },
+  "locatedIn": null,
+  "floor": null,
+  "plusCode": null,
+  "menu": null,
+  "servicesLink": null,
+  "totalScore": null,
+  "permanentlyClosed": false,
+  "temporarilyClosed": false,
+  "placeId": "ChIJKaEeZxy_wjsR2juhEvbOgWA",
+  "categories": [
+    "Plumber"
+  ],
+  "fid": "0x3bc2bf1c671ea129:0x6081cef612a13bda",
+  "cid": "6954066855906589658",
+  "reviewsCount": null,
+  "imagesCount": 1,
+  "imageCategories": [],
+  "scrapedAt": "2026-10-04T08:40:30.540Z",
+  "reserveTableUrl": null,
+  "googleFoodUrl": null,
+  "hotelStars": null,
+  "hotelDescription": null,
+  "checkInDate": null,
+  "checkOutDate": null,
+  "hotelAds": [],
+  "popularTimesLiveText": null,
+  "popularTimesLivePercent": null,
+  "popularTimesHistogram": {},
+  "openingHours": [
+    {
+      "day": "Monday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Tuesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Wednesday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Thursday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Friday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Saturday",
+      "hours": "Open 24 hours"
+    },
+    {
+      "day": "Sunday",
+      "hours": "Open 24 hours"
+    }
+  ],
+  "wasOpenAtScrapeTime": true,
+  "peopleAlsoSearch": [],
+  "placesTags": [],
+  "reviewsTags": [],
+  "gasPrices": [],
+  "url": "https://www.google.com/maps/search/?api=1&query=RB%20enterprises&query_place_id=ChIJKaEeZxy_wjsR2juhEvbOgWA",
+  "searchPageUrl": "https://www.google.com/maps/search/Plumber/@18.50346741322928,73.80151845356286,17z?hl=en",
+  "searchString": "Plumber",
+  "language": "en",
+  "rank": 8,
+  "isAdvertisement": false,
+  "imageUrl": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=xLjcekGvXmi7T5-qSbCf4g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=210.05002&pitch=0&thumbfov=100",
+  "kgmid": "/g/11zdyt7ch8",
+  "businessProfileId": "657251462869255623"
+}]
