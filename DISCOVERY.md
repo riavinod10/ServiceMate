@@ -112,3 +112,29 @@ businesses with no shop address. Taken at face value, these providers would all
 look very close to a user in central Kothrud. Analysis should treat coordinates
 shared by two or more different places as "distance unknown" and give a neutral
 distance score.
+
+## Discovery Agent (Week 2)
+
+`core/agents/discovery.py` is the `discover` node in the graph. It replaces the
+stub in `core/orchestration.py` with one import line.
+
+**What it reads from `state["requirements"]` (Person 3):**
+
+| Key | Example | If missing |
+|---|---|---|
+| `category` | `"ac_repair"` or `"pest control"` | guessed from `raw_text`; if still unknown, no search |
+| `locality` + `city` | `"Kothrud"`, `"Pune"` | city defaults to Pune; no locality means a city-wide search |
+| or `location` | `"Kothrud, Pune"` | used only when `locality`/`city` are absent |
+
+**What it writes:** `providers` (all available, exclusions removed, not yet
+ranked) and `status="ranking"`. Every step is logged to the agent log as
+"Service Discovery Agent".
+
+**Apify token:** set `APIFY_API_TOKEN` in your local `.env`. `docker-compose.yml`
+passes it to the worker container. Without a token, discovery still works using
+cache and fixtures, and the agent log says "Live search unavailable".
+
+Settings (optional, read with defaults, not in `settings.py`):
+`DISCOVERY_CACHE_TTL_DAYS=7`, `DISCOVERY_MAX_PLACES=25`,
+`DISCOVERY_APIFY_TIMEOUT_SECONDS=150`, `DISCOVERY_MIN_RESULTS=3`,
+`DISCOVERY_DEFAULT_CITY="Pune"`.

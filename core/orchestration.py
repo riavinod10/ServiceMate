@@ -2,6 +2,7 @@
 from typing import TypedDict
 from django.conf import settings
 from langgraph.types import interrupt
+from .agents.discovery import discovery_agent
 from .models import Approval
 
 class ServiceState(TypedDict, total=False):
@@ -17,7 +18,6 @@ class ServiceState(TypedDict, total=False):
     retry_count: int
 
 def requirement_agent(state: ServiceState): return {"status": "discovering"}
-def discovery_agent(state: ServiceState): return {"status": "ranking"}
 def analysis_agent(state: ServiceState): return {"status": "awaiting_approval"}
 def scheduling_agent(state: ServiceState): return {"status": "booking_requested"}
 
