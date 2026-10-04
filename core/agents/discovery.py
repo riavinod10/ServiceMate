@@ -77,7 +77,7 @@ def _discover(request_id: int, category: ServiceCategory | None, search_term: st
     if cached and cached.providers:
         log_agent_event(request_id, AGENT_NAME,
                         f"Using saved results from {cached.fetched_at:%d %b %Y} instead.")
-        return cached.providers
+        return [{**p, "source": "stale_cache"} for p in cached.providers]
 
     fixture = normalize_results(load_fixture(category), category, source="fixture")
     if fixture.providers:

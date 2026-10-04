@@ -9,6 +9,15 @@ from django.shortcuts import get_object_or_404, render
 from .models import Approval, ServiceRequest
 from .providers.scoring import WEIGHTS
 
+# Most reliable first. If a ranking mixes sources (e.g. after widening the
+# search), the page describes the least reliable one present.
+SOURCE_NOTES = {
+    "apify": "Live results from Google Maps, searched for this request.",
+    "cache": "Results from a Google Maps search made in the last 7 days.",
+    "stale_cache": "Live search was unavailable, so these are older saved results from Google Maps.",
+    "fixture": "Live search was unavailable, so these are saved demo results, not a live search.",
+}
+
 BREAKDOWN_LABELS = {"quality": "Rating quality", "reviews": "Review count",
                     "distance": "Distance", "budget": "Budget fit"}
 
@@ -30,4 +39,13 @@ def compare_providers(request, request_id):
         "ranked": ranked,
         "is_pending": approval is not None and approval.decision == Approval.Decision.PENDING,
         "still_searching": approval is None,
+        "source_note": source_note(ranked),
     })
+
+
+def source_note(ranked: list[dict]) -> str:
+    present = {p.get("source") for p in ranked}
+    for source in reversed(list(SOURCE_NOTES)):
+        if source in present:
+            return SOURCE_NOTES[source]
+    return ""

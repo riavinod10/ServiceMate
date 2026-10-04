@@ -177,3 +177,52 @@ now; Person 4 can make it extend `base.html` and drop its `<style>` block.
 
 **LLM explanation:** not built yet. `core/providers/explain.py` is the single
 place to add it once the team picks a model. Rules are in that file's docstring.
+
+## Re-discovery after a cancellation (Week 4)
+
+Discovery already skips everything in `excluded_provider_ids`, and Person 1's
+`recover` node adds the cancelled provider there, so no new Person 2 code is
+needed for re-discovery. `core/test_recovery_demo.py` proves the full loop:
+the cancelled provider never comes back, the other providers move up, and the
+request returns to "pending" on the Approvals page.
+
+**For Persons 1 and 4 (cancellation trigger):** the graph has already finished
+after Scheduling, so there is no interrupt to resume. The trigger must record
+the cancellation as if Scheduling had produced it, then continue the run, using
+the same checkpointer and `thread_id`:
+
+```python
+config = {"configurable": {"thread_id": service_request.workflow_thread_id}}
+graph.update_state(config, {"status": "cancelled"}, as_node="schedule")
+graph.invoke(None, config=config)   # recover -> discover -> analyze -> approval
+```
+
+This should run in a Celery task (discovery may call Apify), like `run_workflow`.
+
+**Note for Person 1:** "Search again" and cancellation recovery share
+`retry_count`. After two "Search again" clicks (retry_count = 2), a later
+cancellation ends the workflow instead of recovering. Consider a separate
+counter if that matters for the demo.
+
+## Where results came from (`source`)
+
+| `source` | Meaning | Comparison page says |
+|---|---|---|
+| `apify` | live search for this request | Live results from Google Maps |
+| `cache` | fresh cache (under 7 days) | Results from a search in the last 7 days |
+| `stale_cache` | Apify failed, older cache used | Older saved results |
+| `fixture` | Apify failed, no cache, demo JSON used | Saved demo results, not a live search |
+
+## Demo day checklist
+
+1. The day before, with `APIFY_API_TOKEN` set, pre-load the localities you will demo:
+   `python manage.py prefetch_providers --locality Kothrud`
+   (all 4 categories; about 4 Apify runs). Fresh entries are skipped, so running
+   it twice costs nothing. Add `--force` to refresh anyway.
+2. Check what's cached: `python manage.py prefetch_providers --list`. Every entry
+   you need should say "fresh" (they last 7 days).
+3. Use the same category and locality in the demo request, so it hits the cache:
+   the agent log shows "Used N cached providers (no Apify credits spent)".
+4. If the network fails on stage, discovery falls back to the demo JSON and the
+   Comparison page says so. That fallback only covers the 4 known categories,
+   with Kothrud providers.

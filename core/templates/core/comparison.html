@@ -15,6 +15,7 @@
   .request { color: var(--muted); margin: 0 0 1.5rem; }
   .status { border-left: 4px solid var(--bar); padding: .75rem 1rem; background: #fff; margin-bottom: 2rem; }
   .status a { font-weight: 600; }
+  .source { color: var(--muted); font-size: .9rem; margin: -1.25rem 0 1.5rem; }
   ol.providers { list-style: none; padding: 0; margin: 0; }
   .provider { display: grid; grid-template-columns: 3rem 1fr; gap: 0 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line); }
   .rank { font-size: 1.75rem; font-weight: 700; color: var(--bar); line-height: 1; }
@@ -52,6 +53,7 @@
   {% endif %}
 
   {% if ranked %}
+  {% if source_note %}<p class="source">{{ source_note }}</p>{% endif %}
   <ol class="providers">
     {% for p in ranked %}
     <li class="provider">
