@@ -138,3 +138,42 @@ Settings (optional, read with defaults, not in `settings.py`):
 `DISCOVERY_CACHE_TTL_DAYS=7`, `DISCOVERY_MAX_PLACES=25`,
 `DISCOVERY_APIFY_TIMEOUT_SECONDS=150`, `DISCOVERY_MIN_RESULTS=3`,
 `DISCOVERY_DEFAULT_CITY="Pune"`.
+
+## Provider Analysis Agent (Week 3)
+
+`core/agents/analysis.py` is the `analyze` node. It scores every provider from
+Discovery and writes the **top 5** to `ranked_providers`. Person 1's
+`create_approval` node copies them into `Approval.payload`.
+
+**Score (0–100), from `core/providers/scoring.py`:**
+
+| Part | Weight | How |
+|---|---|---|
+| Rating quality | 40% | Bayesian average: the rating is blended with 10 "average" reviews (average = mean rating of this search), so a 5.0 from 2 reviews counts for less than a 4.7 from 385. Mapped from 3.0–5.0 to 0–100. |
+| Review count | 20% | `log(1 + reviews) / log(501)`, capped at 100. 10 reviews ≈ 39, 500+ = 100. |
+| Distance | 30% | Haversine (straight-line) km from the user. 0 km = 100, 10 km or more = 0. |
+| Budget fit | 10% | Budget covers the top of the price range = 100; falls to 50 at the bottom of the range and towards 0 below it. No budget or no price = 50. |
+
+Budget fit is usually the same for every provider in a category, because prices
+are category estimates. It rarely changes the order, but it flags "typical
+price may be above your budget".
+
+**User location** (for distance), in order: `requirements["lat"/"lng"]` if
+present; the approximate centre of a known Pune locality (`PUNE_LOCALITIES` in
+`geo.py`); the middle of the search results; the centre of Pune.
+
+**Unknown provider locations** (no coordinates, Google's default area pin, or a
+pin shared by 2+ businesses) get `distance_km=None` and the typical distance
+score for that search, so they are neither helped nor hurt.
+
+**Fields added to each ranked provider** (on top of the shared provider dict):
+`rank`, `score`, `score_breakdown`, `distance_km`, `location_approximate`,
+`over_budget`, `reason`, `reason_source`. All are plain JSON.
+
+**Comparison page:** `/requests/<id>/compare/` (`core/views_comparison.py`). It
+reads the latest `Approval.payload` and links to the Approvals page for the
+decision. The Approvals page links back to it. The page is self-contained for
+now; Person 4 can make it extend `base.html` and drop its `<style>` block.
+
+**LLM explanation:** not built yet. `core/providers/explain.py` is the single
+place to add it once the team picks a model. Rules are in that file's docstring.

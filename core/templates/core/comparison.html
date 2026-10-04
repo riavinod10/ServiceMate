@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% if still_searching %}<meta http-equiv="refresh" content="5">{% endif %}
+<title>Compare providers</title>
+<style>
+  /* Page-scoped styles. Person 4 can replace these when this page extends base.html. */
+  :root { --ink: #1d2a33; --muted: #5b6b75; --line: #d9e1e5; --bar: #1f6f78; --bar-bg: #e4eef0; --warn: #8a4b00; --paper: #fbfcfc; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--paper); line-height: 1.5; }
+  main { max-width: 52rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+  h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
+  .request { color: var(--muted); margin: 0 0 1.5rem; }
+  .status { border-left: 4px solid var(--bar); padding: .75rem 1rem; background: #fff; margin-bottom: 2rem; }
+  .status a { font-weight: 600; }
+  ol.providers { list-style: none; padding: 0; margin: 0; }
+  .provider { display: grid; grid-template-columns: 3rem 1fr; gap: 0 1rem; padding: 1.25rem 0; border-top: 1px solid var(--line); }
+  .rank { font-size: 1.75rem; font-weight: 700; color: var(--bar); line-height: 1; }
+  .head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  .head h2 { font-size: 1.15rem; margin: 0; }
+  .score { font-weight: 700; white-space: nowrap; }
+  .score small { font-weight: 400; color: var(--muted); }
+  .reason { margin: .25rem 0 .75rem; }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: .15rem 1rem; margin: 0 0 1rem; font-size: .95rem; }
+  dl.facts dt { color: var(--muted); }
+  dl.facts dd { margin: 0; }
+  .tag { display: inline-block; font-size: .8rem; padding: 0 .4rem; border: 1px solid var(--warn); color: var(--warn); border-radius: 3px; margin-left: .35rem; }
+  .breakdown { display: grid; grid-template-columns: 9rem 1fr 2.5rem; gap: .35rem .75rem; align-items: center; font-size: .9rem; }
+  .breakdown .label small { color: var(--muted); }
+  .track { height: .6rem; background: var(--bar-bg); border-radius: 3px; overflow: hidden; }
+  .fill { height: 100%; background: var(--bar); }
+  .value { text-align: right; font-variant-numeric: tabular-nums; }
+  .method { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  a { color: var(--bar); }
+  a:focus-visible { outline: 3px solid var(--bar); outline-offset: 2px; }
+  @media (max-width: 30rem) { .provider { grid-template-columns: 1fr; } .rank { margin-bottom: .5rem; } .breakdown { grid-template-columns: 7rem 1fr 2.5rem; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Compare providers</h1>
+  <p class="request">For your request: “{{ service_request.raw_text }}”</p>
+
+  {% if still_searching %}
+    <p class="status">Still finding and ranking providers. This page refreshes every 5 seconds.</p>
+  {% elif is_pending %}
+    <p class="status">{% if ranked %}Pick one of these providers on the <a href="{% url 'approvals' %}">Approvals page</a>. Nothing is booked until you approve.{% else %}No providers matched this request. Choose “Search again” or “Reject” on the <a href="{% url 'approvals' %}">Approvals page</a>.{% endif %}</p>
+  {% else %}
+    <p class="status">You already decided on this request: {{ approval.get_decision_display }}.</p>
+  {% endif %}
+
+  {% if ranked %}
+  <ol class="providers">
+    {% for p in ranked %}
+    <li class="provider">
+      <div class="rank" aria-label="Rank {{ p.rank }}">{{ p.rank }}</div>
+      <div>
+        <div class="head">
+          <h2>{{ p.name }}</h2>
+          <span class="score">{{ p.score|floatformat:0 }}<small> / 100</small></span>
+        </div>
+        {% if p.reason_source == "llm" %}<p class="reason">{{ p.reason }}</p>{% endif %}
+        <dl class="facts">
+          <dt>Rating</dt>
+          <dd>{% if p.rating and p.review_count %}{{ p.rating|floatformat:1 }}★ from {{ p.review_count }} review{{ p.review_count|pluralize }}{% else %}No reviews yet{% endif %}</dd>
+          <dt>Distance</dt>
+          <dd>{% if p.distance_km is not None %}{{ p.distance_km }} km in a straight line{% elif p.location_approximate %}Not known: this business has no exact address on Google Maps{% else %}Not known{% endif %}</dd>
+          <dt>Price</dt>
+          <dd>{% if p.price_info %}{{ p.price_info }}{% if p.price_is_estimate %}<span class="tag">Estimate</span>{% endif %}{% else %}Price on request{% endif %}{% if p.over_budget %}<br>Typical price may be above your budget.{% endif %}</dd>
+          <dt>Phone</dt>
+          <dd><a href="tel:{{ p.phone }}">{{ p.phone }}</a></dd>
+          {% if p.website %}<dt>Website</dt><dd><a href="{{ p.website }}" target="_blank" rel="noopener noreferrer">{{ p.website|truncatechars:48 }}</a></dd>{% endif %}
+        </dl>
+        <div class="breakdown" aria-label="How the score was made">
+          {% for row in p.breakdown_rows %}
+          <span class="label">{{ row.label }} <small>{{ row.weight }}%</small></span>
+          <span class="track"><span class="fill" style="display:block;width: {{ row.value }}%"></span></span>
+          <span class="value">{{ row.value }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="method">How the score works: rating quality counts 40%, review count 20%, distance 30% and budget fit 10%. Ratings with few reviews are pulled towards the average, so a 5.0 from 2 reviews doesn't beat a 4.7 from hundreds. Prices marked Estimate are typical ranges for this service in Pune, not quotes from the provider.</p>
+  {% endif %}
+</main>
+</body>
+</html>
