@@ -1,5 +1,5 @@
 {% extends "core/brand_base.html" %}
-{% load servicemate_ui %}
+{% load static servicemate_ui %}
 {% block title %}Approvals · ServiceMate{% endblock %}
 {% block content %}
 <header class="sm-page-head">
@@ -56,7 +56,10 @@
 </section>
 {% empty %}
 <section class="sm-empty">
-  {% include "core/_squiggle.svg.html" with width=110 %}
+  <div class="sm-empty__mark" aria-hidden="true">
+    <span class="sm-shape sm-shape--pink-dot"></span><span class="sm-shape sm-shape--sun-pill"></span>
+    <img src="{% static 'core/img/servicemate-logo.png' %}" alt="" width="120" height="56">
+  </div>
   <h2 class="sm-display">Nothing waiting for you</h2>
   <p>When ServiceMate has ranked providers for one of your requests, they'll appear here for you to choose from.</p>
 </section>

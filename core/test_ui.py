@@ -2,8 +2,9 @@
 from unittest.mock import patch
 
 from django.contrib.auth.models import User
-from django.test import TestCase
-from django.urls import reverse
+from django.http import HttpResponse
+from django.test import TestCase, override_settings
+from django.urls import include, path, reverse
 
 from .models import Approval, ServiceRequest
 from .providers.categories import CATEGORIES
@@ -12,6 +13,12 @@ from .providers.normalize import normalize_results
 from .providers.scoring import rank_providers
 
 KOTHRUD = {"category": "ac_repair", "locality": "Kothrud", "budget": 1500}
+
+# Used only by the test that checks Settings connects once Person 3 adds a "settings" URL.
+urlpatterns = [
+    path("", include("core.urls")),
+    path("settings/", lambda request: HttpResponse("settings"), name="settings"),
+]
 
 
 def ranked_ac():
@@ -22,7 +29,9 @@ def ranked_ac():
 class AuthPageTests(TestCase):
     def test_login_page_is_branded_and_keeps_django_fields(self):
         html = self.client.get(reverse("login")).content.decode()
-        self.assertIn("servicemate-logo-white.png", html)
+        self.assertIn("servicemate-logo-cream.png", html)     # full SM. mark, cream on cobalt
+        self.assertNotIn("sm-nav", html)                       # auth pages keep their own header
+        self.assertNotIn("sm-footer", html)
         self.assertIn('name="username"', html)
         self.assertIn('name="password"', html)
         self.assertIn(reverse("register"), html)
@@ -52,6 +61,45 @@ class AuthPageTests(TestCase):
         self.client.login(username="ria", password="safe-password-123")
         html = self.client.get(reverse("approvals")).content.decode()
         self.assertIn(f'<form method="post" action="{reverse("logout")}">', html)
+        self.assertNotIn(f'href="{reverse("logout")}"', html)  # never a GET link
+        self.assertEqual(self.client.get(reverse("logout")).status_code, 405)
+        self.assertEqual(self.client.post(reverse("logout")).status_code, 302)
+
+
+class NavbarTests(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user("ria", password="safe-password-123")
+        self.client.force_login(self.user)
+
+    def test_cobalt_navbar_with_full_logo_and_profile_menu(self):
+        html = self.client.get(reverse("approvals")).content.decode()
+        self.assertIn('class="sm-nav"', html)
+        self.assertIn("servicemate-logo-cream.png", html)
+        self.assertIn('<details class="sm-profile" data-sm-menu>', html)
+        self.assertIn("Account menu for ria", html)
+        self.assertIn("Signed in as<strong>ria</strong>", html)
+        self.assertIn("Log out", html)
+        self.assertIn('aria-current="page"', html)
+
+    def test_settings_is_marked_soon_until_a_settings_route_exists(self):
+        html = self.client.get(reverse("approvals")).content.decode()
+        self.assertIn('aria-disabled="true">Settings', html)
+
+    @override_settings(ROOT_URLCONF="core.test_ui")
+    def test_settings_links_automatically_once_the_route_exists(self):
+        html = self.client.get(reverse("approvals")).content.decode()
+        self.assertIn('href="/settings/">Settings</a>', html)
+        self.assertNotIn('aria-disabled="true">Settings', html)
+
+    def test_footer_on_product_pages(self):
+        html = self.client.get(reverse("approvals")).content.decode()
+        self.assertIn('class="sm-footer"', html)
+        self.assertIn("a CA3 team project", html)
+
+    def test_no_lone_s_marks_left(self):
+        Approval.objects.all().delete()
+        for url in (reverse("approvals"), reverse("login")):
+            self.assertNotIn("squiggle", self.client.get(url).content.decode())
 
 
 class ApprovalsPageTests(TestCase):
@@ -109,6 +157,13 @@ class ComparisonPageUiTests(TestCase):
         self.client.post(reverse("approval_action", args=[self.approval.id]), {"action": "approve", "provider_id": chosen})
         resume = delay.call_args.args[2]["resume"]
         self.assertEqual(resume, {"action": "approve", "provider_id": chosen})
+
+    def test_back_control_replaces_open_approvals_link(self):
+        html = self.client.get(self.url).content.decode()
+        self.assertIn(f'<a class="sm-back" href="{reverse("approvals")}">', html)
+        self.assertIn("Back to approvals", html)
+        self.assertNotIn("Open Approvals", html)
+        self.assertIn("servicemate-logo-white.png", html)  # full SM. watermark on the top pick
 
     def test_no_choose_buttons_after_a_decision(self):
         self.approval.decision = Approval.Decision.REJECTED

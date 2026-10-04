@@ -1,7 +1,9 @@
 {% extends "core/brand_base.html" %}
+{% load static %}
 {% block title %}Your best matches · ServiceMate{% endblock %}
 {% block head_extra %}{% if still_searching %}<meta http-equiv="refresh" content="5">{% endif %}{% endblock %}
 {% block content %}
+<a class="sm-back" href="{% url 'approvals' %}"><span aria-hidden="true">←</span> Back to approvals</a>
 <header class="sm-page-head">
   <h1 class="sm-display">Your best matches</h1>
   <p class="sm-quote">{{ service_request.raw_text }}</p>
@@ -9,7 +11,10 @@
 
 {% if still_searching %}
   <section class="sm-card sm-empty" role="status">
-    {% include "core/_squiggle.svg.html" with width=110 live=True %}
+    <div class="sm-empty__mark sm-empty__mark--live" aria-hidden="true">
+      <span class="sm-shape sm-shape--pink-dot"></span><span class="sm-shape sm-shape--sun-pill"></span>
+      <img src="{% static 'core/img/servicemate-logo.png' %}" alt="" width="120" height="56">
+    </div>
     <h2 class="sm-display">Still finding providers</h2>
     <p>ServiceMate is searching and ranking providers for this request. This page refreshes every 5 seconds.</p>
   </section>
@@ -17,12 +22,10 @@
   <div class="sm-status">
     {% if is_pending and ranked %}
       <p>Choose a provider below. Nothing is booked until you approve.</p>
-      <a href="{% url 'approvals' %}">Open Approvals</a>
     {% elif is_pending %}
       <p>No suitable providers were found for this request. Search again, or reject it.</p>
     {% else %}
       <p>You already decided on this request: {{ approval.get_decision_display }}.</p>
-      <a href="{% url 'approvals' %}">Back to Approvals</a>
     {% endif %}
   </div>
   {% if source_note %}<p class="sm-source">{{ source_note }}</p>{% endif %}
@@ -30,11 +33,12 @@
   {% if ranked %}
     {% with p=ranked.0 %}
     <article class="sm-hero-pick" aria-labelledby="top-pick-name">
-      <svg class="sm-hero-pick__art" width="380" viewBox="0 0 120 100" aria-hidden="true" focusable="false"><path d="M100 14 L22 44 L78 70 L18 92" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <img class="sm-hero-pick__art" src="{% static 'core/img/servicemate-logo-white.png' %}" alt="" aria-hidden="true" width="420" height="194">
+      <span class="sm-hero-pick__dot" aria-hidden="true"></span>
       <div class="sm-hero-pick__main">
         <span class="sm-hero-pick__badge">Top pick for you</span>
         <h2 class="sm-display" id="top-pick-name">{{ p.name }}</h2>
-        {% if p.reason_source == "llm" %}<p class="sm-reason"><strong>Why it's a match</strong>{{ p.reason }}</p>{% endif %}
+        {% if p.reason_source == "llm" %}<p class="sm-reason"><span class="sm-reason__label">Why it's a match</span>{{ p.reason }}</p>{% endif %}
         {% include "core/_provider_facts.html" %}
         {% if is_pending %}<div class="sm-hero-pick__cta">{% include "core/_choose_form.html" with button_class="sm-btn--sun" %}</div>{% endif %}
       </div>
@@ -58,7 +62,7 @@
             <div class="sm-ring__inner"><div><div class="sm-ring__value">{{ p.score|floatformat:0 }}</div><div class="sm-ring__label">/ 100</div></div></div>
           </div>
         </div>
-        {% if p.reason_source == "llm" %}<p class="sm-reason"><strong>Why it's a match</strong>{{ p.reason }}</p>{% endif %}
+        {% if p.reason_source == "llm" %}<p class="sm-reason"><span class="sm-reason__label">Why it's a match</span>{{ p.reason }}</p>{% endif %}
         {% include "core/_provider_facts.html" %}
         {% include "core/_score_bars.html" %}
         {% if is_pending %}{% include "core/_choose_form.html" with button_class="sm-btn--secondary" %}{% endif %}

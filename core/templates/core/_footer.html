@@ -1,0 +1,16 @@
+{% load static %}{% url 'settings' as settings_url %}
+<footer class="sm-footer">
+  <div class="sm-footer__inner">
+    <div class="sm-footer__brand">
+      <img src="{% static 'core/img/servicemate-logo-cream.png' %}" alt="ServiceMate" width="56" height="26">
+      <p>Local help, found, compared and booked with your OK.</p>
+    </div>
+    {% if user.is_authenticated %}
+    <nav class="sm-footer__links" aria-label="Footer">
+      <a href="{% url 'approvals' %}">Approvals</a>
+      {% if settings_url %}<a href="{{ settings_url }}">Settings</a>{% endif %}
+    </nav>
+    {% endif %}
+    <p class="sm-footer__small">ServiceMate AI, a CA3 team project. Provider data from Google Maps.</p>
+  </div>
+</footer>

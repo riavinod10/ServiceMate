@@ -1,9 +1,11 @@
 {% load static %}<aside class="sm-auth__brand">
-  <svg class="sm-auth__art" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-    <path d="M660 440 L450 530 L610 610 L430 700" fill="none" stroke="#2e6bff" stroke-width="56" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="545" cy="752" r="34" fill="#ffd23f"/>
-  </svg>
-  <img src="{% static 'core/img/servicemate-logo-white.png' %}" alt="ServiceMate">
+  <div class="sm-auth__shapes" aria-hidden="true">
+    <span class="sm-shape sm-shape--pink-quarter"></span>
+    <span class="sm-shape sm-shape--sun-dot"></span>
+    <span class="sm-shape sm-shape--cream-pill"></span>
+    <span class="sm-shape sm-shape--ring"></span>
+  </div>
+  <img class="sm-auth__logo" src="{% static 'core/img/servicemate-logo-cream.png' %}" alt="ServiceMate" width="104" height="48">
   <p class="sm-auth__sticker">Nothing gets booked until you approve it</p>
   <div class="sm-auth__pitch">
     <h1 class="sm-display">{{ headline }}</h1>

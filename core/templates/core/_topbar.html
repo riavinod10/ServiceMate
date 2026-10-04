@@ -1,9 +1,26 @@
-{% load static %}<header class="sm-topbar">
-  <a class="sm-topbar__logo" href="{% url 'home' %}"><img src="{% static 'core/img/servicemate-logo.png' %}" alt="ServiceMate home"></a>
-  {% if user.is_authenticated %}
-  <nav class="sm-topbar__nav" aria-label="Main">
-    <a class="sm-topbar__link" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
-    <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="sm-btn sm-btn--secondary sm-btn--small" type="submit">Log out</button></form>
-  </nav>
-  {% endif %}
+{% load static %}{% url 'settings' as settings_url %}
+<header class="sm-nav">
+  <div class="sm-nav__inner">
+    <a class="sm-nav__brand" href="{% url 'home' %}"><img src="{% static 'core/img/servicemate-logo-cream.png' %}" alt="ServiceMate home" width="64" height="30"></a>
+    {% if user.is_authenticated %}
+    <nav class="sm-nav__links" aria-label="Main">
+      <a class="sm-nav__link" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
+    </nav>
+    <details class="sm-profile" data-sm-menu>
+      <summary class="sm-profile__button" aria-label="Account menu for {{ user.get_username }}">
+        <span class="sm-profile__avatar" aria-hidden="true">{{ user.get_username|slice:":1"|upper }}</span>
+        <svg class="sm-profile__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </summary>
+      <div class="sm-profile__menu">
+        <p class="sm-profile__who">Signed in as<strong>{{ user.get_username }}</strong></p>
+        {% if settings_url %}
+        <a class="sm-profile__item" href="{{ settings_url }}">Settings</a>
+        {% else %}
+        <span class="sm-profile__item is-disabled" aria-disabled="true">Settings <span class="sm-soon">Soon</span></span>
+        {% endif %}
+        <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="sm-profile__item sm-profile__item--logout" type="submit">Log out</button></form>
+      </div>
+    </details>
+    {% endif %}
+  </div>
 </header>
