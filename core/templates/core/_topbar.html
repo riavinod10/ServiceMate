@@ -1,0 +1,9 @@
+{% load static %}<header class="sm-topbar">
+  <a class="sm-topbar__logo" href="{% url 'home' %}"><img src="{% static 'core/img/servicemate-logo.png' %}" alt="ServiceMate home"></a>
+  {% if user.is_authenticated %}
+  <nav class="sm-topbar__nav" aria-label="Main">
+    <a class="sm-topbar__link" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
+    <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="sm-btn sm-btn--secondary sm-btn--small" type="submit">Log out</button></form>
+  </nav>
+  {% endif %}
+</header>

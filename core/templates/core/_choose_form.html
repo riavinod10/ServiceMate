@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'approval_action' approval.id %}">
+  {% csrf_token %}
+  <input type="hidden" name="provider_id" value="{{ p.place_id }}">
+  <button class="sm-btn {{ button_class|default:'sm-btn--primary' }}" name="action" value="approve">Choose this provider</button>
+</form>

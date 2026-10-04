@@ -1,0 +1,9 @@
+<div class="sm-bars" role="list" aria-label="How the score was made">
+  {% for row in p.breakdown_rows %}
+  <div class="sm-bar" role="listitem">
+    <span class="sm-bar__label">{{ row.label }} <small>{{ row.weight }}%</small></span>
+    <span class="sm-bar__track"><span class="sm-bar__fill" style="width: {{ row.value }}%"></span></span>
+    <span class="sm-bar__value">{{ row.value }}</span>
+  </div>
+  {% endfor %}
+</div>

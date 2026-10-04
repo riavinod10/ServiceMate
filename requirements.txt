@@ -5,3 +5,5 @@ psycopg[binary]>=3.2,<4.0
 langgraph>=0.2,<1.0
 langgraph-checkpoint-postgres>=2.0,<3.0
 apify-client>=3.0,<4.0
+pydantic>=2.0,<3.0
+google-genai>=2.0,<3.0

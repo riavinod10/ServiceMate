@@ -38,7 +38,7 @@ services:
   worker:
     build: .
     command: celery -A servicemate worker -l info
-    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0, APIFY_API_TOKEN: "${APIFY_API_TOKEN:-}" }
+    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0, APIFY_API_TOKEN: "${APIFY_API_TOKEN:-}", GEMINI_API_KEY: "${GEMINI_API_KEY:-}", GEMINI_MODEL: "${GEMINI_MODEL:-gemini-3.6-flash}" }
     volumes: [".:/app"]
     depends_on:
       migrate:

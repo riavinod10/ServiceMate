@@ -1,1 +1,64 @@
-<h1>Pending approvals</h1>{% for approval in approvals %}<section><p>{{ approval.request.raw_text }}</p><p><a href="{% url 'compare_providers' approval.request_id %}">Compare these providers in detail</a></p><form method="post" action="{% url 'approval_action' approval.id %}">{% csrf_token %}{% for provider in approval.payload.ranked_providers %}<label><input type="radio" name="provider_id" value="{{ provider.place_id }}" required> {{ provider.name }}{% if provider.rating %} ({{ provider.rating }}){% endif %}</label><br>{% empty %}<p>No ranked providers are available. Search again or reject this request.</p>{% endfor %}<button name="action" value="approve">Approve selected provider</button><button name="action" value="reject">Reject</button><button name="action" value="search_again">Search again</button></form></section>{% empty %}<p>No pending approvals.</p>{% endfor %}
+{% extends "core/brand_base.html" %}
+{% load servicemate_ui %}
+{% block title %}Approvals · ServiceMate{% endblock %}
+{% block content %}
+<header class="sm-page-head">
+  <h1 class="sm-display">Pick your provider</h1>
+  <p class="sm-lede">ServiceMate ranked these for you. Choose one to approve, or ask it to search again. Nothing is booked until you approve.</p>
+</header>
+
+{% for approval in approvals %}
+<section class="sm-card sm-request" aria-labelledby="request-{{ approval.id }}">
+  <div class="sm-request__head">
+    <div>
+      <p class="sm-quote" id="request-{{ approval.id }}">{{ approval.request.raw_text }}</p>
+      <p class="sm-request__when">Requested {{ approval.request.created_at|timesince }} ago</p>
+    </div>
+    <a class="sm-btn sm-btn--secondary sm-btn--small" href="{% url 'compare_providers' approval.request_id %}">Compare these providers in detail</a>
+  </div>
+
+  <form method="post" action="{% url 'approval_action' approval.id %}">
+    {% csrf_token %}
+    {% with ranked=approval.payload.ranked_providers %}
+    {% if ranked %}
+    <fieldset class="sm-choices">
+      <legend>Ranked providers</legend>
+      {% for provider in ranked %}
+      <label class="sm-choice">
+        <input type="radio" name="provider_id" value="{{ provider.place_id }}" required>
+        <span class="sm-choice__mark" aria-hidden="true"></span>
+        <span>
+          <span class="sm-choice__name">{{ provider.name }}</span>
+          <span class="sm-chips">
+            {% if forloop.first %}<span class="sm-chip sm-chip--top">Top pick</span>{% endif %}
+            {% if provider.rating and provider.review_count %}<span class="sm-chip">★ {{ provider.rating|floatformat:1 }} ({{ provider.review_count }} review{{ provider.review_count|pluralize }})</span>{% elif provider.rating %}<span class="sm-chip">★ {{ provider.rating|floatformat:1 }}</span>{% else %}<span class="sm-chip">No reviews yet</span>{% endif %}
+            {% if provider.distance_km is not None %}<span class="sm-chip">{% if provider.distance_km < 0.5 %}Under 0.5 km away{% else %}{{ provider.distance_km }} km away{% endif %}</span>{% elif provider.location_approximate %}<span class="sm-chip">Location not listed</span>{% endif %}
+            {% if provider.price_info %}<span class="sm-chip">{{ provider.price_info|price_short }}{% if provider.price_is_estimate %} est.{% endif %}</span>{% endif %}
+            {% if provider.over_budget %}<span class="sm-chip sm-chip--warn">May be over budget</span>{% endif %}
+          </span>
+        </span>
+        {% if provider.score is not None %}<span class="sm-choice__score">{{ provider.score|floatformat:0 }}<small>/ 100</small></span>{% endif %}
+      </label>
+      {% endfor %}
+    </fieldset>
+    {% else %}
+    <div class="sm-alert" role="status"><p>No suitable providers were found for this request. Search again, or reject it.</p></div>
+    {% endif %}
+    {% endwith %}
+
+    <div class="sm-actions">
+      {% if approval.payload.ranked_providers %}<button class="sm-btn sm-btn--primary" name="action" value="approve">Approve selected provider</button>{% endif %}
+      <button class="sm-btn sm-btn--secondary" name="action" value="search_again" formnovalidate>Search again</button>
+      <button class="sm-btn sm-btn--quiet" name="action" value="reject" formnovalidate>Reject request</button>
+      <p class="sm-actions__note">Search again shows different providers. Reject closes the request without booking anyone.</p>
+    </div>
+  </form>
+</section>
+{% empty %}
+<section class="sm-empty">
+  {% include "core/_squiggle.svg.html" with width=110 %}
+  <h2 class="sm-display">Nothing waiting for you</h2>
+  <p>When ServiceMate has ranked providers for one of your requests, they'll appear here for you to choose from.</p>
+</section>
+{% endfor %}
+{% endblock %}

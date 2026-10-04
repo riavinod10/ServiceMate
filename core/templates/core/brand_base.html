@@ -1,0 +1,30 @@
+{% load static %}<!doctype html>
+{% comment %}
+  Temporary ServiceMate layout for the Login/Register, Approvals and Comparison
+  pages. When Person 4's shared base.html exists, change each page's
+  {% extends %} line and move the fonts/stylesheet links and the top bar there.
+{% endcomment %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% block head_extra %}{% endblock %}
+  <title>{% block title %}ServiceMate{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{% static 'core/img/servicemate-logo.png' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="{% static 'core/css/servicemate.css' %}">
+</head>
+<body class="sm-body">
+  {% block topbar %}{% include "core/_topbar.html" %}{% endblock %}
+  {% block messages %}
+    {% if messages %}
+    <div class="sm-messages" role="status">
+      {% for message in messages %}<p class="sm-message sm-message--{{ message.tags|default:'info' }}">{{ message }}</p>{% endfor %}
+    </div>
+    {% endif %}
+  {% endblock %}
+  {% block body %}<main class="sm-page">{% block content %}{% endblock %}</main>{% endblock %}
+</body>
+</html>

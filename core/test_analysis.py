@@ -117,6 +117,7 @@ class RankingTests(SimpleTestCase):
         self.assertIn("above your budget", ranked[0]["reason"])
 
 
+@patch.dict(os.environ, {"GEMINI_API_KEY": ""})  # never call Gemini from tests
 class AnalysisAgentTests(TestCase):
     def setUp(self):
         self.req = ServiceRequest.objects.create(raw_text="AC not cooling", workflow_thread_id="t-analysis")
@@ -138,7 +139,7 @@ class AnalysisAgentTests(TestCase):
         self.assertIs(orchestration.analysis_agent, analysis_agent)
 
 
-@patch.dict(os.environ, {"APIFY_API_TOKEN": ""})
+@patch.dict(os.environ, {"APIFY_API_TOKEN": "", "GEMINI_API_KEY": ""})
 class GraphFlowTests(TestCase):
     """Person 1's graph with Person 2's real nodes: discover, rank, pause, resume."""
 

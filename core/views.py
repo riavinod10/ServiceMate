@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseBadRequest, HttpResponseNotAllowed
@@ -39,4 +40,14 @@ def approval_action(request, approval_id):
     if action == "approve":
         resume["provider_id"] = provider_id
     run_workflow.delay(approval.request_id, approval.thread_id, {"request_id": approval.request_id, "resume": resume})
+    messages.success(request, _decision_message(action, provider_id, approval))
     return redirect("approvals")
+
+def _decision_message(action, provider_id, approval):
+    """Confirmation shown on the next page (display only; the workflow is unchanged)."""
+    if action == "approve":
+        names = {p.get("place_id"): p.get("name") for p in approval.payload.get("ranked_providers", [])}
+        return f"Approved {names.get(provider_id, 'your provider')}. ServiceMate is preparing the booking request."
+    if action == "search_again":
+        return "Searching again. New providers will appear here shortly."
+    return "Request rejected. Nothing was booked."

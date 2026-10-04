@@ -175,8 +175,7 @@ reads the latest `Approval.payload` and links to the Approvals page for the
 decision. The Approvals page links back to it. The page is self-contained for
 now; Person 4 can make it extend `base.html` and drop its `<style>` block.
 
-**LLM explanation:** not built yet. `core/providers/explain.py` is the single
-place to add it once the team picks a model. Rules are in that file's docstring.
+**LLM explanation:** see "Ranking explanations (Gemini)" below.
 
 ## Re-discovery after a cancellation (Week 4)
 
@@ -226,3 +225,46 @@ counter if that matters for the demo.
 4. If the network fails on stage, discovery falls back to the demo JSON and the
    Comparison page says so. That fallback only covers the 4 known categories,
    with Kothrud providers.
+
+## Ranking explanations (Gemini)
+
+Team standard: Google Gemini via `google-genai`, configured by `GEMINI_API_KEY`
+and `GEMINI_MODEL` (default `gemini-3.6-flash`). The shared setup is
+`core/gemini.py`; Person 3's Requirement Agent should reuse
+`generate_structured()` from there rather than creating its own client.
+
+`core/providers/explain.py` makes **one** Gemini call per ranking, after scoring.
+It sends the user's request and, for each of the top 5, only the facts scoring
+already used (name, rank, score, breakdown, rating, reviews, distance, price,
+budget flag). No phone numbers, websites or coordinates. Gemini returns
+`{"reasons": [{"place_id", "reason"}]}` (Pydantic schema), matched back by
+`place_id`.
+
+Gemini can only change `reason` (and sets `reason_source="llm"`). Order, scores
+and every other field stay exactly as scoring produced them. If Gemini skips
+any provider, returns an empty or malformed reply, times out, errors, or there
+is no API key, **all** reasons stay as templates and the workflow carries on.
+The agent log says either "Explanations written by the LLM" or "LLM
+unavailable, used standard explanations".
+
+Limits: 20-second timeout and at most 2 attempts (the SDK default is 5).
+Temperature and penalties are not set: `gemini-3.6-flash` ignores the former
+and rejects the latter. Tests always fake Gemini; test classes that run the
+agent blank `GEMINI_API_KEY` so a key in your shell can't cause real calls.
+
+## Frontend (Login/Register, Approvals, Comparison)
+
+All three pages extend `core/templates/core/brand_base.html`, a temporary
+layout holding the fonts, `core/static/core/css/servicemate.css`, the top bar
+(with a POST logout button) and flash messages. Every CSS class starts with
+`sm-`. When Person 4's shared `base.html` exists: move the font/stylesheet links
+and `_topbar.html` into it and change each page's `{% extends %}` line.
+
+Logo files: `core/static/core/img/servicemate-logo.png` (cobalt) and
+`servicemate-logo-white.png`, both with real transparency. The uploaded PNG had
+the checkerboard painted in, so these were extracted from it.
+
+Backend changes for the UI: only a confirmation message in `approval_action`.
+The Comparison page's "Choose this provider" buttons post to the existing
+`approval_action` endpoint, so ownership checks and the LangGraph resume are
+exactly the same as on the Approvals page.

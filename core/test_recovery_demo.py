@@ -44,7 +44,7 @@ def cancel_booking(graph, config):
     return graph.invoke(None, config=config)
 
 
-@patch.dict(os.environ, {"APIFY_API_TOKEN": ""})
+@patch.dict(os.environ, {"APIFY_API_TOKEN": "", "GEMINI_API_KEY": ""})
 class CancellationRediscoveryTests(TestCase):
     def setUp(self):
         self.req = ServiceRequest.objects.create(raw_text="AC not cooling", workflow_thread_id="cancel-1")

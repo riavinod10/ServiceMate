@@ -1,0 +1,11 @@
+{% load servicemate_ui %}<dl class="sm-facts">
+  <dt>Rating</dt>
+  <dd>{% if p.rating and p.review_count %}★ {{ p.rating|floatformat:1 }} from {{ p.review_count }} review{{ p.review_count|pluralize }}{% else %}No reviews yet{% endif %}</dd>
+  <dt>Distance</dt>
+  <dd>{% if p.distance_km is not None %}{% if p.distance_km < 0.5 %}Under 0.5 km{% else %}{{ p.distance_km }} km{% endif %} in a straight line{% elif p.location_approximate %}Not known: no exact address on Google Maps{% else %}Not known{% endif %}</dd>
+  <dt>Price</dt>
+  <dd>{% if p.price_info %}{{ p.price_info|price_short }}{% if p.price_is_estimate %}<span class="sm-tag">Estimate</span>{% endif %}{% if p.price_info|price_note %}<br><small>{{ p.price_info|price_note|capfirst }}</small>{% endif %}{% else %}Price on request{% endif %}
+    {% if p.over_budget %}<br><span class="sm-warn">Typical price may be above your budget.</span>{% endif %}</dd>
+  {% if p.phone %}<dt>Phone</dt><dd><a href="tel:{{ p.phone }}">{{ p.phone }}</a></dd>{% endif %}
+  {% if p.website %}<dt>Website</dt><dd><a href="{{ p.website }}" target="_blank" rel="noopener noreferrer">{{ p.website|truncatechars:42 }}</a></dd>{% endif %}
+</dl>

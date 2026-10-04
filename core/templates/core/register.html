@@ -1,1 +1,20 @@
-<h1>Register</h1><form method="post">{% csrf_token %}{{ form.as_p }}<button>Register</button></form>
+{% extends "core/brand_base.html" %}
+{% block title %}Create account · ServiceMate{% endblock %}
+{% block topbar %}{% endblock %}
+{% block body %}
+<div class="sm-auth">
+  {% include "core/_auth_brand.html" with headline="Start with one sentence." pitch="Say what needs fixing the way you'd tell a friend. ServiceMate handles the searching, comparing and follow-up." %}
+  <main class="sm-auth__panel">
+    <div class="sm-card sm-auth__card">
+      <h2 class="sm-display">Create your account</h2>
+      <p>It takes a minute. You'll go straight to your requests.</p>
+      <form method="post" novalidate>
+        {% csrf_token %}
+        {% include "core/_form_fields.html" %}
+        <button class="sm-btn sm-btn--primary sm-btn--block" type="submit">Create account</button>
+      </form>
+      <p class="sm-auth__switch">Already have an account? <a href="{% url 'login' %}">Log in</a></p>
+    </div>
+  </main>
+</div>
+{% endblock %}

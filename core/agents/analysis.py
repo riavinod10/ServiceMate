@@ -22,11 +22,13 @@ def analysis_agent(state: dict) -> dict:
         return {"ranked_providers": [], "status": "awaiting_approval"}
 
     result = rank_providers(providers, requirements)
-    ranked = explain_ranking(result.ranked, requirements)
+    ranked, used_llm = explain_ranking(result.ranked, requirements, state.get("raw_text", ""))
     top = ranked[0]
     log_agent_event(request_id, AGENT_NAME,
                     f"Scored {result.total} providers by rating, reviews, distance and budget "
                     f"(distance measured from the {result.location_note}).")
     log_agent_event(request_id, AGENT_NAME,
                     f"Top {len(ranked)} selected. Best match: {top['name']} (score {top['score']:.0f}/100).")
+    log_agent_event(request_id, AGENT_NAME,
+                    "Explanations written by the LLM" if used_llm else "LLM unavailable, used standard explanations")
     return {"ranked_providers": ranked, "status": "awaiting_approval"}
