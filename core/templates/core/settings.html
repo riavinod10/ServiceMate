@@ -1,0 +1,85 @@
+{% extends "core/brand_base.html" %}
+{% load static servicemate_ui %}
+{% block title %}Settings · ServiceMate{% endblock %}
+{% block content %}
+
+<header class="sm-page-head">
+  <h1 class="sm-display">Settings</h1>
+  <p class="sm-lede">Update your name, email and default location preferences.</p>
+</header>
+
+<section class="sm-card" aria-labelledby="profile-heading">
+  <h2 class="sm-section-title" id="profile-heading">Profile</h2>
+
+  <form method="post" action="{% url 'settings' %}">
+    {% csrf_token %}
+
+    <div class="sm-field-row">
+      <div class="sm-field">
+        <label class="sm-field__label" for="{{ form.first_name.id_for_label }}">
+          {{ form.first_name.label }}
+        </label>
+        {{ form.first_name }}
+        {% for error in form.first_name.errors %}
+          <p class="sm-field__error" role="alert">{{ error }}</p>
+        {% endfor %}
+      </div>
+
+      <div class="sm-field">
+        <label class="sm-field__label" for="{{ form.last_name.id_for_label }}">
+          {{ form.last_name.label }}
+        </label>
+        {{ form.last_name }}
+        {% for error in form.last_name.errors %}
+          <p class="sm-field__error" role="alert">{{ error }}</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="sm-field">
+      <label class="sm-field__label" for="{{ form.email.id_for_label }}">
+        {{ form.email.label }}
+      </label>
+      {{ form.email }}
+      {% for error in form.email.errors %}
+        <p class="sm-field__error" role="alert">{{ error }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="sm-field">
+      <label class="sm-field__label" for="{{ form.preferred_city.id_for_label }}">
+        {{ form.preferred_city.label }}
+      </label>
+      {{ form.preferred_city }}
+      {% if form.preferred_city.help_text %}
+        <p class="sm-field__help">{{ form.preferred_city.help_text }}</p>
+      {% endif %}
+      {% for error in form.preferred_city.errors %}
+        <p class="sm-field__error" role="alert">{{ error }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="sm-actions">
+      <button type="submit" class="sm-btn sm-btn--primary">Save settings</button>
+    </div>
+  </form>
+</section>
+
+{# ── Account info (read-only) ── #}
+<section class="sm-card sm-card--muted" aria-labelledby="account-heading">
+  <h2 class="sm-section-title" id="account-heading">Account</h2>
+  <dl class="sm-facts">
+    <dt>Username</dt>
+    <dd>{{ request.user.username }}</dd>
+    <dt>Member since</dt>
+    <dd>{{ request.user.date_joined|date:"j N Y" }}</dd>
+  </dl>
+  <div class="sm-actions">
+    <form method="post" action="{% url 'logout' %}">
+      {% csrf_token %}
+      <button type="submit" class="sm-btn sm-btn--quiet">Sign out</button>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

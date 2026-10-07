@@ -1,0 +1,173 @@
+{% extends "core/brand_base.html" %}
+{% load static servicemate_ui %}
+{% block title %}Booking Request · ServiceMate{% endblock %}
+{% block content %}
+
+<header class="sm-page-head">
+  <h1 class="sm-display">Your booking request is ready</h1>
+  <p class="sm-lede">
+    ServiceMate has prepared everything you need to contact
+    <strong>{{ details.provider_name }}</strong> and confirm the appointment.
+    This is a booking request — not a confirmed appointment.
+    Contact the provider directly to confirm availability.
+  </p>
+</header>
+
+{# ── Status badge ── #}
+<div class="sm-status-row">
+  <span class="sm-chip
+    {% if booking.status == 'requested' %}sm-chip--info
+    {% elif booking.status == 'confirmed' %}sm-chip--ok
+    {% elif booking.status == 'cancelled' %}sm-chip--warn
+    {% else %}sm-chip--muted{% endif %}">
+    {{ booking.status|capfirst }}
+  </span>
+  <span class="sm-status-row__date">
+    Prepared {{ booking.created_at|date:"j N Y" }}
+  </span>
+</div>
+
+{# ── Provider card ── #}
+<section class="sm-card" aria-labelledby="provider-heading">
+  <h2 class="sm-section-title" id="provider-heading">Provider</h2>
+  <dl class="sm-facts">
+    <dt>Name</dt>
+    <dd>{{ details.provider_name }}</dd>
+
+    {% if details.phone %}
+    <dt>Phone</dt>
+    <dd>
+      <a href="tel:{{ details.phone }}" class="sm-link">{{ details.phone }}</a>
+    </dd>
+    {% endif %}
+
+    {% if details.website %}
+    <dt>Website</dt>
+    <dd>
+      <a href="{{ details.website }}" class="sm-link" target="_blank" rel="noopener noreferrer">
+        {{ details.website|truncatechars:50 }}
+      </a>
+    </dd>
+    {% endif %}
+
+    {% if details.rating %}
+    <dt>Rating</dt>
+    <dd>
+      ★ {{ details.rating|floatformat:1 }}
+      {% if details.review_count %}
+        ({{ details.review_count }} review{{ details.review_count|pluralize }})
+      {% endif %}
+    </dd>
+    {% endif %}
+
+    {% if details.price_info %}
+    <dt>Pricing</dt>
+    <dd>
+      {{ details.price_info|price_short }}
+      {% if details.price_is_estimate %}<span class="sm-tag">Estimate</span>{% endif %}
+    </dd>
+    {% endif %}
+  </dl>
+</section>
+
+{# ── Service details ── #}
+<section class="sm-card" aria-labelledby="service-heading">
+  <h2 class="sm-section-title" id="service-heading">Service details</h2>
+  <dl class="sm-facts">
+    <dt>Service</dt>
+    <dd>{{ details.service_label }}</dd>
+
+    {% if details.problem %}
+    <dt>Problem</dt>
+    <dd>{{ details.problem }}</dd>
+    {% endif %}
+
+    {% if details.location %}
+    <dt>Location</dt>
+    <dd>{{ details.location }}</dd>
+    {% endif %}
+
+    {% if details.appointment_str %}
+    <dt>Preferred time</dt>
+    <dd>{{ details.appointment_str }}</dd>
+    {% endif %}
+
+    {% if details.budget_inr %}
+    <dt>Budget</dt>
+    <dd>₹{{ details.budget_inr|floatformat:0 }}</dd>
+    {% endif %}
+  </dl>
+</section>
+
+{# ── Contact actions ── #}
+<section class="sm-card" aria-labelledby="contact-heading">
+  <h2 class="sm-section-title" id="contact-heading">Contact the provider</h2>
+  <p>Send the pre-filled message below to confirm your appointment.</p>
+
+  <div class="sm-contact-actions">
+    {% if whatsapp_url %}
+    <a href="{{ whatsapp_url }}"
+       class="sm-btn sm-btn--primary"
+       target="_blank"
+       rel="noopener noreferrer">
+      Open in WhatsApp
+    </a>
+    {% endif %}
+
+    {% if details.phone %}
+    <a href="tel:{{ details.phone }}" class="sm-btn sm-btn--secondary">
+      Call {{ details.phone }}
+    </a>
+    {% endif %}
+
+    <a href="{% url 'booking_pdf' service_request.pk %}"
+       class="sm-btn sm-btn--secondary"
+       download>
+      Download PDF summary
+    </a>
+  </div>
+
+  {# Pre-filled message — user can copy and edit before sending #}
+  {% if whatsapp_message %}
+  <div class="sm-message-preview" aria-label="Pre-filled message">
+    <p class="sm-label">Pre-filled message</p>
+    <pre class="sm-message-text">{{ whatsapp_message }}</pre>
+    <button type="button" class="sm-btn sm-btn--quiet sm-btn--small"
+            id="sm-copy-btn" data-sm-target="sm-raw-message">
+      Copy message
+    </button>
+    <textarea id="sm-raw-message" class="sm-visually-hidden"
+              readonly aria-hidden="true">{{ whatsapp_message }}</textarea>
+  </div>
+  {% endif %}
+</section>
+
+{# ── Original request ── #}
+<section class="sm-card sm-card--muted" aria-labelledby="request-heading">
+  <h2 class="sm-section-title" id="request-heading">Your original request</h2>
+  <p class="sm-quote">{{ service_request.raw_text }}</p>
+</section>
+
+<div class="sm-actions">
+  <a href="{% url 'approvals' %}" class="sm-btn sm-btn--secondary">Back to approvals</a>
+  <a href="{% url 'service_request_create' %}" class="sm-btn sm-btn--quiet">New request</a>
+</div>
+
+<script>
+  var copyBtn = document.getElementById("sm-copy-btn");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var ta = document.getElementById(copyBtn.dataset.smTarget);
+      if (!ta) return;
+      navigator.clipboard.writeText(ta.value).then(function () {
+        copyBtn.textContent = "Copied!";
+        setTimeout(function () { copyBtn.textContent = "Copy message"; }, 2000);
+      }).catch(function () {
+        ta.select();
+        document.execCommand("copy");
+      });
+    });
+  }
+</script>
+
+{% endblock %}

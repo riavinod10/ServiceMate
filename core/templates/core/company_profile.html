@@ -1,0 +1,110 @@
+{% extends "core/brand_base.html" %}
+{% load static servicemate_ui %}
+{% block title %}{{ provider.name }} · ServiceMate{% endblock %}
+{% block content %}
+
+<header class="sm-page-head">
+  <h1 class="sm-display">{{ provider.name }}</h1>
+  {% if provider.rating %}
+    <p class="sm-lede">
+      ★ {{ provider.rating|floatformat:1 }}
+      {% if provider.review_count %}
+        · {{ provider.review_count }} review{{ provider.review_count|pluralize }}
+      {% endif %}
+    </p>
+  {% endif %}
+</header>
+
+{# ── Provider details ── #}
+<section class="sm-card" aria-labelledby="details-heading">
+  <h2 class="sm-section-title" id="details-heading">Provider details</h2>
+  <dl class="sm-facts">
+
+    {% if provider.phone %}
+    <dt>Phone</dt>
+    <dd>
+      <a href="tel:{{ provider.phone }}" class="sm-link">{{ provider.phone }}</a>
+    </dd>
+    {% endif %}
+
+    {% if provider.website %}
+    <dt>Website</dt>
+    <dd>
+      <a href="{{ provider.website }}" class="sm-link" target="_blank" rel="noopener noreferrer">
+        {{ provider.website|truncatechars:60 }}
+      </a>
+    </dd>
+    {% endif %}
+
+    {% if provider.price_info %}
+    <dt>Pricing</dt>
+    <dd>
+      {{ provider.price_info|price_short }}
+      {% if provider.price_is_estimate %}<span class="sm-tag">Estimate</span>{% endif %}
+    </dd>
+    {% endif %}
+
+    {% if provider.source %}
+    <dt>Source</dt>
+    <dd class="sm-source">
+      {% if provider.source == "apify" %}Live results from Google Maps
+      {% elif provider.source == "cache" %}Results from a search in the last 7 days
+      {% elif provider.source == "stale_cache" %}Older saved results
+      {% elif provider.source == "fixture" %}Saved demo results
+      {% else %}{{ provider.source }}
+      {% endif %}
+    </dd>
+    {% endif %}
+
+  </dl>
+
+  <div class="sm-contact-actions">
+    {% if provider.phone %}
+      <a href="tel:{{ provider.phone }}" class="sm-btn sm-btn--primary">
+        Call {{ provider.phone }}
+      </a>
+    {% endif %}
+    {% if provider.website %}
+      <a href="{{ provider.website }}" class="sm-btn sm-btn--secondary"
+         target="_blank" rel="noopener noreferrer">
+        Visit website
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+{# ── Your history with this provider ── #}
+{% if past_bookings %}
+<section class="sm-card" aria-labelledby="history-heading">
+  <h2 class="sm-section-title" id="history-heading">Your bookings with {{ provider.name }}</h2>
+  <ol class="sm-history-list" role="list">
+    {% for bk in past_bookings %}
+    <li class="sm-history-item">
+      <div>
+        <p class="sm-history-item__text">{{ bk.request.raw_text|truncatechars:100 }}</p>
+        <p class="sm-history-item__meta">
+          <span class="sm-chip
+            {% if bk.status == 'requested' %}sm-chip--info
+            {% elif bk.status == 'confirmed' %}sm-chip--ok
+            {% elif bk.status == 'cancelled' %}sm-chip--warn
+            {% else %}sm-chip--muted{% endif %}">
+            {{ bk.status|capfirst }}
+          </span>
+          {{ bk.created_at|date:"j N Y" }}
+        </p>
+      </div>
+      <a href="{% url 'booking_detail' bk.request_id %}" class="sm-btn sm-btn--quiet sm-btn--small">
+        View
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}
+
+<div class="sm-actions">
+  <a href="{% url 'service_request_create' %}" class="sm-btn sm-btn--primary">New request</a>
+  <a href="javascript:history.back()" class="sm-btn sm-btn--secondary">Back</a>
+</div>
+
+{% endblock %}

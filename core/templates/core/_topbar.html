@@ -1,26 +1,45 @@
-{% load static %}{% url 'settings' as settings_url %}
-<header class="sm-nav">
+{% load static %}
+<nav class="sm-nav" aria-label="Main navigation">
   <div class="sm-nav__inner">
-    <a class="sm-nav__brand" href="{% url 'home' %}"><img src="{% static 'core/img/servicemate-logo-cream.png' %}" alt="ServiceMate home" width="64" height="30"></a>
-    {% if user.is_authenticated %}
-    <nav class="sm-nav__links" aria-label="Main">
-      <a class="sm-nav__link" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
-    </nav>
-    <details class="sm-profile" data-sm-menu>
-      <summary class="sm-profile__button" aria-label="Account menu for {{ user.get_username }}">
-        <span class="sm-profile__avatar" aria-hidden="true">{{ user.get_username|slice:":1"|upper }}</span>
-        <svg class="sm-profile__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </summary>
-      <div class="sm-profile__menu">
-        <p class="sm-profile__who">Signed in as<strong>{{ user.get_username }}</strong></p>
-        {% if settings_url %}
-        <a class="sm-profile__item" href="{{ settings_url }}">Settings</a>
-        {% else %}
-        <span class="sm-profile__item is-disabled" aria-disabled="true">Settings <span class="sm-soon">Soon</span></span>
-        {% endif %}
-        <form method="post" action="{% url 'logout' %}">{% csrf_token %}<button class="sm-profile__item sm-profile__item--logout" type="submit">Log out</button></form>
-      </div>
-    </details>
-    {% endif %}
+
+    <a class="sm-nav__brand" href="{% url 'home' %}">
+      <img src="{% static 'core/img/servicemate-logo-white.png' %}" alt="ServiceMate" height="32" width="auto">
+    </a>
+
+    <ul class="sm-nav__links" role="list">
+      {% if user.is_authenticated %}
+        <li><a href="{% url 'service_request_create' %}" class="sm-nav__link">New Request</a></li>
+        <li><a href="{% url 'approvals' %}" class="sm-nav__link">Approvals</a></li>
+        <li><a href="{% url 'my_services' %}" class="sm-nav__link">My Services</a></li>
+      {% endif %}
+    </ul>
+
+    <div class="sm-nav__end">
+      {% if user.is_authenticated %}
+        <details class="sm-profile" data-sm-menu>
+          <summary class="sm-profile__trigger" aria-label="Account menu">
+            <span class="sm-profile__avatar" aria-hidden="true">{{ user.username|slice:":1"|upper }}</span>
+            <span class="sm-profile__name">{{ user.username }}</span>
+            <span class="sm-profile__caret" aria-hidden="true">▾</span>
+          </summary>
+          <ul class="sm-profile__menu" role="menu">
+            <li role="menuitem">
+              <a href="{% url 'settings' %}" class="sm-profile__item">Settings</a>
+            </li>
+            <li role="separator" aria-hidden="true"></li>
+            <li role="menuitem">
+              <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="sm-profile__item sm-profile__item--logout">Sign out</button>
+              </form>
+            </li>
+          </ul>
+        </details>
+      {% else %}
+        <a href="{% url 'login' %}" class="sm-btn sm-btn--secondary sm-btn--small">Sign in</a>
+        <a href="{% url 'register' %}" class="sm-btn sm-btn--primary sm-btn--small">Register</a>
+      {% endif %}
+    </div>
+
   </div>
-</header>
+</nav>

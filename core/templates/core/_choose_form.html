@@ -1,5 +1,16 @@
+{% comment %}
+  _choose_form.html — "Choose this provider" button included on the comparison page.
+
+  Required context variables:
+    approval      Approval object
+    provider      provider dict (ranked provider)
+    button_class  optional extra CSS class(es) for the button (default sm-btn--primary)
+{% endcomment %}
 <form method="post" action="{% url 'approval_action' approval.id %}">
   {% csrf_token %}
-  <input type="hidden" name="provider_id" value="{{ p.place_id }}">
-  <button class="sm-btn {{ button_class|default:'sm-btn--primary' }}" name="action" value="approve">Choose this provider</button>
+  <input type="hidden" name="action" value="approve">
+  <input type="hidden" name="provider_id" value="{{ provider.place_id }}">
+  <button type="submit" class="sm-btn {{ button_class|default:'sm-btn--primary' }}">
+    Choose {{ provider.name }}
+  </button>
 </form>

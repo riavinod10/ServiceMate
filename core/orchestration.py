@@ -1,9 +1,11 @@
-"""Person 1 owns routing; teammate nodes below are deliberately no-op interfaces."""
+"""Person 1 owns routing; agent implementations live in core/agents/."""
 from typing import TypedDict
 from django.conf import settings
 from langgraph.types import interrupt
 from .agents.analysis import analysis_agent
 from .agents.discovery import discovery_agent
+from .agents.requirement_agent import requirement_agent  # Person 3
+from .agents.scheduling_agent import scheduling_agent    # Person 3
 from .models import Approval
 
 class ServiceState(TypedDict, total=False):
@@ -17,9 +19,6 @@ class ServiceState(TypedDict, total=False):
     booking: dict | None
     status: str
     retry_count: int
-
-def requirement_agent(state: ServiceState): return {"status": "discovering"}
-def scheduling_agent(state: ServiceState): return {"status": "booking_requested"}
 
 def create_pending_approval(state: ServiceState, config=None):
     """Create/update the approval shown to the user before the graph pauses."""

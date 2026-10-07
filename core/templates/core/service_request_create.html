@@ -1,0 +1,138 @@
+{% extends "core/brand_base.html" %}
+{% load static servicemate_ui %}
+{% block title %}New Request · ServiceMate{% endblock %}
+{% block content %}
+
+<header class="sm-page-head">
+  <h1 class="sm-display">What do you need help with?</h1>
+  <p class="sm-lede">
+    Describe the problem in your own words. ServiceMate will find, compare and
+    prepare a booking for you.
+  </p>
+</header>
+
+<section class="sm-card">
+  <form method="post" action="{% url 'service_request_create' %}">
+    {% csrf_token %}
+
+    {# ── Main request textarea ── #}
+    <div class="sm-field">
+      <label class="sm-field__label" for="{{ form.request_text.id_for_label }}">
+        {{ form.request_text.label }}
+        <span class="sm-field__required" aria-hidden="true">*</span>
+      </label>
+      {{ form.request_text }}
+      {% if form.request_text.help_text %}
+        <p class="sm-field__help">{{ form.request_text.help_text }}</p>
+      {% endif %}
+      {% for error in form.request_text.errors %}
+        <p class="sm-field__error" role="alert">{{ error }}</p>
+      {% endfor %}
+    </div>
+
+    {# ── Optional details ── #}
+    <details class="sm-collapsible" {% if form.location.value or form.preferred_date.value or form.budget_inr.value %}open{% endif %}>
+      <summary class="sm-collapsible__trigger">Optional details (location, date, budget)</summary>
+      <div class="sm-collapsible__body">
+
+        <div class="sm-field">
+          <label class="sm-field__label" for="{{ form.location.id_for_label }}">
+            {{ form.location.label }}
+          </label>
+          {{ form.location }}
+          {% if form.location.help_text %}
+            <p class="sm-field__help">{{ form.location.help_text }}</p>
+          {% endif %}
+          {% for error in form.location.errors %}
+            <p class="sm-field__error" role="alert">{{ error }}</p>
+          {% endfor %}
+        </div>
+
+        <div class="sm-field-row">
+          <div class="sm-field">
+            <label class="sm-field__label" for="{{ form.preferred_date.id_for_label }}">
+              {{ form.preferred_date.label }}
+            </label>
+            {{ form.preferred_date }}
+            {% if form.preferred_date.help_text %}
+              <p class="sm-field__help">{{ form.preferred_date.help_text }}</p>
+            {% endif %}
+            {% for error in form.preferred_date.errors %}
+              <p class="sm-field__error" role="alert">{{ error }}</p>
+            {% endfor %}
+          </div>
+
+          <div class="sm-field">
+            <label class="sm-field__label" for="{{ form.budget_inr.id_for_label }}">
+              {{ form.budget_inr.label }}
+            </label>
+            {{ form.budget_inr }}
+            {% if form.budget_inr.help_text %}
+              <p class="sm-field__help">{{ form.budget_inr.help_text }}</p>
+            {% endif %}
+            {% for error in form.budget_inr.errors %}
+              <p class="sm-field__error" role="alert">{{ error }}</p>
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </details>
+
+    <div class="sm-actions">
+      <button type="submit" class="sm-btn sm-btn--primary">
+        Find providers
+      </button>
+    </div>
+  </form>
+</section>
+
+{# ── Example queries ── #}
+<section class="sm-card sm-card--muted" aria-label="Example requests">
+  <p class="sm-label">Try one of these</p>
+  <ul class="sm-example-list" role="list">
+    <li>
+      <button type="button" class="sm-example"
+              data-sm-fill="#id_request_text"
+              data-sm-value="My AC is not cooling. Find three reliable technicians near me under ₹1,500, tomorrow evening.">
+        AC not cooling · under ₹1,500 · tomorrow evening
+      </button>
+    </li>
+    <li>
+      <button type="button" class="sm-example"
+              data-sm-fill="#id_request_text"
+              data-sm-value="Pipe leak under the kitchen sink. Need a plumber this Saturday morning in Kothrud.">
+        Kitchen pipe leak · Kothrud · this Saturday
+      </button>
+    </li>
+    <li>
+      <button type="button" class="sm-example"
+              data-sm-fill="#id_request_text"
+              data-sm-value="Need a deep home cleaning for a 2BHK flat in Baner. Preferably this weekend, budget around ₹2,000.">
+        Deep cleaning · 2BHK · weekend · ₹2,000
+      </button>
+    </li>
+    <li>
+      <button type="button" class="sm-example"
+              data-sm-fill="#id_request_text"
+              data-sm-value="Switchboard sparking near the main door. Need an electrician today in Pune.">
+        Sparking switchboard · electrician · today
+      </button>
+    </li>
+  </ul>
+</section>
+
+<script>
+  // Fill the textarea when the user clicks an example query.
+  document.querySelectorAll("[data-sm-fill]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var target = document.querySelector(btn.dataset.smFill);
+      if (target) {
+        target.value = btn.dataset.smValue;
+        target.focus();
+      }
+    });
+  });
+</script>
+
+{% endblock %}
