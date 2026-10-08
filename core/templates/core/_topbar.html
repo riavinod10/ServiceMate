@@ -4,6 +4,9 @@
     <a class="sm-nav__brand" href="{% url 'home' %}"><img src="{% static 'core/img/servicemate-logo-cream.png' %}" alt="ServiceMate home" width="64" height="30"></a>
     {% if user.is_authenticated %}
     <nav class="sm-nav__links" aria-label="Main">
+      <a class="sm-nav__link" href="{% url 'dashboard' %}"{% if request.resolver_match.url_name == "dashboard" %} aria-current="page"{% endif %}>Dashboard</a>
+      <a class="sm-nav__link" href="{% url 'my_services' %}"{% if request.resolver_match.url_name == "my_services" %} aria-current="page"{% endif %}>My Services</a>
+      <a class="sm-nav__link" href="{% url 'analytics' %}"{% if request.resolver_match.url_name == "analytics" %} aria-current="page"{% endif %}>Analytics</a>
       <a class="sm-nav__link" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
     </nav>
     <details class="sm-profile" data-sm-menu>
@@ -13,6 +16,12 @@
       </summary>
       <div class="sm-profile__menu">
         <p class="sm-profile__who">Signed in as<strong>{{ user.get_username }}</strong></p>
+        <nav class="sm-profile__nav" aria-label="Mobile">
+          <a class="sm-profile__item" href="{% url 'dashboard' %}"{% if request.resolver_match.url_name == "dashboard" %} aria-current="page"{% endif %}>Dashboard</a>
+          <a class="sm-profile__item" href="{% url 'my_services' %}"{% if request.resolver_match.url_name == "my_services" %} aria-current="page"{% endif %}>My Services</a>
+          <a class="sm-profile__item" href="{% url 'analytics' %}"{% if request.resolver_match.url_name == "analytics" %} aria-current="page"{% endif %}>Analytics</a>
+          <a class="sm-profile__item" href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
+        </nav>
         {% if settings_url %}
         <a class="sm-profile__item" href="{{ settings_url }}">Settings</a>
         {% else %}

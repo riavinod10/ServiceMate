@@ -20,10 +20,20 @@ USE_TZ = True
 STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_URL = "login"
-LOGIN_REDIRECT_URL = "approvals"
+LOGIN_REDIRECT_URL = "dashboard"
 LOGOUT_REDIRECT_URL = "login"
 CELERY_BROKER_URL = os.environ.get("CELERY_BROKER_URL", "redis://localhost:6379/0")
 CELERY_RESULT_BACKEND = os.environ.get("CELERY_RESULT_BACKEND", "redis://localhost:6379/0")
 CELERY_TASK_ALWAYS_EAGER = os.environ.get("CELERY_TASK_ALWAYS_EAGER", "false").lower() == "true"
 CELERY_TASK_EAGER_PROPAGATES = True
 WORKFLOW_MAX_RECOVERY_RETRIES = int(os.environ.get("WORKFLOW_MAX_RECOVERY_RETRIES", "2"))
+CELERY_BEAT_SCHEDULE = {
+    "follow-up-appointment-reminders": {
+        "task": "core.tasks_followup.send_appointment_reminders",
+        "schedule": 900.0,
+    },
+    "follow-up-mark-overdue-bookings": {
+        "task": "core.tasks_followup.mark_overdue_bookings",
+        "schedule": 900.0,
+    },
+}

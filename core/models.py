@@ -44,6 +44,18 @@ class AgentLog(models.Model):
     message = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
+class ServiceFollowUp(models.Model):
+    """Reminder and overdue tracking for one booking (Person 4)."""
+    booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name="follow_up")
+    appointment_at = models.DateTimeField(null=True, blank=True)
+    reminder_sent_at = models.DateTimeField(null=True, blank=True)
+    overdue_marked_at = models.DateTimeField(null=True, blank=True)
+    assumed_time = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["appointment_at", "id"]
+
+
 class Approval(models.Model):
     class Decision(models.TextChoices):
         PENDING = "pending", "Pending"

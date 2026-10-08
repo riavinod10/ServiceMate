@@ -7,7 +7,10 @@
     </div>
     {% if user.is_authenticated %}
     <nav class="sm-footer__links" aria-label="Footer">
-      <a href="{% url 'approvals' %}">Approvals</a>
+      <a href="{% url 'dashboard' %}"{% if request.resolver_match.url_name == "dashboard" %} aria-current="page"{% endif %}>Dashboard</a>
+      <a href="{% url 'my_services' %}"{% if request.resolver_match.url_name == "my_services" %} aria-current="page"{% endif %}>My Services</a>
+      <a href="{% url 'analytics' %}"{% if request.resolver_match.url_name == "analytics" %} aria-current="page"{% endif %}>Analytics</a>
+      <a href="{% url 'approvals' %}"{% if request.resolver_match.url_name == "approvals" %} aria-current="page"{% endif %}>Approvals</a>
       {% if settings_url %}<a href="{{ settings_url }}">Settings</a>{% endif %}
     </nav>
     {% endif %}

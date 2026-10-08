@@ -1,0 +1,12 @@
+{% if logs %}
+<ol class="sm-log__list">
+  {% for log in logs %}
+  <li class="sm-log__item">
+    <p class="sm-log__meta">{{ log.agent_name }} · {{ log.created_at|timesince }} ago{% if log.request.raw_text %} · {{ log.request.raw_text|truncatewords:8 }}{% endif %}</p>
+    <p>{{ log.message }}</p>
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p class="sm-log__empty">No agent activity yet.</p>
+{% endif %}

@@ -13,7 +13,7 @@ class PersonOneTests(TestCase):
         self.request_obj = ServiceRequest.objects.create(user=self.user, raw_text="AC repair", workflow_thread_id="thread-1")
 
     def test_registration_login_and_protected_approval_page(self):
-        self.assertRedirects(self.client.get(reverse("home")), reverse("approvals"), fetch_redirect_response=False)
+        self.assertRedirects(self.client.get(reverse("home")), reverse("dashboard"), fetch_redirect_response=False)
         self.assertEqual(self.client.get(reverse("approvals")).status_code, 302)
         response = self.client.post(reverse("register"), {"username": "new", "password1": "strong-pass-123", "password2": "strong-pass-123"})
         self.assertRedirects(response, reverse("approvals"))

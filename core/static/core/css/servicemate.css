@@ -413,3 +413,32 @@
 
 /* Forms that have been submitted once (see brand_base.html) */
 form.is-submitting button { opacity: .65; cursor: progress; }
+
+/* ---------- Person 4: dashboard, services, analytics, mobile nav ---------- */
+.sm-profile__nav { display: none; }
+.sm-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1rem; }
+.sm-stat { padding: 1.1rem 1.2rem; }
+.sm-stat strong { display: block; font-family: var(--sm-font-display); font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1; letter-spacing: -0.03em; margin-bottom: .4rem; }
+.sm-stat span { color: var(--sm-muted); font-weight: 600; font-size: .92rem; }
+.sm-services { display: grid; gap: 1.25rem; }
+.sm-service { padding: 1.25rem 1.4rem; display: grid; gap: .75rem; }
+.sm-service__head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; }
+.sm-service h2 { font-size: 1.25rem; margin: 0; }
+.sm-service form { margin: 0; }
+.sm-log { padding: 1.25rem 1.4rem; margin-top: 2rem; }
+.sm-log h2 { font-size: 1.8rem; margin: 0 0 .35rem; }
+.sm-log__list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .85rem; }
+.sm-log__item { padding-bottom: .85rem; border-bottom: 1px dashed var(--sm-line); }
+.sm-log__item p { margin: 0; }
+.sm-log__meta { color: var(--sm-muted); font-size: .82rem; font-weight: 700; margin-bottom: .2rem; }
+.sm-log__empty { padding: 1.5rem 0; }
+.sm-insight { padding: 1.25rem 1.4rem; margin-bottom: 1.25rem; }
+.sm-insight h2 { font-size: 1.6rem; margin: 0 0 1rem; }
+.sm-cats { list-style: none; margin: 0; padding: 0; display: grid; gap: .65rem; }
+.sm-cats li { display: flex; justify-content: space-between; gap: 1rem; font-weight: 700; padding-bottom: .55rem; border-bottom: 1px dashed var(--sm-line); }
+.sm-note { color: var(--sm-muted); font-size: .92rem; margin: .35rem 0 1.25rem; }
+@media (max-width: 40rem) {
+  .sm-profile__nav { display: block; padding-bottom: .35rem; margin-bottom: .35rem; border-bottom: 2px dashed var(--sm-line); }
+  .sm-stats { grid-template-columns: 1fr 1fr; }
+  .sm-service__head { flex-direction: column; }
+}

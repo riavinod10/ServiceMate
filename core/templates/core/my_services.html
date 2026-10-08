@@ -1,0 +1,43 @@
+{% extends "core/brand_base.html" %}
+{% block title %}My Services · ServiceMate{% endblock %}
+{% block head_extra %}<script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>{% endblock %}
+{% block content %}
+<header class="sm-page-head">
+  <h1 class="sm-display">My services</h1>
+  <p class="sm-lede">Everything you have asked ServiceMate to handle. If a provider cancels, the search starts again with that provider left out.</p>
+</header>
+
+{% if rows %}
+<div class="sm-services">
+  {% for row in rows %}
+  <article class="sm-card sm-service">
+    <div class="sm-service__head">
+      <h2 class="sm-quote">{{ row.request.raw_text }}</h2>
+      <span class="sm-chip">{{ row.label }}</span>
+    </div>
+    <p class="sm-request__when">Requested {{ row.request.created_at|timesince }} ago{% if row.provider_name %} · {{ row.provider_name }}{% endif %}{% if row.appointment %} · {{ row.appointment }}{% endif %}</p>
+    {% if row.pending %}
+    <p class="sm-note"><a href="{% url 'approvals' %}">This one is waiting on Approvals.</a></p>
+    {% endif %}
+    {% if row.label == "Recovery stopped" %}
+    <p class="sm-note">Recovery stops after {{ max_retries }} retries, shared with Search again.</p>
+    {% endif %}
+    {% if row.can_reopen %}
+    <form method="post" action="{% url 'simulate_cancellation' row.request.id %}">
+      {% csrf_token %}
+      <button class="sm-btn sm-btn--secondary sm-btn--small" type="submit">Simulate provider cancellation</button>
+    </form>
+    <p class="sm-note">Demo: mark this booking cancelled and look for a different provider. The cancelled one is not suggested again.</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<div class="sm-card sm-empty">
+  <h2 class="sm-display">No services yet</h2>
+  <p>When a request is on your account it will show up here, including a way to simulate a provider cancellation.</p>
+</div>
+{% endif %}
+
+{% include "core/_agent_log_panel.html" %}
+{% endblock %}

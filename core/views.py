@@ -16,7 +16,7 @@ def register(request):
     return render(request, "core/register.html", {"form": form})
 
 def home(request):
-    return redirect("approvals")
+    return redirect("dashboard")
 
 @login_required
 def approvals(request):

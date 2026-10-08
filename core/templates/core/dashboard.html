@@ -1,0 +1,37 @@
+{% extends "core/brand_base.html" %}
+{% block title %}Dashboard · ServiceMate{% endblock %}
+{% block head_extra %}<script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>{% endblock %}
+{% block content %}
+<header class="sm-page-head">
+  <h1 class="sm-display">Your desk</h1>
+  <p class="sm-lede">Approvals waiting on you, services in motion, and what the agents have been doing.</p>
+</header>
+
+<section class="sm-stats" aria-label="Summary">
+  <article class="sm-card sm-stat">
+    <strong>{{ pending_count }}</strong>
+    <span>Waiting for approval</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.request_count }}</strong>
+    <span>Service requests</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.completed_count }}</strong>
+    <span>Booking requests</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.time_saved_label }}</strong>
+    <span>Time saved</span>
+  </article>
+</section>
+<p class="sm-note">Time saved assumes {{ summary.minutes_each }} minutes of manual searching per request. Estimated spend so far is ₹{{ summary.estimated_spend_inr|floatformat:0 }}.</p>
+
+<div class="sm-actions">
+  <a class="sm-btn sm-btn--primary sm-btn--small" href="{% url 'approvals' %}">Open approvals</a>
+  <a class="sm-btn sm-btn--secondary sm-btn--small" href="{% url 'my_services' %}">My services</a>
+  <a class="sm-btn sm-btn--secondary sm-btn--small" href="{% url 'analytics' %}">Analytics</a>
+</div>
+
+{% include "core/_agent_log_panel.html" %}
+{% endblock %}

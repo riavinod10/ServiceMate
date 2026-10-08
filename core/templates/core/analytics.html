@@ -1,0 +1,47 @@
+{% extends "core/brand_base.html" %}
+{% block title %}Analytics · ServiceMate{% endblock %}
+{% block content %}
+<header class="sm-page-head">
+  <h1 class="sm-display">Analytics</h1>
+  <p class="sm-lede">Spending, the services you use most, and a short read on what that adds up to.</p>
+</header>
+
+<section class="sm-stats" aria-label="Analytics totals">
+  <article class="sm-card sm-stat">
+    <strong>₹{{ summary.estimated_spend_inr|floatformat:0 }}</strong>
+    <span>Estimated spend</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.completed_count }}</strong>
+    <span>Completed services</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.request_count }}</strong>
+    <span>Requests</span>
+  </article>
+  <article class="sm-card sm-stat">
+    <strong>{{ summary.time_saved_label }}</strong>
+    <span>Time saved</span>
+  </article>
+</section>
+
+<article class="sm-card sm-insight">
+  <p class="sm-reason__label">{% if summary.insight_source == "llm" %}Analytics agent{% else %}Summary{% endif %}</p>
+  <p>{{ summary.insight }}</p>
+</article>
+
+<section class="sm-card sm-insight" aria-labelledby="categories-title">
+  <h2 id="categories-title" class="sm-display">Most-used categories</h2>
+  {% if summary.categories %}
+  <ol class="sm-cats">
+    {% for row in summary.categories %}
+    <li><span>{{ row.label }}</span><span>{{ row.count }}</span></li>
+    {% endfor %}
+  </ol>
+  {% else %}
+  <p class="sm-note">Categories appear here after your first request.</p>
+  {% endif %}
+</section>
+
+<p class="sm-note">Time saved assumes {{ summary.minutes_each }} minutes of manual searching per request. Estimated spend uses the budget on the request when you set one, otherwise the midpoint of that category’s typical price. These are not invoices. A completed service is a booking request the provider has not cancelled.</p>
+{% endblock %}
