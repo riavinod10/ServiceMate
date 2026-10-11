@@ -65,6 +65,33 @@ class PageTests(TestCase):
         approvals = self.client.get(reverse("approvals")).content.decode()
         self.assertIn('href="/approvals/" aria-current="page"', approvals)
         self.assertIn('href="/dashboard/"', approvals)
+        self.assertIn("Start request", html)
+        self.assertIn('action="/requests/new/"', html)
+
+    @patch("core.views_workspace.run_workflow.delay")
+    def test_new_request_starts_the_workflow(self, delay):
+        response = self.client.post(reverse("new_request"), {
+            "raw_text": "AC not cooling, need someone tomorrow evening",
+            "locality": "Kothrud",
+            "city": "Pune",
+            "budget": "1500",
+        })
+        self.assertRedirects(response, reverse("dashboard"))
+        service_request = ServiceRequest.objects.get(user=self.user)
+        self.assertEqual(service_request.requirements["locality"], "Kothrud")
+        self.assertEqual(service_request.requirements["city"], "Pune")
+        self.assertEqual(service_request.requirements["budget"], 1500)
+        delay.assert_called_once()
+        request_id, thread_id, state = delay.call_args.args
+        self.assertEqual(request_id, service_request.id)
+        self.assertEqual(thread_id, service_request.workflow_thread_id)
+        self.assertEqual(state["raw_text"], service_request.raw_text)
+        self.assertNotIn("resume", state)
+
+    def test_blank_request_does_not_start_a_workflow(self):
+        response = self.client.post(reverse("new_request"), {"raw_text": "   "})
+        self.assertRedirects(response, reverse("dashboard"))
+        self.assertFalse(ServiceRequest.objects.filter(user=self.user).exists())
 
     def test_comparison_does_not_grow_an_agent_log_panel(self):
         req = ServiceRequest.objects.create(user=self.user, raw_text="AC not cooling", workflow_thread_id="cmp-p4")
@@ -225,6 +252,7 @@ class AnalyticsTests(TestCase):
         self.client.force_login(self.user)
         html = self.client.get(reverse("analytics")).content.decode()
         self.assertIn("You mostly book cooling help", html)
+        self.assertTrue(AgentLog.objects.filter(request__user=self.user, agent_name="Analytics Agent").exists())
         self.assertIn("45 minutes", html)
         self.assertIn("AC repair", html)
         self.assertIn("₹2150", html)

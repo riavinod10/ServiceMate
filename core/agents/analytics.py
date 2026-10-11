@@ -10,7 +10,8 @@ import re
 from pydantic import BaseModel, Field
 
 from ..gemini import GeminiUnavailable, generate_structured
-from ..models import Booking, ServiceRequest
+from ..logging import log_agent_event
+from ..models import AgentLog, Booking, ServiceRequest
 from ..providers.categories import CATEGORIES, resolve_category
 
 logger = logging.getLogger(__name__)
@@ -27,6 +28,23 @@ Two or three sentences, plain English, no emoji, no markdown."""
 
 class InsightParagraph(BaseModel):
     paragraph: str = Field(description="Two or three sentences summarising the user's service activity")
+
+
+def note_analytics(user, summary: dict) -> None:
+    """Write one activity line when the figures change, so the Analytics Agent is visible."""
+    latest = ServiceRequest.objects.filter(user=user).order_by("-created_at").first()
+    if latest is None:
+        return
+    message = (
+        f"Estimated spend ₹{summary['estimated_spend_inr']}, "
+        f"{summary['request_count']} request(s), "
+        f"{summary['completed_count']} completed, "
+        f"{summary['minutes_saved']} minutes saved."
+    )
+    last = AgentLog.objects.filter(request__user=user, agent_name=AGENT_NAME).order_by("-id").first()
+    if last is not None and last.message == message:
+        return
+    log_agent_event(latest.id, AGENT_NAME, message)
 
 
 def build_analytics(user, *, with_insight: bool = True) -> dict:

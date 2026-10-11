@@ -1,6 +1,31 @@
 {% extends "core/brand_base.html" %}
 {% block title %}Dashboard · ServiceMate{% endblock %}
 {% block head_extra %}<script src="https://unpkg.com/htmx.org@2.0.4/dist/htmx.min.js"></script>{% endblock %}
+{% block head_late %}
+<style>
+  .sm-request-form { padding: 1.35rem 1.4rem 1.25rem; margin: 0 0 1.75rem; }
+  .sm-request-form h2 { font-size: 1.8rem; margin: 0 0 .4rem; }
+  .sm-request-form > p { margin: 0 0 1.1rem; max-width: 40rem; }
+  .sm-request-form textarea {
+    display: block; width: 100%; min-height: 7.5rem; resize: vertical;
+    font: inherit; font-size: 1.05rem; line-height: 1.45; color: var(--sm-ink);
+    padding: .85rem 1rem; background: var(--sm-cream);
+    border: 2px solid var(--sm-ink); border-radius: var(--sm-radius);
+  }
+  .sm-request-form textarea:focus { outline: none; background: var(--sm-white); box-shadow: 0 0 0 4px var(--sm-cobalt-soft); border-color: var(--sm-cobalt); }
+  .sm-request-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: end; }
+  .sm-request-grid .sm-field { margin-bottom: 0; }
+  .sm-request-form .sm-btn { margin-top: 1.15rem; }
+  .sm-request-form .sm-note { margin: .85rem 0 0; max-width: 46rem; }
+  .sm-request-form input::placeholder,
+  .sm-request-form textarea::placeholder { color: #9a9286; opacity: 1; }
+  @media (max-width: 52rem) {
+    .sm-request-grid { grid-template-columns: 1fr; }
+    .sm-request-grid .sm-field { margin-bottom: 1rem; }
+    .sm-request-grid .sm-field:last-child { margin-bottom: 0; }
+  }
+</style>
+{% endblock %}
 {% block content %}
 <header class="sm-page-head">
   <h1 class="sm-display">Your desk</h1>
@@ -26,6 +51,34 @@
   </article>
 </section>
 <p class="sm-note">Time saved assumes {{ summary.minutes_each }} minutes of manual searching per request. Estimated spend so far is ₹{{ summary.estimated_spend_inr|floatformat:0 }}.</p>
+
+<section class="sm-card sm-request-form" aria-labelledby="new-request-title">
+  <h2 id="new-request-title" class="sm-display">New request</h2>
+  <p>Describe the job the way you would tell a friend. Discovery and analysis start as soon as you submit.</p>
+  <form method="post" action="{% url 'new_request' %}">
+    {% csrf_token %}
+    <div class="sm-field">
+      <label for="raw-text">What needs doing</label>
+      <textarea id="raw-text" name="raw_text" required maxlength="500" rows="4" placeholder="AC not cooling, need someone tomorrow evening under 1500"></textarea>
+    </div>
+    <div class="sm-request-grid">
+      <div class="sm-field">
+        <label for="locality">Area</label>
+        <input id="locality" name="locality" maxlength="80" placeholder="Kothrud">
+      </div>
+      <div class="sm-field">
+        <label for="city">City</label>
+        <input id="city" name="city" maxlength="80" placeholder="Pune">
+      </div>
+      <div class="sm-field">
+        <label for="budget">Budget in ₹</label>
+        <input id="budget" name="budget" inputmode="numeric" maxlength="8" placeholder="1500">
+      </div>
+    </div>
+    <button class="sm-btn sm-btn--primary" type="submit">Start request</button>
+  </form>
+  <p class="sm-note">AC repair, plumber, electrician, and home cleaning have demo providers. Agent activity below updates as each agent runs.</p>
+</section>
 
 <div class="sm-actions">
   <a class="sm-btn sm-btn--primary sm-btn--small" href="{% url 'approvals' %}">Open approvals</a>

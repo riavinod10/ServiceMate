@@ -4,6 +4,7 @@ from django.conf import settings
 from langgraph.types import interrupt
 from .agents.analysis import analysis_agent
 from .agents.discovery import discovery_agent
+from .logging import log_agent_event
 from .models import Approval
 
 class ServiceState(TypedDict, total=False):
@@ -18,17 +19,42 @@ class ServiceState(TypedDict, total=False):
     status: str
     retry_count: int
 
-def requirement_agent(state: ServiceState): return {"status": "discovering"}
-def scheduling_agent(state: ServiceState): return {"status": "booking_requested"}
+def requirement_agent(state: ServiceState):
+    request_id = state.get("request_id")
+    if request_id:
+        raw = (state.get("raw_text") or "").strip()
+        requirements = state.get("requirements") or {}
+        where = ", ".join(part for part in (requirements.get("locality"), requirements.get("city")) if part) or "the default city"
+        budget = requirements.get("budget")
+        budget_note = f" Budget ₹{budget}." if budget else ""
+        log_agent_event(request_id, "Requirement Agent", f"Understood the request: {raw}. Looking in {where}.{budget_note}")
+    return {"status": "discovering"}
+
+def scheduling_agent(state: ServiceState):
+    request_id = state.get("request_id")
+    if request_id:
+        provider_id = state.get("selected_provider_id")
+        ranked = state.get("ranked_providers") or []
+        chosen = next((provider for provider in ranked if provider.get("place_id") == provider_id), None)
+        name = (chosen or {}).get("name") or "the provider you approved"
+        log_agent_event(request_id, "Scheduling Agent", f"Booking request prepared for {name}. The provider has not confirmed it yet.")
+    return {"status": "booking_requested"}
 
 def create_pending_approval(state: ServiceState, config=None):
     """Create/update the approval shown to the user before the graph pauses."""
     thread_id = (config or {}).get("configurable", {}).get("thread_id")
     if not thread_id:
         raise ValueError("Approval requires a LangGraph thread_id")
+    ranked = state.get("ranked_providers", [])
     Approval.objects.update_or_create(
         request_id=state["request_id"], thread_id=thread_id,
-        defaults={"decision": Approval.Decision.PENDING, "payload": {"ranked_providers": state.get("ranked_providers", [])}, "decided_at": None},
+        defaults={"decision": Approval.Decision.PENDING, "payload": {"ranked_providers": ranked}, "decided_at": None},
+    )
+    count = len(ranked)
+    log_agent_event(
+        state["request_id"],
+        "Approval",
+        f"{count} ranked provider{'s' if count != 1 else ''} {'are' if count != 1 else 'is'} waiting on Approvals. Nothing is booked until you choose.",
     )
     return {"status": "awaiting_approval"}
 
@@ -38,7 +64,14 @@ def recovery_agent(state: ServiceState):
     provider_id = state.get("selected_provider_id")
     if provider_id and provider_id not in excluded:
         excluded.append(provider_id)
-    return {"status": "discovering", "retry_count": state.get("retry_count", 0) + 1, "excluded_provider_ids": excluded}
+    retry_count = state.get("retry_count", 0) + 1
+    request_id = state.get("request_id")
+    if request_id:
+        ranked = state.get("ranked_providers") or []
+        chosen = next((provider for provider in ranked if provider.get("place_id") == provider_id), None)
+        name = (chosen or {}).get("name") or "The cancelled provider"
+        log_agent_event(request_id, "Recovery Agent", f"{name} is left out of the next search. Retry {retry_count}.")
+    return {"status": "discovering", "retry_count": retry_count, "excluded_provider_ids": excluded}
 
 def approval_gate(state: ServiceState):
     decision = interrupt({"request_id": state["request_id"], "ranked_providers": state.get("ranked_providers", [])})

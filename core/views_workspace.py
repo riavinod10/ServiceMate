@@ -1,4 +1,6 @@
 """Dashboard, My Services, Analytics, and the agent-log panel (Person 4)."""
+import uuid
+
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -8,10 +10,12 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from django.views.decorators.http import require_POST
 
-from .agents.analytics import build_analytics
+from .agents.analytics import build_analytics, note_analytics
 from .agents.followup import mark_booking_cancelled
 from .logging import log_agent_event
 from .models import AgentLog, Approval, Booking, ServiceRequest
+from .providers.scoring import parse_budget
+from .tasks import run_workflow
 from .tasks_followup import reopen_workflow_after_cancellation
 
 
@@ -37,7 +41,48 @@ def my_services(request):
 
 @login_required
 def analytics(request):
-    return render(request, "core/analytics.html", {"summary": build_analytics(request.user)})
+    summary = build_analytics(request.user)
+    note_analytics(request.user, summary)
+    return render(request, "core/analytics.html", {"summary": summary})
+
+
+@login_required
+@require_POST
+def new_request(request):
+    raw_text = (request.POST.get("raw_text") or "").strip()
+    if not raw_text:
+        messages.error(request, "Describe the job before starting a request.")
+        return redirect("dashboard")
+    if len(raw_text) > 500:
+        messages.error(request, "Keep the request to 500 characters.")
+        return redirect("dashboard")
+    locality = (request.POST.get("locality") or "Kothrud").strip()[:80] or "Kothrud"
+    city = (request.POST.get("city") or "Pune").strip()[:80] or "Pune"
+    budget_raw = (request.POST.get("budget") or "").strip()
+    requirements = {"locality": locality, "city": city}
+    if budget_raw:
+        budget = parse_budget(budget_raw)
+        if budget is None:
+            messages.error(request, "Enter the budget as a number of rupees, or leave it blank.")
+            return redirect("dashboard")
+        requirements["budget"] = budget
+    thread_id = uuid.uuid4().hex
+    service_request = ServiceRequest.objects.create(
+        user=request.user,
+        raw_text=raw_text,
+        requirements=requirements,
+        status="new",
+        workflow_thread_id=thread_id,
+    )
+    run_workflow.delay(service_request.id, thread_id, {
+        "request_id": service_request.id,
+        "raw_text": raw_text,
+        "requirements": requirements,
+        "excluded_provider_ids": [],
+        "retry_count": 0,
+    })
+    messages.success(request, "Request started. Agent activity updates on this page. Open Approvals when the providers are ready.")
+    return redirect("dashboard")
 
 
 @login_required

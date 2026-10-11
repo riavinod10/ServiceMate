@@ -1,6 +1,6 @@
 <section class="sm-card sm-log" aria-labelledby="agent-log-title">
   <h2 id="agent-log-title" class="sm-display">Agent activity</h2>
-  <p class="sm-note">This list refreshes every 5 seconds.</p>
+  <p class="sm-note">This list refreshes every 5 seconds. Requirement, Service Discovery, Provider Analysis, Approval, Scheduling, Recovery, Follow-Up, and Analytics each add a line when they run.</p>
   <div aria-live="polite" hx-get="{% url 'agent_log' %}" hx-trigger="load, every 5s" hx-swap="innerHTML">
     {% include "core/_agent_log.html" %}
   </div>

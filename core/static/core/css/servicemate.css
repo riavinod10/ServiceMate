@@ -442,3 +442,26 @@ form.is-submitting button { opacity: .65; cursor: progress; }
   .sm-stats { grid-template-columns: 1fr 1fr; }
   .sm-service__head { flex-direction: column; }
 }
+.sm-field textarea,
+.sm-request-form textarea {
+  display: block; width: 100%; min-height: 7.5rem; resize: vertical;
+  font: inherit; font-size: 1.05rem; line-height: 1.45; color: var(--sm-ink);
+  padding: .85rem 1rem; background: var(--sm-cream);
+  border: 2px solid var(--sm-ink); border-radius: var(--sm-radius);
+}
+.sm-field textarea:focus,
+.sm-request-form textarea:focus { outline: none; background: var(--sm-white); box-shadow: 0 0 0 4px var(--sm-cobalt-soft); border-color: var(--sm-cobalt); }
+.sm-request-form { padding: 1.35rem 1.4rem 1.25rem; margin: 0 0 1.75rem; }
+.sm-request-form h2 { font-size: 1.8rem; margin: 0 0 .4rem; }
+.sm-request-form > p { margin: 0 0 1.1rem; max-width: 40rem; }
+.sm-request-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: end; }
+.sm-request-grid .sm-field { margin-bottom: 0; }
+.sm-request-form .sm-btn { margin-top: 1.15rem; }
+.sm-request-form .sm-note { margin: .85rem 0 0; max-width: 46rem; }
+.sm-request-form input::placeholder,
+.sm-request-form textarea::placeholder { color: #9a9286; opacity: 1; }
+@media (max-width: 52rem) {
+  .sm-request-grid { grid-template-columns: 1fr; }
+  .sm-request-grid .sm-field { margin-bottom: 1rem; }
+  .sm-request-grid .sm-field:last-child { margin-bottom: 0; }
+}

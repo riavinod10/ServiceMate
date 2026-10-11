@@ -9,6 +9,7 @@ urlpatterns = [
     path("login/", auth_views.LoginView.as_view(template_name="core/login.html"), name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path("dashboard/", views_workspace.dashboard, name="dashboard"),
+    path("requests/new/", views_workspace.new_request, name="new_request"),
     path("my-services/", views_workspace.my_services, name="my_services"),
     path("analytics/", views_workspace.analytics, name="analytics"),
     path("activity/", views_workspace.agent_log, name="agent_log"),
