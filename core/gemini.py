@@ -31,6 +31,11 @@ def gemini_model() -> str:
     return os.environ.get("GEMINI_MODEL", "").strip() or DEFAULT_MODEL
 
 
+def gemini_calls_enabled() -> bool:
+    """Paused until the free-tier quota is back. Set GEMINI_CALLS_ENABLED=true to call Gemini again."""
+    return os.environ.get("GEMINI_CALLS_ENABLED", "").strip().lower() in {"1", "true", "yes", "on"}
+
+
 def get_client(timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS, attempts: int = DEFAULT_ATTEMPTS):
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if key in PLACEHOLDER_KEYS:
@@ -55,6 +60,8 @@ def get_client(timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS, attempts: int =
 def generate_structured(prompt: str, schema: type[BaseModel], system_instruction: str,
                         timeout_seconds: float = DEFAULT_TIMEOUT_SECONDS) -> BaseModel:
     """One Gemini call that must return JSON matching `schema`."""
+    if not gemini_calls_enabled():
+        raise GeminiUnavailable("Gemini calls are paused")
     client = get_client(timeout_seconds=timeout_seconds)
     from google.genai import types
 

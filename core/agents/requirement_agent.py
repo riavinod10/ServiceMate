@@ -26,7 +26,7 @@ from datetime import date, timedelta
 
 from pydantic import BaseModel, Field
 
-from ..gemini import GeminiUnavailable, generate_structured
+from ..gemini import GeminiUnavailable, gemini_calls_enabled, generate_structured
 from ..logging import log_agent_event
 
 logger = logging.getLogger(__name__)
@@ -238,21 +238,23 @@ def requirement_agent(state: dict) -> dict:
 
     log_agent_event(request_id, AGENT_NAME, f"Extracting requirements from: \"{raw_text[:120]}\"")
 
-    # --- LLM extraction ---
+    # --- LLM extraction (skipped while Gemini calls are paused) ---
     extracted: RequirementSchema | None = None
-    try:
-        extracted = generate_structured(
-            prompt=raw_text,
-            schema=RequirementSchema,
-            system_instruction=_SYSTEM_INSTRUCTION,
-            timeout_seconds=20,
-        )
-        log_agent_event(request_id, AGENT_NAME, "Requirements extracted by LLM.")
-    except GeminiUnavailable as exc:
-        log_agent_event(
-            request_id, AGENT_NAME,
-            f"LLM unavailable ({exc}). Falling back to keyword-based extraction.",
-        )
+    if gemini_calls_enabled():
+        try:
+            extracted = generate_structured(
+                prompt=raw_text,
+                schema=RequirementSchema,
+                system_instruction=_SYSTEM_INSTRUCTION,
+                timeout_seconds=20,
+            )
+            log_agent_event(request_id, AGENT_NAME, "Requirements extracted by LLM.")
+        except GeminiUnavailable:
+            log_agent_event(
+                request_id, AGENT_NAME,
+                "LLM unavailable. Falling back to keyword-based extraction.",
+            )
+    if extracted is None:
         extracted = _keyword_fallback(raw_text)
 
     # --- Resolve relative dates against today (UTC) ---

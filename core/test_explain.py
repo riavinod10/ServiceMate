@@ -70,6 +70,13 @@ class GeminiModuleTests(SimpleTestCase):
         self.assertEqual(options.timeout, 20000)           # milliseconds
         self.assertEqual(options.retry_options.attempts, 2)  # not the SDK default of 5
 
+    @patch.dict(os.environ, {"GEMINI_CALLS_ENABLED": "", "GEMINI_API_KEY": "real-key"})
+    def test_calls_stay_paused_until_explicitly_enabled(self):
+        with patch("google.genai.Client") as client_cls:
+            with self.assertRaises(GeminiUnavailable):
+                generate_structured("p", RankingExplanations, "s")
+        client_cls.assert_not_called()
+
     def test_model_name_from_env_with_team_default(self):
         with patch.dict(os.environ, {"GEMINI_MODEL": ""}):
             self.assertEqual(gemini.gemini_model(), "gemini-3.6-flash")
@@ -79,7 +86,7 @@ class GeminiModuleTests(SimpleTestCase):
     def test_structured_call_config(self):
         expected = RankingExplanations(reasons=[])
         client = fake_client(response=SimpleNamespace(parsed=expected, text=None))
-        with patch("core.gemini.get_client", return_value=client), patch.dict(os.environ, {"GEMINI_MODEL": ""}):
+        with patch("core.gemini.get_client", return_value=client), patch.dict(os.environ, {"GEMINI_MODEL": "", "GEMINI_CALLS_ENABLED": "true"}):
             self.assertIs(generate_structured("prompt", RankingExplanations, "system"), expected)
         call = client.models.calls[0]
         self.assertEqual(call["model"], "gemini-3.6-flash")
@@ -91,7 +98,7 @@ class GeminiModuleTests(SimpleTestCase):
 
     def test_text_json_is_parsed_when_parsed_is_missing(self):
         client = fake_client(response=SimpleNamespace(parsed=None, text='{"reasons": [{"place_id": "a", "reason": "Fine."}]}'))
-        with patch("core.gemini.get_client", return_value=client):
+        with patch("core.gemini.get_client", return_value=client), patch.dict(os.environ, {"GEMINI_CALLS_ENABLED": "true"}):
             result = generate_structured("p", RankingExplanations, "s")
         self.assertEqual(result.reasons[0].place_id, "a")
 
@@ -103,7 +110,7 @@ class GeminiModuleTests(SimpleTestCase):
             fake_client(error=RuntimeError("404 model not found")),
         ]
         for client in cases:
-            with self.subTest(client=client), patch("core.gemini.get_client", return_value=client):
+            with self.subTest(client=client), patch("core.gemini.get_client", return_value=client), patch.dict(os.environ, {"GEMINI_CALLS_ENABLED": "true"}):
                 with self.assertRaises(GeminiUnavailable):
                     generate_structured("p", RankingExplanations, "s")
 
