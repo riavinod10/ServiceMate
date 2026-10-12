@@ -27,7 +27,7 @@ services:
   web:
     build: .
     command: python manage.py runserver 0.0.0.0:8000
-    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0 }
+    environment: { POSTGRES_DB: servicemate, POSTGRES_USER: servicemate, POSTGRES_PASSWORD: servicemate, POSTGRES_HOST: db, CELERY_BROKER_URL: redis://redis:6379/0, CELERY_RESULT_BACKEND: redis://redis:6379/0, GEMINI_API_KEY: "${GEMINI_API_KEY:-}", GEMINI_MODEL: "${GEMINI_MODEL:-gemini-3.6-flash}" }
     volumes: [".:/app"]
     ports: ["8000:8000"]
     depends_on:

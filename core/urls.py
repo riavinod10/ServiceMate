@@ -1,7 +1,7 @@
 from django.contrib.auth import views as auth_views
 from django.urls import path
 
-from . import views, views_comparison, views_workspace
+from . import views, views_comparison, views_request, views_workspace
 
 urlpatterns = [
     path("", views.home, name="home"),
@@ -14,6 +14,9 @@ urlpatterns = [
     path("analytics/", views_workspace.analytics, name="analytics"),
     path("activity/", views_workspace.agent_log, name="agent_log"),
     path("requests/<int:request_id>/cancel/", views_workspace.simulate_cancellation, name="simulate_cancellation"),
+    path("requests/<int:request_id>/booking/", views_request.booking_detail, name="booking_detail"),
+    path("requests/<int:request_id>/booking/pdf/", views_request.booking_pdf, name="booking_pdf"),
+    path("requests/<int:request_id>/booking/confirm/", views_request.mark_booking_confirmed, name="mark_booking_confirmed"),
     path("approvals/", views.approvals, name="approvals"),
     path("approvals/<int:approval_id>/", views.approval_action, name="approval_action"),
     path("requests/<int:request_id>/compare/", views_comparison.compare_providers, name="compare_providers"),

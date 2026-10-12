@@ -4,8 +4,10 @@ from django.conf import settings
 from langgraph.types import interrupt
 from .agents.analysis import analysis_agent
 from .agents.discovery import discovery_agent
+from .agents.requirement_agent import requirement_agent as extract_requirements
+from .agents.scheduling_agent import scheduling_agent
 from .logging import log_agent_event
-from .models import Approval
+from .models import Approval, ServiceRequest
 
 class ServiceState(TypedDict, total=False):
     request_id: int
@@ -20,25 +22,33 @@ class ServiceState(TypedDict, total=False):
     retry_count: int
 
 def requirement_agent(state: ServiceState):
-    request_id = state.get("request_id")
-    if request_id:
+    """Person 3 extracts the sentence. Form fields fill anything the extractor left blank."""
+    prior = dict(state.get("requirements") or {})
+    result = extract_requirements(state)
+    requirements = dict(result.get("requirements") or {})
+    for key in ("category", "problem", "locality", "date", "time"):
+        if not requirements.get(key) and prior.get(key):
+            requirements[key] = prior[key]
+    if requirements.get("budget") in (None, "") and prior.get("budget") not in (None, ""):
+        requirements["budget"] = prior["budget"]
+    prior_city = str(prior.get("city") or "").strip()
+    extracted_city = str(requirements.get("city") or "").strip()
+    if prior_city and prior_city.lower() != "pune" and extracted_city.lower() in ("", "pune"):
+        requirements["city"] = prior_city
+    if not requirements.get("problem"):
         raw = (state.get("raw_text") or "").strip()
-        requirements = state.get("requirements") or {}
-        where = ", ".join(part for part in (requirements.get("locality"), requirements.get("city")) if part) or "the default city"
-        budget = requirements.get("budget")
-        budget_note = f" Budget ₹{budget}." if budget else ""
-        log_agent_event(request_id, "Requirement Agent", f"Understood the request: {raw}. Looking in {where}.{budget_note}")
-    return {"status": "discovering"}
-
-def scheduling_agent(state: ServiceState):
+        if raw:
+            requirements["problem"] = raw[:180]
+    locality = str(requirements.get("locality") or "").strip()
+    city = str(requirements.get("city") or prior_city or "Pune").strip() or "Pune"
+    requirements["locality"] = locality
+    requirements["city"] = city
+    requirements["location"] = ", ".join(part for part in (locality, city) if part)
+    result["requirements"] = requirements
     request_id = state.get("request_id")
     if request_id:
-        provider_id = state.get("selected_provider_id")
-        ranked = state.get("ranked_providers") or []
-        chosen = next((provider for provider in ranked if provider.get("place_id") == provider_id), None)
-        name = (chosen or {}).get("name") or "the provider you approved"
-        log_agent_event(request_id, "Scheduling Agent", f"Booking request prepared for {name}. The provider has not confirmed it yet.")
-    return {"status": "booking_requested"}
+        ServiceRequest.objects.filter(pk=request_id).update(requirements=requirements)
+    return result
 
 def create_pending_approval(state: ServiceState, config=None):
     """Create/update the approval shown to the user before the graph pauses."""

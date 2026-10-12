@@ -171,6 +171,8 @@ def _state_label(item, approval, booking, pending) -> str:
         return "Overdue"
     if booking is not None and booking.status == "cancelled":
         return "Provider cancelled"
+    if booking is not None and booking.status == "confirmed":
+        return "Confirmed"
     if booking is not None:
         return "Booking requested"
     if approval is not None and approval.decision == Approval.Decision.APPROVED:

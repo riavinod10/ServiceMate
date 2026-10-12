@@ -22,6 +22,11 @@
     {% if row.label == "Recovery stopped" %}
     <p class="sm-note">Recovery stops after {{ max_retries }} retries, shared with Search again.</p>
     {% endif %}
+    {% if row.booking %}
+    <div class="sm-service__actions">
+      <a class="sm-btn sm-btn--primary sm-btn--small" href="{% url 'booking_detail' row.request.id %}">Open booking</a>
+    </div>
+    {% endif %}
     {% if row.can_reopen %}
     <form method="post" action="{% url 'simulate_cancellation' row.request.id %}">
       {% csrf_token %}

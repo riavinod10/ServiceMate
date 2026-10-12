@@ -13,7 +13,7 @@ from ..models import Booking, ServiceFollowUp, ServiceRequest
 
 AGENT_NAME = "Follow-Up Agent"
 REMINDER_HOURS = 24
-OPEN_STATUSES = ("requested", "booking_requested")
+OPEN_STATUSES = ("requested", "booking_requested", "confirmed")
 _CLOCK_WORDS = {
     "morning": time(9, 0),
     "afternoon": time(14, 0),

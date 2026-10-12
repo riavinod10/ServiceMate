@@ -1,0 +1,93 @@
+{% extends "core/brand_base.html" %}
+{% load servicemate_ui %}
+{% block title %}Booking request · ServiceMate{% endblock %}
+{% block content %}
+<a class="sm-back" href="{% url 'my_services' %}"><span aria-hidden="true">←</span> Back to My Services</a>
+<header class="sm-page-head">
+  <h1 class="sm-display">Your booking request is ready</h1>
+  <p class="sm-lede">This opens a WhatsApp chat with <strong>{{ details.provider_name }}</strong> and the message already typed. You tap Send. ServiceMate does not message the provider itself.</p>
+</header>
+
+<p class="sm-status"><span class="sm-chip">{{ booking.status|capfirst }}</span></p>
+
+<section class="sm-card sm-booking-card" aria-labelledby="provider-heading">
+  <h2 class="sm-display" id="provider-heading">Provider</h2>
+  <dl class="sm-facts">
+    <dt>Name</dt>
+    <dd>{{ details.provider_name }}</dd>
+    {% if details.phone %}
+    <dt>Phone</dt>
+    <dd><a href="tel:{{ details.phone }}">{{ details.phone }}</a></dd>
+    {% endif %}
+    {% if details.website %}
+    <dt>Website</dt>
+    <dd><a href="{{ details.website }}" target="_blank" rel="noopener noreferrer">{{ details.website }}</a></dd>
+    {% endif %}
+    {% if details.rating %}
+    <dt>Rating</dt>
+    <dd>★ {{ details.rating|floatformat:1 }}{% if details.review_count %} ({{ details.review_count }} review{{ details.review_count|pluralize }}){% endif %}</dd>
+    {% endif %}
+    {% if details.price_info %}
+    <dt>Pricing</dt>
+    <dd>{{ details.price_info|price_short }}{% if details.price_is_estimate %} <span class="sm-tag">Estimate</span>{% endif %}</dd>
+    {% endif %}
+  </dl>
+</section>
+
+<section class="sm-card sm-booking-card" aria-labelledby="service-heading">
+  <h2 class="sm-display" id="service-heading">Service details</h2>
+  <dl class="sm-facts">
+    <dt>Service</dt><dd>{{ details.service_label }}</dd>
+    {% if details.problem %}<dt>Problem</dt><dd>{{ details.problem }}</dd>{% endif %}
+    {% if details.location %}<dt>Location</dt><dd>{{ details.location }}</dd>{% endif %}
+    {% if details.appointment_str %}<dt>Preferred time</dt><dd>{{ details.appointment_str }}</dd>{% endif %}
+    {% if details.budget_inr %}<dt>Budget</dt><dd>₹{{ details.budget_inr }}</dd>{% endif %}
+  </dl>
+</section>
+
+<section class="sm-card sm-booking-card" aria-labelledby="contact-heading">
+  <h2 class="sm-display" id="contact-heading">Contact the provider</h2>
+  <p>WhatsApp opens with this message filled in. The provider sees your own number and replies to you there.</p>
+  <div class="sm-booking-actions">
+    {% if whatsapp_url %}
+    <a class="sm-btn sm-btn--primary" href="{{ whatsapp_url }}" target="_blank" rel="noopener noreferrer">Open in WhatsApp</a>
+    {% else %}
+    <p class="sm-note">This provider has no phone number, so there is no WhatsApp link.</p>
+    {% endif %}
+    {% if details.phone %}
+    <a class="sm-btn sm-btn--secondary" href="tel:{{ details.phone }}">Call {{ details.phone }}</a>
+    {% endif %}
+    <a class="sm-btn sm-btn--secondary" href="{% url 'booking_pdf' service_request.pk %}">Download PDF summary</a>
+  </div>
+  {% if whatsapp_message %}
+  <p class="sm-label">Pre-filled message</p>
+  <pre class="sm-message-text" id="sm-wa-message">{{ whatsapp_message }}</pre>
+  <button type="button" class="sm-btn sm-btn--quiet sm-btn--small" id="sm-copy-btn">Copy message</button>
+  {% endif %}
+  {% if can_confirm %}
+  <form method="post" action="{% url 'mark_booking_confirmed' service_request.pk %}" class="sm-booking-confirm">
+    {% csrf_token %}
+    <p class="sm-note">ServiceMate cannot see the provider's reply. After they agree a time, mark the booking confirmed.</p>
+    <button class="sm-btn sm-btn--secondary" type="submit">Mark as confirmed</button>
+  </form>
+  {% endif %}
+</section>
+
+<section class="sm-card sm-booking-card">
+  <h2 class="sm-display">Your original request</h2>
+  <p class="sm-quote">{{ service_request.raw_text }}</p>
+</section>
+<script>
+  var copyBtn = document.getElementById("sm-copy-btn");
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var text = document.getElementById("sm-wa-message");
+      if (!text || !navigator.clipboard) return;
+      navigator.clipboard.writeText(text.textContent).then(function () {
+        copyBtn.textContent = "Copied";
+        setTimeout(function () { copyBtn.textContent = "Copy message"; }, 2000);
+      });
+    });
+  }
+</script>
+{% endblock %}

@@ -47,7 +47,7 @@ def _decision_message(action, provider_id, approval):
     """Confirmation shown on the next page (display only; the workflow is unchanged)."""
     if action == "approve":
         names = {p.get("place_id"): p.get("name") for p in approval.payload.get("ranked_providers", [])}
-        return f"Approved {names.get(provider_id, 'your provider')}. ServiceMate is preparing the booking request."
+        return f"Approved {names.get(provider_id, 'your provider')}. ServiceMate is preparing the booking request. Open My Services for the WhatsApp link."
     if action == "search_again":
         return "Searching again. New providers will appear here shortly."
     return "Request rejected. Nothing was booked."

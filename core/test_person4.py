@@ -11,6 +11,7 @@ from langgraph.types import Command
 
 from .agents.analytics import MINUTES_SAVED_PER_REQUEST, build_analytics
 from .agents.followup import mark_overdue_bookings, send_due_reminders
+from .agents.scheduling_agent import scheduling_agent
 from .gemini import GeminiUnavailable
 from .models import AgentLog, Approval, Booking, ServiceRequest
 from .orchestration import build_workflow
@@ -263,3 +264,54 @@ class AnalyticsTests(TestCase):
         html = self.client.get(reverse("analytics")).content.decode()
         self.assertIn("45 minutes", html)
         self.assertIn("Estimated spend is", html)
+
+
+class BookingTests(TestCase):
+    def setUp(self):
+        self.user = User.objects.create_user("shubh", password="safe-password-123")
+        self.req = ServiceRequest.objects.create(
+            user=self.user, raw_text="AC not cooling", workflow_thread_id="book-1", requirements=KOTHRUD,
+        )
+        self.client.force_login(self.user)
+
+    def test_scheduling_builds_a_whatsapp_link_and_my_services_opens_it(self):
+        result = scheduling_agent({
+            "request_id": self.req.id,
+            "selected_provider_id": "p-1",
+            "ranked_providers": [{
+                "place_id": "p-1",
+                "name": "Shiv Krupa AC repair and service centre",
+                "phone": "9876543210",
+                "rating": 4.8,
+                "review_count": 20,
+            }],
+            "requirements": {
+                **KOTHRUD,
+                "problem": "AC not cooling",
+                "location": "Kothrud, Pune",
+                "date": "2026-10-13",
+                "time": "18:00",
+            },
+        })
+        self.assertEqual(result["status"], "booking_requested")
+        self.assertTrue(result["booking"]["whatsapp_url"].startswith("https://wa.me/919876543210?text="))
+        self.assertIn("AC not cooling", result["booking"]["whatsapp_message"])
+        self.assertIn("Kothrud, Pune", result["booking"]["whatsapp_message"])
+        html = self.client.get(reverse("my_services")).content.decode()
+        self.assertIn(reverse("booking_detail", args=[self.req.id]), html)
+        page = self.client.get(reverse("booking_detail", args=[self.req.id]))
+        self.assertContains(page, "https://wa.me/919876543210?text=")
+        self.assertContains(page, "Open in WhatsApp")
+        self.assertContains(page, "Mark as confirmed")
+
+    def test_mark_confirmed_updates_the_booking(self):
+        scheduling_agent({
+            "request_id": self.req.id,
+            "selected_provider_id": "p-1",
+            "ranked_providers": [{"place_id": "p-1", "name": "Cool Air", "phone": "9876543210"}],
+            "requirements": KOTHRUD,
+        })
+        response = self.client.post(reverse("mark_booking_confirmed", args=[self.req.id]))
+        self.assertRedirects(response, reverse("booking_detail", args=[self.req.id]))
+        self.assertEqual(Booking.objects.get(request=self.req).status, "confirmed")
+        self.assertContains(self.client.get(reverse("my_services")), "Confirmed")

@@ -465,3 +465,16 @@ form.is-submitting button { opacity: .65; cursor: progress; }
   .sm-request-grid .sm-field { margin-bottom: 1rem; }
   .sm-request-grid .sm-field:last-child { margin-bottom: 0; }
 }
+.sm-booking-card { padding: 1.35rem 1.4rem 1.25rem; margin: 0 0 1.25rem; }
+.sm-booking-card h2 { font-size: 1.6rem; margin: 0 0 .8rem; }
+.sm-booking-card > p { margin: 0 0 1rem; max-width: 42rem; }
+.sm-booking-actions { display: flex; flex-wrap: wrap; gap: .75rem; align-items: center; margin: 0 0 1rem; }
+.sm-booking-confirm { margin-top: 1.25rem; padding-top: 1rem; border-top: 2px dashed var(--sm-line); }
+.sm-label { margin: .2rem 0 .45rem; font-weight: 700; }
+.sm-message-text {
+  white-space: pre-wrap; font-family: inherit; font-size: 1rem; line-height: 1.45;
+  background: var(--sm-cream); color: var(--sm-ink);
+  border: 2px solid var(--sm-ink); border-radius: var(--sm-radius);
+  padding: 1rem 1.1rem; margin: 0 0 .85rem;
+}
+.sm-service__actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: .35rem 0 .8rem; }
