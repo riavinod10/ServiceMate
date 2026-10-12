@@ -418,6 +418,105 @@ def _find_provider(place_id: str | None, ranked: list[dict]) -> dict | None:
     return None
 
 
+def fill_missing_booking_details(booking) -> dict:
+    """Fill a booking that was cancelled before Scheduling saved the provider.
+
+    Name and service are display text, not fields the user types.
+    """
+    details = dict(booking.details or {})
+    if details.get("provider_name") and details.get("service_label") and "whatsapp_message" in details:
+        return details
+
+    service_request = booking.request
+    requirements = _requirements_for_request(service_request)
+    provider = _provider_for_booking(service_request, booking)
+    if provider:
+        built = _build_details(provider, requirements, service_request.id)
+        built.pop("pdf_b64", None)
+        if details.get("cancelled_by"):
+            built["cancelled_by"] = details["cancelled_by"]
+        details = built
+    else:
+        details.setdefault("service_label", _service_label(requirements))
+        details.setdefault("problem", requirements.get("problem") or "")
+        details.setdefault("location", requirements.get("location") or "")
+        if requirements.get("budget") and not details.get("budget_inr"):
+            details["budget_inr"] = requirements.get("budget")
+    booking.details = details
+    if booking.pk:
+        booking.save(update_fields=["details"])
+    return details
+
+
+def _requirements_for_request(service_request) -> dict:
+    requirements = dict(service_request.requirements or {})
+    raw = (service_request.raw_text or "").strip()
+    if not requirements.get("problem") and raw:
+        requirements["problem"] = raw[:180]
+    if not requirements.get("category") and raw:
+        try:
+            from ..providers.categories import resolve_category
+            category = resolve_category(raw)
+            if category:
+                requirements["category"] = category.slug
+        except Exception:
+            pass
+    locality = str(requirements.get("locality") or "").strip()
+    city = str(requirements.get("city") or "").strip()
+    if not requirements.get("location"):
+        requirements["location"] = ", ".join(part for part in (locality, city) if part)
+    return requirements
+
+
+def _provider_for_booking(service_request, booking) -> dict | None:
+    ranked = []
+    selected_ids = []
+    for approval in service_request.approvals.all():
+        payload = approval.payload or {}
+        ranked.extend(payload.get("ranked_providers") or [])
+        if payload.get("selected_provider_id"):
+            selected_ids.append(payload["selected_provider_id"])
+    if booking.provider_id:
+        selected_ids.insert(0, booking.provider.place_id)
+    excluded = list(service_request.excluded_provider_ids or [])
+    if excluded:
+        selected_ids.append(excluded[-1])
+
+    for place_id in selected_ids:
+        match = next((provider for provider in ranked if provider.get("place_id") == place_id), None)
+        if match:
+            return match
+        row = Provider.objects.filter(place_id=place_id).first()
+        if row:
+            return {
+                "place_id": row.place_id,
+                "name": row.name,
+                "phone": row.phone,
+                "website": row.website,
+                "rating": row.rating,
+                "review_count": row.review_count,
+                "price_info": row.price_info,
+                "price_is_estimate": row.price_is_estimate,
+            }
+
+    name = _provider_name_from_logs(service_request)
+    if not name:
+        return None
+    match = next((provider for provider in ranked if (provider.get("name") or "").strip() == name), None)
+    return match or {"place_id": "", "name": name, "phone": ""}
+
+
+def _provider_name_from_logs(service_request) -> str:
+    markers = ("Preparing booking request for ", "Booking request prepared for ")
+    for log in service_request.agent_logs.order_by("-id"):
+        if log.agent_name != "Scheduling Agent":
+            continue
+        for marker in markers:
+            if marker in log.message:
+                return log.message.split(marker, 1)[1].split(".", 1)[0].strip()
+    return ""
+
+
 def _service_label(requirements: dict) -> str:
     """Human-readable service label from the requirements dict."""
     category = requirements.get("category", "")

@@ -35,7 +35,13 @@ def approval_action(request, approval_id):
     if action == "approve" and provider_id not in valid_ids:
         return HttpResponseBadRequest("Choose one of the ranked providers before approving")
     approval.decision, approval.decided_at = choices[action], timezone.now()
-    approval.save(update_fields=["decision", "decided_at"])
+    update_fields = ["decision", "decided_at"]
+    if action == "approve":
+        payload = dict(approval.payload or {})
+        payload["selected_provider_id"] = provider_id
+        approval.payload = payload
+        update_fields.append("payload")
+    approval.save(update_fields=update_fields)
     resume = {"action": action}
     if action == "approve":
         resume["provider_id"] = provider_id

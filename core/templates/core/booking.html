@@ -5,16 +5,21 @@
 <a class="sm-back" href="{% url 'my_services' %}"><span aria-hidden="true">←</span> Back to My Services</a>
 <header class="sm-page-head">
   <h1 class="sm-display">Your booking request is ready</h1>
+  {% if details.provider_name %}
   <p class="sm-lede">This opens a WhatsApp chat with <strong>{{ details.provider_name }}</strong> and the message already typed. You tap Send. ServiceMate does not message the provider itself.</p>
+  {% else %}
+  <p class="sm-lede">The provider name and service are filled in by ServiceMate after you approve someone. You do not type them.</p>
+  {% endif %}
 </header>
 
 <p class="sm-status"><span class="sm-chip">{{ booking.status|capfirst }}</span></p>
 
 <section class="sm-card sm-booking-card" aria-labelledby="provider-heading">
   <h2 class="sm-display" id="provider-heading">Provider</h2>
+  {% if details.provider_name %}
   <dl class="sm-facts">
     <dt>Name</dt>
-    <dd>{{ details.provider_name }}</dd>
+    <dd class="sm-booking-value">{{ details.provider_name }}</dd>
     {% if details.phone %}
     <dt>Phone</dt>
     <dd><a href="tel:{{ details.phone }}">{{ details.phone }}</a></dd>
@@ -32,12 +37,15 @@
     <dd>{{ details.price_info|price_short }}{% if details.price_is_estimate %} <span class="sm-tag">Estimate</span>{% endif %}</dd>
     {% endif %}
   </dl>
+  {% else %}
+  <p>No provider was saved on this booking. Open Approvals, choose a provider, then come back here. The name and WhatsApp link show up on their own.</p>
+  {% endif %}
 </section>
 
 <section class="sm-card sm-booking-card" aria-labelledby="service-heading">
   <h2 class="sm-display" id="service-heading">Service details</h2>
   <dl class="sm-facts">
-    <dt>Service</dt><dd>{{ details.service_label }}</dd>
+    <dt>Service</dt><dd class="sm-booking-value">{{ details.service_label|default:service_request.raw_text }}</dd>
     {% if details.problem %}<dt>Problem</dt><dd>{{ details.problem }}</dd>{% endif %}
     {% if details.location %}<dt>Location</dt><dd>{{ details.location }}</dd>{% endif %}
     {% if details.appointment_str %}<dt>Preferred time</dt><dd>{{ details.appointment_str }}</dd>{% endif %}
@@ -51,8 +59,10 @@
   <div class="sm-booking-actions">
     {% if whatsapp_url %}
     <a class="sm-btn sm-btn--primary" href="{{ whatsapp_url }}" target="_blank" rel="noopener noreferrer">Open in WhatsApp</a>
-    {% else %}
+    {% elif details.provider_name %}
     <p class="sm-note">This provider has no phone number, so there is no WhatsApp link.</p>
+    {% else %}
+    <p class="sm-note">The WhatsApp button appears here after a provider with a phone number is approved.</p>
     {% endif %}
     {% if details.phone %}
     <a class="sm-btn sm-btn--secondary" href="tel:{{ details.phone }}">Call {{ details.phone }}</a>

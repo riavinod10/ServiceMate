@@ -5,7 +5,7 @@ from django.http import Http404, HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.views.decorators.http import require_POST
 
-from .agents.scheduling_agent import generate_booking_pdf
+from .agents.scheduling_agent import fill_missing_booking_details, generate_booking_pdf
 from .logging import log_agent_event
 from .models import Booking, ServiceRequest
 
@@ -14,7 +14,7 @@ from .models import Booking, ServiceRequest
 def booking_detail(request, request_id):
     service_request = get_object_or_404(ServiceRequest, pk=request_id, user=request.user)
     booking = _booking_or_404(service_request)
-    details = booking.details or {}
+    details = fill_missing_booking_details(booking)
     return render(request, "core/booking.html", {
         "service_request": service_request,
         "booking": booking,
@@ -29,7 +29,7 @@ def booking_detail(request, request_id):
 def booking_pdf(request, request_id):
     service_request = get_object_or_404(ServiceRequest, pk=request_id, user=request.user)
     booking = _booking_or_404(service_request)
-    details = booking.details or {}
+    details = fill_missing_booking_details(booking)
     pdf_bytes = generate_booking_pdf(
         provider={
             "name": details.get("provider_name", ""),

@@ -72,6 +72,9 @@ def mark_booking_cancelled(service_request: ServiceRequest) -> Booking:
     booking = Booking.objects.filter(request=service_request).first()
     if booking is None:
         booking = Booking(request=service_request, details={})
+    if not (booking.details or {}).get("provider_name"):
+        from .scheduling_agent import fill_missing_booking_details
+        fill_missing_booking_details(booking)
     details = dict(booking.details or {})
     details["cancelled_by"] = "follow_up_simulation"
     booking.details = details

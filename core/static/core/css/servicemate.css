@@ -478,3 +478,4 @@ form.is-submitting button { opacity: .65; cursor: progress; }
   padding: 1rem 1.1rem; margin: 0 0 .85rem;
 }
 .sm-service__actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: .35rem 0 .8rem; }
+.sm-booking-value { font-weight: 700; }

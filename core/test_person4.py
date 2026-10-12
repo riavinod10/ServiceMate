@@ -315,3 +315,22 @@ class BookingTests(TestCase):
         self.assertRedirects(response, reverse("booking_detail", args=[self.req.id]))
         self.assertEqual(Booking.objects.get(request=self.req).status, "confirmed")
         self.assertContains(self.client.get(reverse("my_services")), "Confirmed")
+
+    def test_cancelled_booking_shows_the_approved_provider_without_a_form(self):
+        Approval.objects.create(
+            request=self.req, thread_id=self.req.workflow_thread_id, decision=Approval.Decision.APPROVED,
+            payload={
+                "selected_provider_id": "p-9",
+                "ranked_providers": [{
+                    "place_id": "p-9",
+                    "name": "Kothrud Plumbing Works",
+                    "phone": "9876543210",
+                }],
+            },
+        )
+        Booking.objects.create(request=self.req, status="cancelled", details={})
+        page = self.client.get(reverse("booking_detail", args=[self.req.id]))
+        self.assertContains(page, "Kothrud Plumbing Works")
+        self.assertContains(page, "AC repair")
+        self.assertContains(page, "https://wa.me/919876543210?text=")
+        self.assertContains(page, "Open in WhatsApp")
