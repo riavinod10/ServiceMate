@@ -35,7 +35,7 @@ class PersonOneTests(TestCase):
         self.client.force_login(self.user)
         self.assertEqual(self.client.get(reverse("approval_action", args=[approval.id])).status_code, 405)
         response = self.client.post(reverse("approval_action", args=[approval.id]), {"action": "approve", "provider_id": "place-1"})
-        self.assertRedirects(response, reverse("approvals"))
+        self.assertRedirects(response, reverse("dashboard"))
         delay.assert_called_once_with(self.request_obj.id, "thread-1", {"request_id": self.request_obj.id, "resume": {"action": "approve", "provider_id": "place-1"}})
         approval.refresh_from_db()
         self.assertEqual(approval.decision, Approval.Decision.APPROVED)

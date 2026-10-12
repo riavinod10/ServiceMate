@@ -77,7 +77,7 @@ class PageTests(TestCase):
             "city": "Pune",
             "budget": "1500",
         })
-        self.assertRedirects(response, reverse("dashboard"))
+        self.assertRedirects(response, reverse("approvals"))
         service_request = ServiceRequest.objects.get(user=self.user)
         self.assertEqual(service_request.requirements["locality"], "Kothrud")
         self.assertEqual(service_request.requirements["city"], "Pune")
@@ -93,6 +93,68 @@ class PageTests(TestCase):
         response = self.client.post(reverse("new_request"), {"raw_text": "   "})
         self.assertRedirects(response, reverse("dashboard"))
         self.assertFalse(ServiceRequest.objects.filter(user=self.user).exists())
+
+    @patch("core.views_workspace.run_workflow.delay")
+    def test_new_request_shows_a_waiting_card_on_approvals(self, delay):
+        text = "AC not cooling, need someone tomorrow evening"
+        response = self.client.post(reverse("new_request"), {
+            "raw_text": text, "locality": "Kothrud", "city": "Pune", "budget": "1500",
+        })
+        self.assertRedirects(response, reverse("approvals"))
+        page = self.client.get(reverse("approvals"))
+        self.assertContains(page, "Finding providers for")
+        self.assertContains(page, text)
+        self.assertContains(page, 'http-equiv="refresh" content="5"')
+        self.assertContains(page, "sm-empty__mark--live")
+        self.assertNotContains(page, "Nothing waiting for you")
+        delay.assert_called_once()
+
+    def test_dashboard_sections_start_closed_and_open(self):
+        html = self.client.get(reverse("dashboard")).content.decode()
+        self.assertIn('<details class="sm-card sm-request-form">', html)
+        self.assertNotIn('sm-request-form" open', html)
+        self.assertIn('<details class="sm-card sm-log" open>', html)
+        self.assertIn('hx-trigger="load, every 5s"', html)
+
+    def test_a_failed_submit_reopens_the_request_form(self):
+        response = self.client.post(reverse("new_request"), {"raw_text": "   "}, follow=True)
+        self.assertContains(response, '<details class="sm-card sm-request-form" open>')
+
+    def _ranked_approval(self, thread, name):
+        req = ServiceRequest.objects.create(user=self.user, raw_text="Need a plumber", workflow_thread_id=thread)
+        return Approval.objects.create(
+            request=req, thread_id=thread,
+            payload={"ranked_providers": [{"place_id": "p-9", "name": name}]},
+        )
+
+    @patch("core.views.run_workflow.delay")
+    def test_reject_and_search_again_show_on_the_dashboard(self, delay):
+        rejected = self._ranked_approval("t-reject", "Cool Air")
+        response = self.client.post(reverse("approval_action", args=[rejected.id]), {"action": "reject"}, follow=True)
+        self.assertRedirects(response, reverse("dashboard"))
+        self.assertContains(response, "Request rejected. Nothing was booked.")
+
+        again = self._ranked_approval("t-again", "Cool Air")
+        response = self.client.post(reverse("approval_action", args=[again.id]), {"action": "search_again"}, follow=True)
+        self.assertRedirects(response, reverse("dashboard"))
+        self.assertContains(response, "Searching again. New providers will appear on Approvals shortly.")
+        self.assertEqual(delay.call_count, 2)
+
+    @patch("core.views.run_workflow.delay")
+    def test_approve_message_links_to_my_services_and_escapes_the_name(self, delay):
+        name = "<img src=x onerror=alert(1)>"
+        approval = self._ranked_approval("t-approve", name)
+        response = self.client.post(
+            reverse("approval_action", args=[approval.id]),
+            {"action": "approve", "provider_id": "p-9"},
+            follow=True,
+        )
+        self.assertRedirects(response, reverse("dashboard"))
+        self.assertContains(response, "ServiceMate is preparing the booking request.")
+        self.assertContains(response, "&lt;img src=x onerror=alert(1)&gt;")
+        self.assertNotContains(response, "<img src=x")
+        self.assertContains(response, f'<a href="{reverse("my_services")}">Open My Services</a>')
+        delay.assert_called_once()
 
     def test_comparison_does_not_grow_an_agent_log_panel(self):
         req = ServiceRequest.objects.create(user=self.user, raw_text="AC not cooling", workflow_thread_id="cmp-p4")
@@ -315,6 +377,23 @@ class BookingTests(TestCase):
         self.assertRedirects(response, reverse("booking_detail", args=[self.req.id]))
         self.assertEqual(Booking.objects.get(request=self.req).status, "confirmed")
         self.assertContains(self.client.get(reverse("my_services")), "Confirmed")
+
+    def test_confirmed_booking_shows_a_green_chip_and_hides_the_button(self):
+        scheduling_agent({
+            "request_id": self.req.id,
+            "selected_provider_id": "p-1",
+            "ranked_providers": [{"place_id": "p-1", "name": "Cool Air", "phone": "9876543210"}],
+            "requirements": KOTHRUD,
+        })
+        response = self.client.post(reverse("mark_booking_confirmed", args=[self.req.id]), follow=True)
+        self.assertContains(response, "sm-chip--ok")
+        self.assertContains(response, "sm-chip__check")
+        self.assertContains(response, "Confirmed")
+        self.assertNotContains(response, "Mark as confirmed")
+        services = self.client.get(reverse("my_services"))
+        self.assertContains(services, "sm-chip sm-chip--ok")
+        self.assertContains(services, "Confirmed")
+        self.assertContains(services, "sm-chip__check")
 
     def test_cancelled_booking_shows_the_approved_provider_without_a_form(self):
         Approval.objects.create(

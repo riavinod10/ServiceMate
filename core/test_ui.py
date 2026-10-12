@@ -126,11 +126,13 @@ class ApprovalsPageTests(TestCase):
     def test_actions_show_a_confirmation(self, delay):
         url = reverse("approval_action", args=[self.approval.id])
         response = self.client.post(url, {"action": "approve", "provider_id": self.ranked[0]["place_id"]}, follow=True)
+        self.assertRedirects(response, reverse("dashboard"))
         self.assertContains(response, f"Approved {self.ranked[0]['name']}")
         delay.assert_called_once()  # workflow resume unchanged
 
     def test_empty_state(self):
         Approval.objects.all().delete()
+        ServiceRequest.objects.filter(user=self.user).delete()
         self.assertContains(self.client.get(reverse("approvals")), "Nothing waiting for you")
 
 

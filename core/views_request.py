@@ -22,6 +22,7 @@ def booking_detail(request, request_id):
         "whatsapp_url": details.get("whatsapp_url", ""),
         "whatsapp_message": details.get("whatsapp_message", ""),
         "can_confirm": booking.status in {"requested", "booking_requested", "overdue"},
+        "booking_tone": _booking_tone(booking.status),
     })
 
 
@@ -81,6 +82,16 @@ def mark_booking_confirmed(request, request_id):
     )
     messages.success(request, "Booking marked confirmed. Reminders still run before the appointment.")
     return redirect("booking_detail", request_id=request_id)
+
+
+def _booking_tone(status: str) -> str:
+    return {
+        "confirmed": "ok",
+        "requested": "info",
+        "booking_requested": "info",
+        "overdue": "alert",
+        "cancelled": "alert",
+    }.get(status, "neutral")
 
 
 def _booking_or_404(service_request):

@@ -13,7 +13,7 @@
   <article class="sm-card sm-service">
     <div class="sm-service__head">
       <h2 class="sm-quote">{{ row.request.raw_text }}</h2>
-      <span class="sm-chip">{{ row.label }}</span>
+      <span class="sm-chip sm-chip--{{ row.tone }}">{% if row.tone == "ok" %}<span class="sm-chip__check" aria-hidden="true">✓</span> {% endif %}{{ row.label }}</span>
     </div>
     <p class="sm-request__when">Requested {{ row.request.created_at|timesince }} ago{% if row.provider_name %} · {{ row.provider_name }}{% endif %}{% if row.appointment %} · {{ row.appointment }}{% endif %}</p>
     {% if row.pending %}

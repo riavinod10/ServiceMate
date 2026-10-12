@@ -1,11 +1,22 @@
 {% extends "core/brand_base.html" %}
 {% load static servicemate_ui %}
 {% block title %}Approvals · ServiceMate{% endblock %}
+{% block head_extra %}{% if finding %}<meta http-equiv="refresh" content="5">{% endif %}{% endblock %}
 {% block content %}
 <header class="sm-page-head">
   <h1 class="sm-display">Pick your provider</h1>
   <p class="sm-lede">ServiceMate ranked these for you. Choose one to approve, or ask it to search again. Nothing is booked until you approve.</p>
 </header>
+
+{% for item in finding %}
+<section class="sm-card sm-finding" role="status">
+  <div class="sm-empty__mark sm-empty__mark--live" aria-hidden="true">
+    <span class="sm-shape sm-shape--pink-dot"></span><span class="sm-shape sm-shape--sun-pill"></span>
+    <img src="{% static 'core/img/servicemate-logo.png' %}" alt="" width="120" height="56">
+  </div>
+  <p class="sm-finding__text">Finding providers for “{{ item.raw_text }}”…</p>
+</section>
+{% endfor %}
 
 {% for approval in approvals %}
 <section class="sm-card sm-request" aria-labelledby="request-{{ approval.id }}">
@@ -55,6 +66,7 @@
   </form>
 </section>
 {% empty %}
+{% if not finding %}
 <section class="sm-empty">
   <div class="sm-empty__mark" aria-hidden="true">
     <span class="sm-shape sm-shape--pink-dot"></span><span class="sm-shape sm-shape--sun-pill"></span>
@@ -63,5 +75,6 @@
   <h2 class="sm-display">Nothing waiting for you</h2>
   <p>When ServiceMate has ranked providers for one of your requests, they'll appear here for you to choose from.</p>
 </section>
+{% endif %}
 {% endfor %}
 {% endblock %}

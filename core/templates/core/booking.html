@@ -12,7 +12,7 @@
   {% endif %}
 </header>
 
-<p class="sm-status"><span class="sm-chip">{{ booking.status|capfirst }}</span></p>
+<p class="sm-status"><span class="sm-chip sm-chip--{{ booking_tone }}">{% if booking_tone == "ok" %}<span class="sm-chip__check" aria-hidden="true">✓</span> Confirmed{% else %}{{ booking.status|capfirst }}{% endif %}</span></p>
 
 <section class="sm-card sm-booking-card" aria-labelledby="provider-heading">
   <h2 class="sm-display" id="provider-heading">Provider</h2>

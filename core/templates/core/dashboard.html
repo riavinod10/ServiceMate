@@ -52,8 +52,11 @@
 </section>
 <p class="sm-note">Time saved assumes {{ summary.minutes_each }} minutes of manual searching per request. Estimated spend so far is ₹{{ summary.estimated_spend_inr|floatformat:0 }}.</p>
 
-<section class="sm-card sm-request-form" aria-labelledby="new-request-title">
-  <h2 id="new-request-title" class="sm-display">New request</h2>
+<details class="sm-card sm-request-form"{% if open_request_form %} open{% endif %}>
+  <summary class="sm-disclosure">
+    <h2 id="new-request-title" class="sm-display">New request</h2>
+    <span class="sm-disclosure__chevron" aria-hidden="true"></span>
+  </summary>
   <p>Describe the job the way you would tell a friend. Discovery and analysis start as soon as you submit.</p>
   <form method="post" action="{% url 'new_request' %}">
     {% csrf_token %}
@@ -78,7 +81,7 @@
     <button class="sm-btn sm-btn--primary" type="submit">Start request</button>
   </form>
   <p class="sm-note">AC repair, plumber, electrician, and home cleaning have demo providers. Agent activity below updates as each agent runs.</p>
-</section>
+</details>
 
 <div class="sm-actions">
   <a class="sm-btn sm-btn--primary sm-btn--small" href="{% url 'approvals' %}">Open approvals</a>

@@ -27,6 +27,7 @@ def dashboard(request):
         "summary": summary,
         "pending_count": pending,
         "logs": _logs(request.user),
+        "open_request_form": _has_error_message(request),
     })
 
 
@@ -81,8 +82,8 @@ def new_request(request):
         "excluded_provider_ids": [],
         "retry_count": 0,
     })
-    messages.success(request, "Request started. Agent activity updates on this page. Open Approvals when the providers are ready.")
-    return redirect("dashboard")
+    messages.success(request, "Request started. ServiceMate is finding providers; they'll appear here in a few seconds.")
+    return redirect("approvals")
 
 
 @login_required
@@ -112,6 +113,29 @@ def simulate_cancellation(request, request_id):
     return redirect("my_services")
 
 
+def _has_error_message(request) -> bool:
+    """True when a failed submit sent the user back. Leaves the messages for the banner."""
+    storage = messages.get_messages(request)
+    has_error = False
+    for message in storage:
+        if message.level >= messages.ERROR:
+            has_error = True
+    storage.used = False
+    return has_error
+
+
+def _row_tone(label: str) -> str:
+    if label == "Confirmed":
+        return "ok"
+    if label == "Booking requested":
+        return "info"
+    if label == "Waiting for approval":
+        return "wait"
+    if label in {"Overdue", "Provider cancelled", "Recovery stopped"}:
+        return "alert"
+    return "neutral"
+
+
 def _logs(user, request_id=None):
     rows = AgentLog.objects.filter(request__user=user).select_related("request")
     if request_id:
@@ -131,12 +155,14 @@ def _service_rows(user):
         approval = max(approvals, key=lambda row: row.id) if approvals else None
         pending = any(row.decision == Approval.Decision.PENDING for row in approvals)
         booking = bookings.get(item.id)
+        label = _state_label(item, approval, booking, pending)
         rows.append({
             "request": item,
             "approval": approval,
             "booking": booking,
             "pending": pending,
-            "label": _state_label(item, approval, booking, pending),
+            "label": label,
+            "tone": _row_tone(label),
             "provider_name": _provider_name(booking),
             "appointment": _appointment_label(booking),
             "can_reopen": _can_reopen(item, approval=approval, pending=pending, booking=booking),

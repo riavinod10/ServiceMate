@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="{% static 'core/css/servicemate.css' %}?v=20261012b">
+  <link rel="stylesheet" href="{% static 'core/css/servicemate.css' %}?v=20261012c">
   {% block head_late %}{% endblock %}
 </head>
 <body class="sm-body{% block body_class %}{% endblock %}">
@@ -21,7 +21,12 @@
   {% block messages %}
     {% if messages %}
     <div class="sm-messages" role="status">
-      {% for message in messages %}<p class="sm-message sm-message--{{ message.tags|default:'info' }}">{{ message }}</p>{% endfor %}
+      {% for message in messages %}
+      <p class="sm-message sm-message--{{ message.level_tag|default:'info' }}">
+        <span class="sm-message__text">{% if 'safe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}</span>
+        <button type="button" class="sm-message__close" aria-label="Dismiss notification">×</button>
+      </p>
+      {% endfor %}
     </div>
     {% endif %}
   {% endblock %}
@@ -55,6 +60,17 @@
         document.querySelectorAll("form.is-submitting").forEach(function (form) {
           delete form.dataset.smSubmitted; form.classList.remove("is-submitting");
         });
+      });
+      var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      document.querySelectorAll(".sm-message").forEach(function (message) {
+        function dismiss() {
+          if (reduceMotion) { message.remove(); return; }
+          message.classList.add("is-leaving");
+          message.addEventListener("animationend", function () { message.remove(); });
+        }
+        var close = message.querySelector(".sm-message__close");
+        if (close) close.addEventListener("click", dismiss);
+        if (!reduceMotion) window.setTimeout(dismiss, 8000);
       });
     })();
   </script>
